@@ -158,9 +158,9 @@
             // AceCard
             // 
             this.AceCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_A;
-            this.AceCard.Location = new System.Drawing.Point(654, 12);
+            this.AceCard.Location = new System.Drawing.Point(624, 6);
             this.AceCard.Name = "AceCard";
-            this.AceCard.Size = new System.Drawing.Size(59, 87);
+            this.AceCard.Size = new System.Drawing.Size(89, 125);
             this.AceCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AceCard.TabIndex = 8;
             this.AceCard.TabStop = false;
@@ -168,9 +168,9 @@
             // TwoCard
             // 
             this.TwoCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_2;
-            this.TwoCard.Location = new System.Drawing.Point(719, 12);
+            this.TwoCard.Location = new System.Drawing.Point(719, 6);
             this.TwoCard.Name = "TwoCard";
-            this.TwoCard.Size = new System.Drawing.Size(59, 87);
+            this.TwoCard.Size = new System.Drawing.Size(89, 125);
             this.TwoCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TwoCard.TabIndex = 9;
             this.TwoCard.TabStop = false;
@@ -178,9 +178,9 @@
             // ThirdCard
             // 
             this.ThirdCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_3;
-            this.ThirdCard.Location = new System.Drawing.Point(784, 12);
+            this.ThirdCard.Location = new System.Drawing.Point(814, 6);
             this.ThirdCard.Name = "ThirdCard";
-            this.ThirdCard.Size = new System.Drawing.Size(59, 87);
+            this.ThirdCard.Size = new System.Drawing.Size(89, 125);
             this.ThirdCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThirdCard.TabIndex = 10;
             this.ThirdCard.TabStop = false;
@@ -188,9 +188,9 @@
             // FouthCard
             // 
             this.FouthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_4;
-            this.FouthCard.Location = new System.Drawing.Point(849, 12);
+            this.FouthCard.Location = new System.Drawing.Point(909, 6);
             this.FouthCard.Name = "FouthCard";
-            this.FouthCard.Size = new System.Drawing.Size(59, 87);
+            this.FouthCard.Size = new System.Drawing.Size(89, 125);
             this.FouthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FouthCard.TabIndex = 11;
             this.FouthCard.TabStop = false;
@@ -198,9 +198,9 @@
             // FifthCard
             // 
             this.FifthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_5;
-            this.FifthCard.Location = new System.Drawing.Point(914, 12);
+            this.FifthCard.Location = new System.Drawing.Point(1004, 6);
             this.FifthCard.Name = "FifthCard";
-            this.FifthCard.Size = new System.Drawing.Size(59, 87);
+            this.FifthCard.Size = new System.Drawing.Size(89, 125);
             this.FifthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FifthCard.TabIndex = 12;
             this.FifthCard.TabStop = false;
@@ -208,9 +208,9 @@
             // TenthCard
             // 
             this.TenthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_10;
-            this.TenthCard.Location = new System.Drawing.Point(914, 155);
+            this.TenthCard.Location = new System.Drawing.Point(1004, 137);
             this.TenthCard.Name = "TenthCard";
-            this.TenthCard.Size = new System.Drawing.Size(59, 87);
+            this.TenthCard.Size = new System.Drawing.Size(89, 125);
             this.TenthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.TenthCard.TabIndex = 13;
             this.TenthCard.TabStop = false;
@@ -218,9 +218,9 @@
             // SixthCard
             // 
             this.SixthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_6;
-            this.SixthCard.Location = new System.Drawing.Point(654, 155);
+            this.SixthCard.Location = new System.Drawing.Point(624, 137);
             this.SixthCard.Name = "SixthCard";
-            this.SixthCard.Size = new System.Drawing.Size(59, 87);
+            this.SixthCard.Size = new System.Drawing.Size(89, 125);
             this.SixthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SixthCard.TabIndex = 14;
             this.SixthCard.TabStop = false;
@@ -228,9 +228,9 @@
             // SeventhCard
             // 
             this.SeventhCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_7;
-            this.SeventhCard.Location = new System.Drawing.Point(719, 155);
+            this.SeventhCard.Location = new System.Drawing.Point(719, 137);
             this.SeventhCard.Name = "SeventhCard";
-            this.SeventhCard.Size = new System.Drawing.Size(59, 87);
+            this.SeventhCard.Size = new System.Drawing.Size(89, 125);
             this.SeventhCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SeventhCard.TabIndex = 15;
             this.SeventhCard.TabStop = false;
@@ -238,9 +238,9 @@
             // EigthCard
             // 
             this.EigthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_8;
-            this.EigthCard.Location = new System.Drawing.Point(784, 155);
+            this.EigthCard.Location = new System.Drawing.Point(814, 137);
             this.EigthCard.Name = "EigthCard";
-            this.EigthCard.Size = new System.Drawing.Size(59, 87);
+            this.EigthCard.Size = new System.Drawing.Size(89, 125);
             this.EigthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.EigthCard.TabIndex = 16;
             this.EigthCard.TabStop = false;
@@ -248,9 +248,9 @@
             // NinthCard
             // 
             this.NinthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_9;
-            this.NinthCard.Location = new System.Drawing.Point(849, 155);
+            this.NinthCard.Location = new System.Drawing.Point(909, 137);
             this.NinthCard.Name = "NinthCard";
-            this.NinthCard.Size = new System.Drawing.Size(59, 87);
+            this.NinthCard.Size = new System.Drawing.Size(89, 125);
             this.NinthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.NinthCard.TabIndex = 17;
             this.NinthCard.TabStop = false;
@@ -258,9 +258,9 @@
             // QueenCard
             // 
             this.QueenCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_Q;
-            this.QueenCard.Location = new System.Drawing.Point(784, 289);
+            this.QueenCard.Location = new System.Drawing.Point(814, 280);
             this.QueenCard.Name = "QueenCard";
-            this.QueenCard.Size = new System.Drawing.Size(59, 87);
+            this.QueenCard.Size = new System.Drawing.Size(89, 125);
             this.QueenCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QueenCard.TabIndex = 18;
             this.QueenCard.TabStop = false;
@@ -268,9 +268,9 @@
             // KingCard
             // 
             this.KingCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_K;
-            this.KingCard.Location = new System.Drawing.Point(849, 289);
+            this.KingCard.Location = new System.Drawing.Point(909, 280);
             this.KingCard.Name = "KingCard";
-            this.KingCard.Size = new System.Drawing.Size(59, 87);
+            this.KingCard.Size = new System.Drawing.Size(89, 125);
             this.KingCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.KingCard.TabIndex = 19;
             this.KingCard.TabStop = false;
@@ -278,9 +278,9 @@
             // JackCard
             // 
             this.JackCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_J;
-            this.JackCard.Location = new System.Drawing.Point(719, 289);
+            this.JackCard.Location = new System.Drawing.Point(719, 280);
             this.JackCard.Name = "JackCard";
-            this.JackCard.Size = new System.Drawing.Size(59, 87);
+            this.JackCard.Size = new System.Drawing.Size(89, 125);
             this.JackCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.JackCard.TabIndex = 20;
             this.JackCard.TabStop = false;
@@ -455,7 +455,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(996, 463);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1101, 463);
+            this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ClubsBox3);
             this.Controls.Add(this.SpadesBox3);
@@ -494,7 +496,10 @@
             this.Controls.Add(this.FifthPlayCard);
             this.Controls.Add(this.FirstPlayCard);
             this.Controls.Add(this.button1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).EndInit();
