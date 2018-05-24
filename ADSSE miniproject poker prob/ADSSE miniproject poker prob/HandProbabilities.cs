@@ -10,28 +10,45 @@ namespace ADSSE_miniproject_poker_prob
     {
 
         List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
+        BuildDeck deck = new BuildDeck();
+        bool pair = false;
 
-        public float Probabilities(List<BuildDeck.Card> currentCards)
+        public float[] Probabilities(List<BuildDeck.Card> currentCards)
         {
-            bool pair;
-            float pairProbability = 0, twoPairProbability = 0;
-            if(currentCards.Count == 2)
+            float[] probabilities = new float[9];
+            if (currentCards.Count == 2)
             {
-                foreach(BuildDeck.Card c in currentCards){
-                    foreach(BuildDeck.Card d in currentCards){
-                        if(c != d){
+                //probability for a pair if you have two cards in hand.
+                foreach (BuildDeck.Card c in currentCards){
+                    foreach (BuildDeck.Card d in currentCards){
+                        if (c != d){
                             if (c.rank == d.rank){
                                 pair = true;
-                                pairProbability = 100;
-                            }else
-                            {
-                                pairProbability = ((6 / 50) * 100);
+                                probabilities[0] = 100;
+                            }
+                            else{
+                                probabilities[0] = (((deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / deck.CardsLeft(GameDeck)) * 100);
                             }
                         }
                     }
                 }
+                //probability of three of a kind
+                foreach(BuildDeck.Card c in currentCards){
+                    foreach(BuildDeck.Card d in currentCards){if(c != d){ 
+                            if(c != d){
+                                //if i already have a pair
+                                if (c.rank == d.rank){
+                                    probabilities[2] = ((deck.TypeOfCardLeft(GameDeck, c.rank)) / deck.CardsLeft(GameDeck)) * 100;
+                                }else
+                                {
+                                }
+                            }
+                            
+                        }
+                    }
+                }
             }
-            return pairProbability;
+            return probabilities;
         }
     }
 }
