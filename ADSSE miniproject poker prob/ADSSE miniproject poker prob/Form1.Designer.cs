@@ -67,6 +67,10 @@
             this.DiamondBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CardSuit1 = new System.Windows.Forms.Label();
+            this.CardNumber1 = new System.Windows.Forms.Label();
+            this.CardSuit2 = new System.Windows.Forms.Label();
+            this.CardNumber2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).BeginInit();
@@ -94,10 +98,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 337);
+            this.button1.Location = new System.Drawing.Point(209, 349);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
+            this.button1.Size = new System.Drawing.Size(89, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -105,64 +109,64 @@
             // 
             // FirstPlayCard
             // 
-            this.FirstPlayCard.Location = new System.Drawing.Point(49, 80);
+            this.FirstPlayCard.Location = new System.Drawing.Point(19, 54);
             this.FirstPlayCard.Name = "FirstPlayCard";
-            this.FirstPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FirstPlayCard.Size = new System.Drawing.Size(89, 125);
             this.FirstPlayCard.TabIndex = 1;
             this.FirstPlayCard.TabStop = false;
             // 
             // FifthPlayCard
             // 
-            this.FifthPlayCard.Location = new System.Drawing.Point(309, 80);
+            this.FifthPlayCard.Location = new System.Drawing.Point(399, 54);
             this.FifthPlayCard.Name = "FifthPlayCard";
-            this.FifthPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FifthPlayCard.Size = new System.Drawing.Size(89, 125);
             this.FifthPlayCard.TabIndex = 2;
             this.FifthPlayCard.TabStop = false;
             // 
             // FirthPlayCard
             // 
-            this.FirthPlayCard.Location = new System.Drawing.Point(244, 80);
+            this.FirthPlayCard.Location = new System.Drawing.Point(304, 54);
             this.FirthPlayCard.Name = "FirthPlayCard";
-            this.FirthPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FirthPlayCard.Size = new System.Drawing.Size(89, 125);
             this.FirthPlayCard.TabIndex = 3;
             this.FirthPlayCard.TabStop = false;
             // 
             // ThirdPlayCard
             // 
-            this.ThirdPlayCard.Location = new System.Drawing.Point(179, 80);
+            this.ThirdPlayCard.Location = new System.Drawing.Point(209, 54);
             this.ThirdPlayCard.Name = "ThirdPlayCard";
-            this.ThirdPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.ThirdPlayCard.Size = new System.Drawing.Size(89, 125);
             this.ThirdPlayCard.TabIndex = 4;
             this.ThirdPlayCard.TabStop = false;
             // 
             // SecondPlayCard
             // 
-            this.SecondPlayCard.Location = new System.Drawing.Point(114, 80);
+            this.SecondPlayCard.Location = new System.Drawing.Point(114, 54);
             this.SecondPlayCard.Name = "SecondPlayCard";
-            this.SecondPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.SecondPlayCard.Size = new System.Drawing.Size(89, 125);
             this.SecondPlayCard.TabIndex = 5;
             this.SecondPlayCard.TabStop = false;
             // 
             // SecoundHandCard
             // 
-            this.SecoundHandCard.Location = new System.Drawing.Point(244, 210);
+            this.SecoundHandCard.Location = new System.Drawing.Point(304, 197);
             this.SecoundHandCard.Name = "SecoundHandCard";
-            this.SecoundHandCard.Size = new System.Drawing.Size(59, 87);
+            this.SecoundHandCard.Size = new System.Drawing.Size(89, 127);
             this.SecoundHandCard.TabIndex = 6;
             this.SecoundHandCard.TabStop = false;
             // 
             // FirstHandCard
             // 
-            this.FirstHandCard.Location = new System.Drawing.Point(114, 210);
+            this.FirstHandCard.Location = new System.Drawing.Point(114, 197);
             this.FirstHandCard.Name = "FirstHandCard";
-            this.FirstHandCard.Size = new System.Drawing.Size(59, 87);
+            this.FirstHandCard.Size = new System.Drawing.Size(89, 127);
             this.FirstHandCard.TabIndex = 7;
             this.FirstHandCard.TabStop = false;
             // 
             // AceCard
             // 
             this.AceCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_A;
-            this.AceCard.Location = new System.Drawing.Point(624, 6);
+            this.AceCard.Location = new System.Drawing.Point(711, 8);
             this.AceCard.Name = "AceCard";
             this.AceCard.Size = new System.Drawing.Size(89, 125);
             this.AceCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +176,7 @@
             // TwoCard
             // 
             this.TwoCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_2;
-            this.TwoCard.Location = new System.Drawing.Point(719, 6);
+            this.TwoCard.Location = new System.Drawing.Point(806, 8);
             this.TwoCard.Name = "TwoCard";
             this.TwoCard.Size = new System.Drawing.Size(89, 125);
             this.TwoCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,7 +186,7 @@
             // ThirdCard
             // 
             this.ThirdCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_3;
-            this.ThirdCard.Location = new System.Drawing.Point(814, 6);
+            this.ThirdCard.Location = new System.Drawing.Point(901, 8);
             this.ThirdCard.Name = "ThirdCard";
             this.ThirdCard.Size = new System.Drawing.Size(89, 125);
             this.ThirdCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +196,7 @@
             // FouthCard
             // 
             this.FouthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_4;
-            this.FouthCard.Location = new System.Drawing.Point(909, 6);
+            this.FouthCard.Location = new System.Drawing.Point(996, 8);
             this.FouthCard.Name = "FouthCard";
             this.FouthCard.Size = new System.Drawing.Size(89, 125);
             this.FouthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +206,7 @@
             // FifthCard
             // 
             this.FifthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_5;
-            this.FifthCard.Location = new System.Drawing.Point(1004, 6);
+            this.FifthCard.Location = new System.Drawing.Point(1091, 8);
             this.FifthCard.Name = "FifthCard";
             this.FifthCard.Size = new System.Drawing.Size(89, 125);
             this.FifthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -212,7 +216,7 @@
             // TenthCard
             // 
             this.TenthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_10;
-            this.TenthCard.Location = new System.Drawing.Point(1004, 137);
+            this.TenthCard.Location = new System.Drawing.Point(1091, 139);
             this.TenthCard.Name = "TenthCard";
             this.TenthCard.Size = new System.Drawing.Size(89, 125);
             this.TenthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -222,7 +226,7 @@
             // SixthCard
             // 
             this.SixthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_6;
-            this.SixthCard.Location = new System.Drawing.Point(624, 137);
+            this.SixthCard.Location = new System.Drawing.Point(711, 139);
             this.SixthCard.Name = "SixthCard";
             this.SixthCard.Size = new System.Drawing.Size(89, 125);
             this.SixthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -232,7 +236,7 @@
             // SeventhCard
             // 
             this.SeventhCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_7;
-            this.SeventhCard.Location = new System.Drawing.Point(719, 137);
+            this.SeventhCard.Location = new System.Drawing.Point(806, 139);
             this.SeventhCard.Name = "SeventhCard";
             this.SeventhCard.Size = new System.Drawing.Size(89, 125);
             this.SeventhCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -242,7 +246,7 @@
             // EigthCard
             // 
             this.EigthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_8;
-            this.EigthCard.Location = new System.Drawing.Point(814, 137);
+            this.EigthCard.Location = new System.Drawing.Point(901, 139);
             this.EigthCard.Name = "EigthCard";
             this.EigthCard.Size = new System.Drawing.Size(89, 125);
             this.EigthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -252,7 +256,7 @@
             // NinthCard
             // 
             this.NinthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_9;
-            this.NinthCard.Location = new System.Drawing.Point(909, 137);
+            this.NinthCard.Location = new System.Drawing.Point(996, 139);
             this.NinthCard.Name = "NinthCard";
             this.NinthCard.Size = new System.Drawing.Size(89, 125);
             this.NinthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -262,7 +266,7 @@
             // QueenCard
             // 
             this.QueenCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_Q;
-            this.QueenCard.Location = new System.Drawing.Point(814, 280);
+            this.QueenCard.Location = new System.Drawing.Point(901, 282);
             this.QueenCard.Name = "QueenCard";
             this.QueenCard.Size = new System.Drawing.Size(89, 125);
             this.QueenCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -272,7 +276,7 @@
             // KingCard
             // 
             this.KingCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_K;
-            this.KingCard.Location = new System.Drawing.Point(909, 280);
+            this.KingCard.Location = new System.Drawing.Point(996, 282);
             this.KingCard.Name = "KingCard";
             this.KingCard.Size = new System.Drawing.Size(89, 125);
             this.KingCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -282,7 +286,7 @@
             // JackCard
             // 
             this.JackCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_J;
-            this.JackCard.Location = new System.Drawing.Point(719, 280);
+            this.JackCard.Location = new System.Drawing.Point(806, 282);
             this.JackCard.Name = "JackCard";
             this.JackCard.Size = new System.Drawing.Size(89, 125);
             this.JackCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -299,7 +303,6 @@
             this.ClubsBox2.Text = "Clubs";
             this.ClubsBox2.UseVisualStyleBackColor = true;
             this.ClubsBox2.CheckedChanged += new System.EventHandler(this.ClubsBox2_CheckedChanged);
-
             // 
             // SpadesBox2
             // 
@@ -311,7 +314,6 @@
             this.SpadesBox2.Text = "Spades";
             this.SpadesBox2.UseVisualStyleBackColor = true;
             this.SpadesBox2.CheckedChanged += new System.EventHandler(this.SpadesBox2_CheckedChanged);
-
             // 
             // DiamondBox2
             // 
@@ -338,7 +340,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(477, 137);
+            this.label2.Location = new System.Drawing.Point(564, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 30;
@@ -371,7 +373,6 @@
             this.ClubsBox3.Text = "Clubs";
             this.ClubsBox3.UseVisualStyleBackColor = true;
             this.ClubsBox3.CheckedChanged += new System.EventHandler(this.ClubsBox3_CheckedChanged);
-
             // 
             // SpadesBox3
             // 
@@ -383,7 +384,6 @@
             this.SpadesBox3.Text = "Spades";
             this.SpadesBox3.UseVisualStyleBackColor = true;
             this.SpadesBox3.CheckedChanged += new System.EventHandler(this.SpadesBox3_CheckedChanged);
-
             // 
             // DiamondBox3
             // 
@@ -395,7 +395,6 @@
             this.DiamondBox3.Text = "Diamond";
             this.DiamondBox3.UseVisualStyleBackColor = true;
             this.DiamondBox3.CheckedChanged += new System.EventHandler(this.DiamondBox3_CheckedChanged);
-
             // 
             // HeartsBox3
             // 
@@ -414,7 +413,7 @@
             this.groupBox1.Controls.Add(this.HeartsBox1);
             this.groupBox1.Controls.Add(this.SpadesBox1);
             this.groupBox1.Controls.Add(this.DiamondBox1);
-            this.groupBox1.Location = new System.Drawing.Point(418, 35);
+            this.groupBox1.Location = new System.Drawing.Point(505, 37);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(191, 85);
             this.groupBox1.TabIndex = 38;
@@ -471,7 +470,7 @@
             this.groupBox2.Controls.Add(this.DiamondBox2);
             this.groupBox2.Controls.Add(this.SpadesBox2);
             this.groupBox2.Controls.Add(this.ClubsBox2);
-            this.groupBox2.Location = new System.Drawing.Point(418, 137);
+            this.groupBox2.Location = new System.Drawing.Point(505, 139);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(191, 85);
             this.groupBox2.TabIndex = 39;
@@ -484,20 +483,60 @@
             this.groupBox3.Controls.Add(this.SpadesBox3);
             this.groupBox3.Controls.Add(this.DiamondBox3);
             this.groupBox3.Controls.Add(this.HeartsBox3);
-            this.groupBox3.Location = new System.Drawing.Point(418, 239);
+            this.groupBox3.Location = new System.Drawing.Point(505, 241);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(191, 85);
             this.groupBox3.TabIndex = 40;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Community Cards";
             // 
+            // CardSuit1
+            // 
+            this.CardSuit1.AutoSize = true;
+            this.CardSuit1.Location = new System.Drawing.Point(12, 360);
+            this.CardSuit1.Name = "CardSuit1";
+            this.CardSuit1.Size = new System.Drawing.Size(46, 17);
+            this.CardSuit1.TabIndex = 37;
+            this.CardSuit1.Text = "label1";
+            // 
+            // CardNumber1
+            // 
+            this.CardNumber1.AutoSize = true;
+            this.CardNumber1.Location = new System.Drawing.Point(12, 388);
+            this.CardNumber1.Name = "CardNumber1";
+            this.CardNumber1.Size = new System.Drawing.Size(46, 17);
+            this.CardNumber1.TabIndex = 41;
+            this.CardNumber1.Text = "label3";
+            // 
+            // CardSuit2
+            // 
+            this.CardSuit2.AutoSize = true;
+            this.CardSuit2.Location = new System.Drawing.Point(62, 360);
+            this.CardSuit2.Name = "CardSuit2";
+            this.CardSuit2.Size = new System.Drawing.Size(46, 17);
+            this.CardSuit2.TabIndex = 42;
+            this.CardSuit2.Text = "label4";
+            // 
+            // CardNumber2
+            // 
+            this.CardNumber2.AutoSize = true;
+            this.CardNumber2.Location = new System.Drawing.Point(64, 388);
+            this.CardNumber2.Name = "CardNumber2";
+            this.CardNumber2.Size = new System.Drawing.Size(46, 17);
+            this.CardNumber2.TabIndex = 43;
+            this.CardNumber2.Text = "label5";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1101, 463);
+            this.ClientSize = new System.Drawing.Size(1217, 463);
             this.ControlBox = false;
+            this.Controls.Add(this.CardNumber2);
+            this.Controls.Add(this.CardSuit2);
+            this.Controls.Add(this.CardNumber1);
+            this.Controls.Add(this.CardSuit1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -603,6 +642,10 @@
         private System.Windows.Forms.CheckBox DiamondBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label CardSuit1;
+        private System.Windows.Forms.Label CardNumber1;
+        private System.Windows.Forms.Label CardSuit2;
+        private System.Windows.Forms.Label CardNumber2;
     }
 }
 

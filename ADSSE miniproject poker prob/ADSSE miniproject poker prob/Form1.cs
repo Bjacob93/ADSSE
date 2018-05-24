@@ -41,6 +41,7 @@ namespace ADSSE_miniproject_poker_prob
             ClubsBox1.Checked = false;
             SpadesBox1.Checked = false;
             DiamondBox1.Checked = false;
+            CardSuit1.Text = HeartsBox1.Text;
         }
 
         private void ClubsBox1_CheckedChanged(object sender, EventArgs e)
@@ -48,6 +49,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox1.Checked = false;
             SpadesBox1.Checked = false;
             DiamondBox1.Checked = false;
+            CardSuit1.Text = ClubsBox1.Text;
         }
 
         private void DiamondBox1_CheckedChanged(object sender, EventArgs e)
@@ -55,6 +57,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox1.Checked = false;
             SpadesBox1.Checked = false;
             ClubsBox1.Checked = false;
+            CardSuit1.Text = DiamondBox1.Text;
         }
 
         private void SpadesBox1_CheckedChanged(object sender, EventArgs e)
@@ -62,12 +65,14 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox1.Checked = false;
             ClubsBox1.Checked = false;
             DiamondBox1.Checked = false;
+            CardSuit1.Text = SpadesBox1.Text;
         }
         private void HeartsBox2_CheckedChanged(object sender, EventArgs e)
         {
             ClubsBox2.Checked = false;
             SpadesBox2.Checked = false;
             DiamondBox2.Checked = false;
+            CardSuit2.Text = HeartsBox2.Text;
         }
 
         private void ClubsBox2_CheckedChanged(object sender, EventArgs e)
@@ -75,6 +80,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             SpadesBox2.Checked = false;
             DiamondBox2.Checked = false;
+            CardSuit2.Text = ClubsBox2.Text;
         }
 
         private void DiamondBox2_CheckedChanged(object sender, EventArgs e)
@@ -82,6 +88,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             SpadesBox2.Checked = false;
             ClubsBox2.Checked = false;
+            CardSuit2.Text = DiamondBox2.Text;
         }
 
         private void SpadesBox2_CheckedChanged(object sender, EventArgs e)
@@ -89,6 +96,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             ClubsBox2.Checked = false;
             DiamondBox2.Checked = false;
+            SpadesBox2.Text = SpadesBox2.Text;
         }
 
         private void ClubsBox3_CheckedChanged(object sender, EventArgs e)
@@ -117,6 +125,9 @@ namespace ADSSE_miniproject_poker_prob
             ClubsBox3.Checked = false;
             SpadesBox3.Checked = false;
             DiamondBox3.Checked = false;
+        }
+       void setCard()
+        {
         }
     }
 }
