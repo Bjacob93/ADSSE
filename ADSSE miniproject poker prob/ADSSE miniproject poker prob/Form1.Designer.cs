@@ -73,6 +73,21 @@
             this.FirstPlayCard = new System.Windows.Forms.PictureBox();
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
+            this.cardsuitchoice1 = new System.Windows.Forms.Label();
+            this.cardnumberchoice1 = new System.Windows.Forms.Label();
+            this.cardnumberchoice2 = new System.Windows.Forms.Label();
+            this.cardsuitchoice2 = new System.Windows.Forms.Label();
+            this.cardnumberchoice3 = new System.Windows.Forms.Label();
+            this.cardsuitchoice3 = new System.Windows.Forms.Label();
+            this.cardnumberchoice4 = new System.Windows.Forms.Label();
+            this.cardsuitchoice4 = new System.Windows.Forms.Label();
+            this.cardnumberchoice5 = new System.Windows.Forms.Label();
+            this.cardsuitchoice5 = new System.Windows.Forms.Label();
+            this.ComCard1 = new System.Windows.Forms.CheckBox();
+            this.ComCard2 = new System.Windows.Forms.CheckBox();
+            this.ComCard3 = new System.Windows.Forms.CheckBox();
+            this.ComCard4 = new System.Windows.Forms.CheckBox();
+            this.ComCard5 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.FirstBox.SuspendLayout();
             this.SecoundBox.SuspendLayout();
@@ -511,6 +526,7 @@
             this.SecondPlayCard.Location = new System.Drawing.Point(114, 54);
             this.SecondPlayCard.Name = "SecondPlayCard";
             this.SecondPlayCard.Size = new System.Drawing.Size(89, 125);
+            this.SecondPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SecondPlayCard.TabIndex = 5;
             this.SecondPlayCard.TabStop = false;
             // 
@@ -519,6 +535,7 @@
             this.ThirdPlayCard.Location = new System.Drawing.Point(209, 54);
             this.ThirdPlayCard.Name = "ThirdPlayCard";
             this.ThirdPlayCard.Size = new System.Drawing.Size(89, 125);
+            this.ThirdPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThirdPlayCard.TabIndex = 4;
             this.ThirdPlayCard.TabStop = false;
             // 
@@ -527,6 +544,7 @@
             this.FirthPlayCard.Location = new System.Drawing.Point(304, 54);
             this.FirthPlayCard.Name = "FirthPlayCard";
             this.FirthPlayCard.Size = new System.Drawing.Size(89, 125);
+            this.FirthPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FirthPlayCard.TabIndex = 3;
             this.FirthPlayCard.TabStop = false;
             // 
@@ -535,6 +553,7 @@
             this.FifthPlayCard.Location = new System.Drawing.Point(399, 54);
             this.FifthPlayCard.Name = "FifthPlayCard";
             this.FifthPlayCard.Size = new System.Drawing.Size(89, 125);
+            this.FifthPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FifthPlayCard.TabIndex = 2;
             this.FifthPlayCard.TabStop = false;
             // 
@@ -543,6 +562,7 @@
             this.FirstPlayCard.Location = new System.Drawing.Point(19, 54);
             this.FirstPlayCard.Name = "FirstPlayCard";
             this.FirstPlayCard.Size = new System.Drawing.Size(89, 125);
+            this.FirstPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FirstPlayCard.TabIndex = 1;
             this.FirstPlayCard.TabStop = false;
             // 
@@ -566,13 +586,153 @@
             this.ResetButton.UseVisualStyleBackColor = true;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
+            // cardsuitchoice1
+            // 
+            this.cardsuitchoice1.AutoSize = true;
+            this.cardsuitchoice1.Location = new System.Drawing.Point(46, 98);
+            this.cardsuitchoice1.Name = "cardsuitchoice1";
+            this.cardsuitchoice1.Size = new System.Drawing.Size(46, 17);
+            this.cardsuitchoice1.TabIndex = 46;
+            this.cardsuitchoice1.Text = "label1";
+            // 
+            // cardnumberchoice1
+            // 
+            this.cardnumberchoice1.AutoSize = true;
+            this.cardnumberchoice1.Location = new System.Drawing.Point(46, 116);
+            this.cardnumberchoice1.Name = "cardnumberchoice1";
+            this.cardnumberchoice1.Size = new System.Drawing.Size(46, 17);
+            this.cardnumberchoice1.TabIndex = 47;
+            this.cardnumberchoice1.Text = "label3";
+            // 
+            // cardnumberchoice2
+            // 
+            this.cardnumberchoice2.AutoSize = true;
+            this.cardnumberchoice2.Location = new System.Drawing.Point(142, 116);
+            this.cardnumberchoice2.Name = "cardnumberchoice2";
+            this.cardnumberchoice2.Size = new System.Drawing.Size(46, 17);
+            this.cardnumberchoice2.TabIndex = 49;
+            this.cardnumberchoice2.Text = "label3";
+            // 
+            // cardsuitchoice2
+            // 
+            this.cardsuitchoice2.AutoSize = true;
+            this.cardsuitchoice2.Location = new System.Drawing.Point(142, 98);
+            this.cardsuitchoice2.Name = "cardsuitchoice2";
+            this.cardsuitchoice2.Size = new System.Drawing.Size(46, 17);
+            this.cardsuitchoice2.TabIndex = 48;
+            this.cardsuitchoice2.Text = "label1";
+            // 
+            // cardnumberchoice3
+            // 
+            this.cardnumberchoice3.AutoSize = true;
+            this.cardnumberchoice3.Location = new System.Drawing.Point(235, 116);
+            this.cardnumberchoice3.Name = "cardnumberchoice3";
+            this.cardnumberchoice3.Size = new System.Drawing.Size(46, 17);
+            this.cardnumberchoice3.TabIndex = 51;
+            this.cardnumberchoice3.Text = "label3";
+            // 
+            // cardsuitchoice3
+            // 
+            this.cardsuitchoice3.AutoSize = true;
+            this.cardsuitchoice3.Location = new System.Drawing.Point(235, 98);
+            this.cardsuitchoice3.Name = "cardsuitchoice3";
+            this.cardsuitchoice3.Size = new System.Drawing.Size(46, 17);
+            this.cardsuitchoice3.TabIndex = 50;
+            this.cardsuitchoice3.Text = "label1";
+            // 
+            // cardnumberchoice4
+            // 
+            this.cardnumberchoice4.AutoSize = true;
+            this.cardnumberchoice4.Location = new System.Drawing.Point(328, 116);
+            this.cardnumberchoice4.Name = "cardnumberchoice4";
+            this.cardnumberchoice4.Size = new System.Drawing.Size(46, 17);
+            this.cardnumberchoice4.TabIndex = 53;
+            this.cardnumberchoice4.Text = "label3";
+            // 
+            // cardsuitchoice4
+            // 
+            this.cardsuitchoice4.AutoSize = true;
+            this.cardsuitchoice4.Location = new System.Drawing.Point(328, 98);
+            this.cardsuitchoice4.Name = "cardsuitchoice4";
+            this.cardsuitchoice4.Size = new System.Drawing.Size(46, 17);
+            this.cardsuitchoice4.TabIndex = 52;
+            this.cardsuitchoice4.Text = "label1";
+            // 
+            // cardnumberchoice5
+            // 
+            this.cardnumberchoice5.AutoSize = true;
+            this.cardnumberchoice5.Location = new System.Drawing.Point(424, 116);
+            this.cardnumberchoice5.Name = "cardnumberchoice5";
+            this.cardnumberchoice5.Size = new System.Drawing.Size(46, 17);
+            this.cardnumberchoice5.TabIndex = 55;
+            this.cardnumberchoice5.Text = "label3";
+            // 
+            // cardsuitchoice5
+            // 
+            this.cardsuitchoice5.AutoSize = true;
+            this.cardsuitchoice5.Location = new System.Drawing.Point(424, 98);
+            this.cardsuitchoice5.Name = "cardsuitchoice5";
+            this.cardsuitchoice5.Size = new System.Drawing.Size(46, 17);
+            this.cardsuitchoice5.TabIndex = 54;
+            this.cardsuitchoice5.Text = "label1";
+            // 
+            // ComCard1
+            // 
+            this.ComCard1.AutoSize = true;
+            this.ComCard1.Location = new System.Drawing.Point(19, 27);
+            this.ComCard1.Name = "ComCard1";
+            this.ComCard1.Size = new System.Drawing.Size(98, 21);
+            this.ComCard1.TabIndex = 56;
+            this.ComCard1.Text = "checkBox1";
+            this.ComCard1.UseVisualStyleBackColor = true;
+            // 
+            // ComCard2
+            // 
+            this.ComCard2.AutoSize = true;
+            this.ComCard2.Location = new System.Drawing.Point(114, 27);
+            this.ComCard2.Name = "ComCard2";
+            this.ComCard2.Size = new System.Drawing.Size(98, 21);
+            this.ComCard2.TabIndex = 57;
+            this.ComCard2.Text = "checkBox2";
+            this.ComCard2.UseVisualStyleBackColor = true;
+            // 
+            // ComCard3
+            // 
+            this.ComCard3.AutoSize = true;
+            this.ComCard3.Location = new System.Drawing.Point(209, 27);
+            this.ComCard3.Name = "ComCard3";
+            this.ComCard3.Size = new System.Drawing.Size(98, 21);
+            this.ComCard3.TabIndex = 58;
+            this.ComCard3.Text = "checkBox3";
+            this.ComCard3.UseVisualStyleBackColor = true;
+            // 
+            // ComCard4
+            // 
+            this.ComCard4.AutoSize = true;
+            this.ComCard4.Location = new System.Drawing.Point(304, 27);
+            this.ComCard4.Name = "ComCard4";
+            this.ComCard4.Size = new System.Drawing.Size(98, 21);
+            this.ComCard4.TabIndex = 59;
+            this.ComCard4.Text = "checkBox4";
+            this.ComCard4.UseVisualStyleBackColor = true;
+            // 
+            // ComCard5
+            // 
+            this.ComCard5.AutoSize = true;
+            this.ComCard5.Location = new System.Drawing.Point(399, 27);
+            this.ComCard5.Name = "ComCard5";
+            this.ComCard5.Size = new System.Drawing.Size(98, 21);
+            this.ComCard5.TabIndex = 60;
+            this.ComCard5.Text = "checkBox5";
+            this.ComCard5.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(473, 397);
+            this.label1.Location = new System.Drawing.Point(442, 369);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 46;
+            this.label1.TabIndex = 61;
             this.label1.Text = "label1";
             // 
             // Form1
@@ -583,6 +743,21 @@
             this.ClientSize = new System.Drawing.Size(1217, 463);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.ComCard5);
+            this.Controls.Add(this.ComCard4);
+            this.Controls.Add(this.ComCard3);
+            this.Controls.Add(this.ComCard2);
+            this.Controls.Add(this.ComCard1);
+            this.Controls.Add(this.cardnumberchoice5);
+            this.Controls.Add(this.cardsuitchoice5);
+            this.Controls.Add(this.cardnumberchoice4);
+            this.Controls.Add(this.cardsuitchoice4);
+            this.Controls.Add(this.cardnumberchoice3);
+            this.Controls.Add(this.cardsuitchoice3);
+            this.Controls.Add(this.cardnumberchoice2);
+            this.Controls.Add(this.cardsuitchoice2);
+            this.Controls.Add(this.cardnumberchoice1);
+            this.Controls.Add(this.cardsuitchoice1);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.ConfirmButton);
             this.Controls.Add(this.CardNumber2);
@@ -700,6 +875,21 @@
         private System.Windows.Forms.Label CardNumber2;
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button ResetButton;
+        private System.Windows.Forms.Label cardsuitchoice1;
+        private System.Windows.Forms.Label cardnumberchoice1;
+        private System.Windows.Forms.Label cardnumberchoice2;
+        private System.Windows.Forms.Label cardsuitchoice2;
+        private System.Windows.Forms.Label cardnumberchoice3;
+        private System.Windows.Forms.Label cardsuitchoice3;
+        private System.Windows.Forms.Label cardnumberchoice4;
+        private System.Windows.Forms.Label cardsuitchoice4;
+        private System.Windows.Forms.Label cardnumberchoice5;
+        private System.Windows.Forms.Label cardsuitchoice5;
+        private System.Windows.Forms.CheckBox ComCard1;
+        private System.Windows.Forms.CheckBox ComCard2;
+        private System.Windows.Forms.CheckBox ComCard3;
+        private System.Windows.Forms.CheckBox ComCard4;
+        private System.Windows.Forms.CheckBox ComCard5;
         private System.Windows.Forms.Label label1;
     }
 }

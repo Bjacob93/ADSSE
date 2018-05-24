@@ -110,6 +110,16 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             SpadesBox3.Checked = false;
             DiamondBox3.Checked = false;
+            if(ComCard1.Checked==false)
+            cardsuitchoice1.Text = ClubsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked==false)
+                cardsuitchoice2.Text = ClubsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked==false)
+                cardsuitchoice3.Text = ClubsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
+                cardsuitchoice4.Text = ClubsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardsuitchoice5.Text = ClubsBox3.Text;
         }
 
         private void DiamondBox3_CheckedChanged(object sender, EventArgs e)
@@ -117,6 +127,16 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             SpadesBox3.Checked = false;
             ClubsBox3.Checked = false;
+            if (ComCard1.Checked == false)
+                cardsuitchoice1.Text = DiamondBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+                cardsuitchoice2.Text = DiamondBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
+                cardsuitchoice3.Text = DiamondBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
+                cardsuitchoice4.Text = DiamondBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardsuitchoice5.Text = DiamondBox3.Text;
         }
 
         private void SpadesBox3_CheckedChanged(object sender, EventArgs e)
@@ -124,6 +144,16 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             ClubsBox3.Checked = false;
             DiamondBox3.Checked = false;
+            if (ComCard1.Checked == false)
+                cardsuitchoice1.Text = SpadesBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+                cardsuitchoice2.Text = SpadesBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
+                cardsuitchoice3.Text = SpadesBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
+                cardsuitchoice4.Text = SpadesBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardsuitchoice5.Text = SpadesBox3.Text;
         }
 
         private void HeartsBox3_CheckedChanged(object sender, EventArgs e)
@@ -131,6 +161,16 @@ namespace ADSSE_miniproject_poker_prob
             ClubsBox3.Checked = false;
             SpadesBox3.Checked = false;
             DiamondBox3.Checked = false;
+            if (ComCard1.Checked == false)
+                cardsuitchoice1.Text = HeartsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+                cardsuitchoice2.Text = HeartsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
+                cardsuitchoice3.Text = HeartsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
+                cardsuitchoice4.Text = HeartsBox3.Text;
+            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardsuitchoice5.Text = HeartsBox3.Text;
         }
        void setCard()
         {
@@ -146,8 +186,10 @@ namespace ADSSE_miniproject_poker_prob
                     FirstHandCard.Image = Properties.Resources.Spades_A;
                 if (CardNumber2.Text == "0" && CardSuit2.Text == "Spades")
                       SecoundHandCard.Image = Properties.Resources.Spades_A;
-            
-            if (CardNumber1.Text == "0" && CardSuit1.Text == "Hearts")
+            if (cardnumberchoice1.Text == "0" && cardsuitchoice1.Text == "Spades")
+                FirstPlayCard.Image = Properties.Resources.Spades_A;
+
+                if (CardNumber1.Text == "0" && CardSuit1.Text == "Hearts")
                       FirstHandCard.Image = Properties.Resources.Hearts_A;
                 if (CardNumber2.Text == "0" && CardSuit2.Text == "Hearts")
                      SecoundHandCard.Image = Properties.Resources.Hearts_A;
@@ -161,7 +203,7 @@ namespace ADSSE_miniproject_poker_prob
                 FirstHandCard.Image = Properties.Resources.Clubs_A;
             if (CardNumber2.Text == "0" && CardSuit2.Text == "Clubs")
                 SecoundHandCard.Image = Properties.Resources.Clubs_A;
-            
+           
 
 
         }
@@ -486,10 +528,8 @@ namespace ADSSE_miniproject_poker_prob
                 SecoundHandCard.Image = Properties.Resources.Diamond_Q;
 
             if (CardNumber1.Text == "11" && CardSuit1.Text == "Clubs")
-            
                     FirstHandCard.Image = Properties.Resources.Clubs_Q;
                 if (CardNumber2.Text == "11" && CardSuit2.Text == "Clubs")
-
                     SecoundHandCard.Image = Properties.Resources.Clubs_Q;
         }
 
@@ -499,9 +539,20 @@ namespace ADSSE_miniproject_poker_prob
                 CardNumber1.Text = "12";
             if (SecoundBox.Visible == true)
                 CardNumber2.Text = "12";
+            if (CommunityBox.Visible == true && ComCard1.Checked == false)
+                cardnumberchoice1.Text = "12";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked==false)
+                cardnumberchoice2.Text = "12";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked==false)
+                cardnumberchoice3.Text = "12";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked==false)
+                cardnumberchoice4.Text = "12";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardnumberchoice5.Text = "12";
+
+
             if (CardNumber1.Text == "12" && CardSuit1.Text == "Spades")
-            
-                    FirstHandCard.Image = Properties.Resources.Spades_K;
+                FirstHandCard.Image = Properties.Resources.Spades_K;
             if (CardNumber2.Text == "12" && CardSuit2.Text == "Spades")
                 SecoundHandCard.Image = Properties.Resources.Spades_K;
 
@@ -522,27 +573,108 @@ namespace ADSSE_miniproject_poker_prob
                 FirstHandCard.Image = Properties.Resources.Clubs_K;
                 if (CardNumber2.Text == "12" && CardSuit2.Text == "Clubs")
                     SecoundHandCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_K;
 
-         
+
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             check++;
             label1.Text = Convert.ToString(check);
+            if (check == 1)
+            {
+                if (FirstBox.Visible == true && CardSuit1.Text == "label1" || CardNumber1.Text == "label3")
+                    check--;
+                else
+                {
+                    FirstBox.Visible = false;
+                    SecoundBox.Visible = true;
+                }
 
-            if (check==1) {
-                FirstBox.Visible = false;
-                SecoundBox.Visible = true;
             }
-            if (check==2) {
-                SecoundBox.Visible = false;
-                CommunityBox.Visible=true;
-            }
-                
+            
+            if (check == 2)
+            {
+                if (SecoundBox.Visible == true && CardSuit2.Text == "label4" || CardNumber2.Text=="label5")
+                    check--;
+                else
+                {
+                    SecoundBox.Visible = false;
+                    CommunityBox.Visible = true;
+                }
 
+            }
+
+            if (check == 3)
+            {
+                if (CommunityBox.Visible == true && cardsuitchoice1.Text == "label1" || cardnumberchoice1.Text == "label3" )
+                    check--;
+                else {
+                    ComCard1.Checked = true;
+                    cardnumberchoice1.Text = cardnumberchoice1.Text;
+                    cardsuitchoice1.Text = cardsuitchoice1.Text;
+                }
+
+            }
+
+            if (check == 4)
+            {
+                if (ComCard1.Checked == true && cardsuitchoice2.Text == "label1" || cardnumberchoice2.Text == "label3")
+                    check--;
+                else
+                {
+                    ComCard2.Checked = true;
+                    cardnumberchoice2.Text = cardnumberchoice2.Text;
+                    cardsuitchoice2.Text = cardsuitchoice2.Text;
+                }
+            }
+            if (check == 5)
+            {
+                if (ComCard2.Checked == true && cardsuitchoice3.Text == "label1" || cardnumberchoice3.Text == "label3")
+                    check--;
+                else
+                {
+                    ComCard3.Checked = true;
+                    cardnumberchoice3.Text = cardnumberchoice3.Text;
+                    cardsuitchoice3.Text = cardsuitchoice3.Text;
+                }
+            }
+            if (check == 6 )
+            {
+                if (ComCard3.Checked == true && cardsuitchoice4.Text == "label1" || cardnumberchoice4.Text == "label3")
+                    check--;
+                else
+                {
+                    ComCard4.Checked = true;
+                    cardnumberchoice4.Text = cardnumberchoice4.Text;
+                    cardsuitchoice4.Text = cardsuitchoice4.Text;
+                }
+            }
+
+            if (check == 7)
+            {
+                if (ComCard4.Checked == true && cardsuitchoice5.Text == "label1" || cardnumberchoice5.Text == "label3")
+                    check--;
+                else
+                {
+                    ComCard5.Checked = true;
+                    cardnumberchoice5.Text = cardnumberchoice5.Text;
+                    cardsuitchoice5.Text = cardsuitchoice5.Text;
+                    ConfirmButton.Visible = false;
+
+                }
+            }
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
@@ -553,6 +685,13 @@ namespace ADSSE_miniproject_poker_prob
                 SecoundBox.Visible = false;
                 CommunityBox.Visible = false;
                 check = 0;
+                ConfirmButton.Visible = true;
+                ComCard1.Checked = false;
+                ComCard2.Checked = false;
+                ComCard3.Checked = false;
+                ComCard4.Checked = false;
+                ComCard5.Checked = false;
+
             }
         }
     }
