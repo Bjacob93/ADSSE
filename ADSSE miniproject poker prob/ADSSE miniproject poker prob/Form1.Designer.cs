@@ -49,23 +49,24 @@
             this.QueenCard = new System.Windows.Forms.PictureBox();
             this.KingCard = new System.Windows.Forms.PictureBox();
             this.JackCard = new System.Windows.Forms.PictureBox();
-            this.HeartsBox1 = new System.Windows.Forms.CheckBox();
-            this.DiamondBox1 = new System.Windows.Forms.CheckBox();
-            this.ClubsBox1 = new System.Windows.Forms.CheckBox();
-            this.SpadesBox1 = new System.Windows.Forms.CheckBox();
             this.ClubsBox2 = new System.Windows.Forms.CheckBox();
             this.SpadesBox2 = new System.Windows.Forms.CheckBox();
             this.DiamondBox2 = new System.Windows.Forms.CheckBox();
             this.HeartsBox2 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Chancewinninglabel = new System.Windows.Forms.Label();
             this.chancenumberlabel = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.ClubsBox3 = new System.Windows.Forms.CheckBox();
             this.SpadesBox3 = new System.Windows.Forms.CheckBox();
             this.DiamondBox3 = new System.Windows.Forms.CheckBox();
             this.HeartsBox3 = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.ClubsBox1 = new System.Windows.Forms.CheckBox();
+            this.HeartsBox1 = new System.Windows.Forms.CheckBox();
+            this.SpadesBox1 = new System.Windows.Forms.CheckBox();
+            this.DiamondBox1 = new System.Windows.Forms.CheckBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).BeginInit();
@@ -86,6 +87,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.QueenCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.KingCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.JackCard)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -285,104 +289,59 @@
             this.JackCard.TabIndex = 20;
             this.JackCard.TabStop = false;
             // 
-            // HeartsBox1
-            // 
-            this.HeartsBox1.AutoSize = true;
-            this.HeartsBox1.Location = new System.Drawing.Point(427, 43);
-            this.HeartsBox1.Name = "HeartsBox1";
-            this.HeartsBox1.Size = new System.Drawing.Size(72, 21);
-            this.HeartsBox1.TabIndex = 21;
-            this.HeartsBox1.Text = "Hearts";
-            this.HeartsBox1.UseVisualStyleBackColor = true;
-            this.HeartsBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // DiamondBox1
-            // 
-            this.DiamondBox1.AutoSize = true;
-            this.DiamondBox1.Location = new System.Drawing.Point(427, 70);
-            this.DiamondBox1.Name = "DiamondBox1";
-            this.DiamondBox1.Size = new System.Drawing.Size(86, 21);
-            this.DiamondBox1.TabIndex = 22;
-            this.DiamondBox1.Text = "Diamond";
-            this.DiamondBox1.UseVisualStyleBackColor = true;
-            // 
-            // ClubsBox1
-            // 
-            this.ClubsBox1.AutoSize = true;
-            this.ClubsBox1.Location = new System.Drawing.Point(531, 41);
-            this.ClubsBox1.Name = "ClubsBox1";
-            this.ClubsBox1.Size = new System.Drawing.Size(65, 21);
-            this.ClubsBox1.TabIndex = 24;
-            this.ClubsBox1.Text = "Clubs";
-            this.ClubsBox1.UseVisualStyleBackColor = true;
-            // 
-            // SpadesBox1
-            // 
-            this.SpadesBox1.AutoSize = true;
-            this.SpadesBox1.Location = new System.Drawing.Point(531, 68);
-            this.SpadesBox1.Name = "SpadesBox1";
-            this.SpadesBox1.Size = new System.Drawing.Size(78, 21);
-            this.SpadesBox1.TabIndex = 23;
-            this.SpadesBox1.Text = "Spades";
-            this.SpadesBox1.UseVisualStyleBackColor = true;
-            // 
             // ClubsBox2
             // 
             this.ClubsBox2.AutoSize = true;
-            this.ClubsBox2.Location = new System.Drawing.Point(531, 158);
+            this.ClubsBox2.Location = new System.Drawing.Point(118, 19);
             this.ClubsBox2.Name = "ClubsBox2";
             this.ClubsBox2.Size = new System.Drawing.Size(65, 21);
             this.ClubsBox2.TabIndex = 28;
             this.ClubsBox2.Text = "Clubs";
             this.ClubsBox2.UseVisualStyleBackColor = true;
+            this.ClubsBox2.CheckedChanged += new System.EventHandler(this.ClubsBox2_CheckedChanged);
+
             // 
             // SpadesBox2
             // 
             this.SpadesBox2.AutoSize = true;
-            this.SpadesBox2.Location = new System.Drawing.Point(531, 185);
+            this.SpadesBox2.Location = new System.Drawing.Point(118, 46);
             this.SpadesBox2.Name = "SpadesBox2";
             this.SpadesBox2.Size = new System.Drawing.Size(78, 21);
             this.SpadesBox2.TabIndex = 27;
             this.SpadesBox2.Text = "Spades";
             this.SpadesBox2.UseVisualStyleBackColor = true;
+            this.SpadesBox2.CheckedChanged += new System.EventHandler(this.SpadesBox2_CheckedChanged);
+
             // 
             // DiamondBox2
             // 
             this.DiamondBox2.AutoSize = true;
-            this.DiamondBox2.Location = new System.Drawing.Point(427, 187);
+            this.DiamondBox2.Location = new System.Drawing.Point(14, 48);
             this.DiamondBox2.Name = "DiamondBox2";
             this.DiamondBox2.Size = new System.Drawing.Size(86, 21);
             this.DiamondBox2.TabIndex = 26;
             this.DiamondBox2.Text = "Diamond";
             this.DiamondBox2.UseVisualStyleBackColor = true;
+            this.DiamondBox2.CheckedChanged += new System.EventHandler(this.DiamondBox2_CheckedChanged);
             // 
             // HeartsBox2
             // 
             this.HeartsBox2.AutoSize = true;
-            this.HeartsBox2.Location = new System.Drawing.Point(427, 160);
+            this.HeartsBox2.Location = new System.Drawing.Point(14, 21);
             this.HeartsBox2.Name = "HeartsBox2";
             this.HeartsBox2.Size = new System.Drawing.Size(72, 21);
             this.HeartsBox2.TabIndex = 25;
             this.HeartsBox2.Text = "Hearts";
             this.HeartsBox2.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(477, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "First Card";
+            this.HeartsBox2.CheckedChanged += new System.EventHandler(this.HeartsBox2_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(477, 137);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 30;
-            this.label2.Text = "Second Card";
             // 
             // Chancewinninglabel
             // 
@@ -402,54 +361,135 @@
             this.chancenumberlabel.TabIndex = 32;
             this.chancenumberlabel.Text = " ";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(458, 258);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 17);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Community Cards";
-            // 
             // ClubsBox3
             // 
             this.ClubsBox3.AutoSize = true;
-            this.ClubsBox3.Location = new System.Drawing.Point(531, 278);
+            this.ClubsBox3.Location = new System.Drawing.Point(113, 24);
             this.ClubsBox3.Name = "ClubsBox3";
             this.ClubsBox3.Size = new System.Drawing.Size(65, 21);
             this.ClubsBox3.TabIndex = 36;
             this.ClubsBox3.Text = "Clubs";
             this.ClubsBox3.UseVisualStyleBackColor = true;
+            this.ClubsBox3.CheckedChanged += new System.EventHandler(this.ClubsBox3_CheckedChanged);
+
             // 
             // SpadesBox3
             // 
             this.SpadesBox3.AutoSize = true;
-            this.SpadesBox3.Location = new System.Drawing.Point(531, 305);
+            this.SpadesBox3.Location = new System.Drawing.Point(113, 51);
             this.SpadesBox3.Name = "SpadesBox3";
             this.SpadesBox3.Size = new System.Drawing.Size(78, 21);
             this.SpadesBox3.TabIndex = 35;
             this.SpadesBox3.Text = "Spades";
             this.SpadesBox3.UseVisualStyleBackColor = true;
+            this.SpadesBox3.CheckedChanged += new System.EventHandler(this.SpadesBox3_CheckedChanged);
+
             // 
             // DiamondBox3
             // 
             this.DiamondBox3.AutoSize = true;
-            this.DiamondBox3.Location = new System.Drawing.Point(427, 307);
+            this.DiamondBox3.Location = new System.Drawing.Point(9, 53);
             this.DiamondBox3.Name = "DiamondBox3";
             this.DiamondBox3.Size = new System.Drawing.Size(86, 21);
             this.DiamondBox3.TabIndex = 34;
             this.DiamondBox3.Text = "Diamond";
             this.DiamondBox3.UseVisualStyleBackColor = true;
+            this.DiamondBox3.CheckedChanged += new System.EventHandler(this.DiamondBox3_CheckedChanged);
+
             // 
             // HeartsBox3
             // 
             this.HeartsBox3.AutoSize = true;
-            this.HeartsBox3.Location = new System.Drawing.Point(427, 280);
+            this.HeartsBox3.Location = new System.Drawing.Point(9, 26);
             this.HeartsBox3.Name = "HeartsBox3";
             this.HeartsBox3.Size = new System.Drawing.Size(72, 21);
             this.HeartsBox3.TabIndex = 33;
             this.HeartsBox3.Text = "Hearts";
             this.HeartsBox3.UseVisualStyleBackColor = true;
+            this.HeartsBox3.CheckedChanged += new System.EventHandler(this.HeartsBox3_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.ClubsBox1);
+            this.groupBox1.Controls.Add(this.HeartsBox1);
+            this.groupBox1.Controls.Add(this.SpadesBox1);
+            this.groupBox1.Controls.Add(this.DiamondBox1);
+            this.groupBox1.Location = new System.Drawing.Point(418, 35);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(191, 85);
+            this.groupBox1.TabIndex = 38;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "First Card";
+            // 
+            // ClubsBox1
+            // 
+            this.ClubsBox1.AutoSize = true;
+            this.ClubsBox1.Location = new System.Drawing.Point(110, 28);
+            this.ClubsBox1.Name = "ClubsBox1";
+            this.ClubsBox1.Size = new System.Drawing.Size(65, 21);
+            this.ClubsBox1.TabIndex = 42;
+            this.ClubsBox1.Text = "Clubs";
+            this.ClubsBox1.UseVisualStyleBackColor = true;
+            this.ClubsBox1.CheckedChanged += new System.EventHandler(this.ClubsBox1_CheckedChanged);
+            // 
+            // HeartsBox1
+            // 
+            this.HeartsBox1.AutoSize = true;
+            this.HeartsBox1.Location = new System.Drawing.Point(6, 30);
+            this.HeartsBox1.Name = "HeartsBox1";
+            this.HeartsBox1.Size = new System.Drawing.Size(72, 21);
+            this.HeartsBox1.TabIndex = 39;
+            this.HeartsBox1.Text = "Hearts";
+            this.HeartsBox1.UseVisualStyleBackColor = true;
+            this.HeartsBox1.CheckedChanged += new System.EventHandler(this.HeartsBox1_CheckedChanged);
+            // 
+            // SpadesBox1
+            // 
+            this.SpadesBox1.AutoSize = true;
+            this.SpadesBox1.Location = new System.Drawing.Point(110, 55);
+            this.SpadesBox1.Name = "SpadesBox1";
+            this.SpadesBox1.Size = new System.Drawing.Size(78, 21);
+            this.SpadesBox1.TabIndex = 41;
+            this.SpadesBox1.Text = "Spades";
+            this.SpadesBox1.UseVisualStyleBackColor = true;
+            this.SpadesBox1.CheckedChanged += new System.EventHandler(this.SpadesBox1_CheckedChanged);
+            // 
+            // DiamondBox1
+            // 
+            this.DiamondBox1.AutoSize = true;
+            this.DiamondBox1.Location = new System.Drawing.Point(6, 57);
+            this.DiamondBox1.Name = "DiamondBox1";
+            this.DiamondBox1.Size = new System.Drawing.Size(86, 21);
+            this.DiamondBox1.TabIndex = 40;
+            this.DiamondBox1.Text = "Diamond";
+            this.DiamondBox1.UseVisualStyleBackColor = true;
+            this.DiamondBox1.CheckedChanged += new System.EventHandler(this.DiamondBox1_CheckedChanged);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.HeartsBox2);
+            this.groupBox2.Controls.Add(this.DiamondBox2);
+            this.groupBox2.Controls.Add(this.SpadesBox2);
+            this.groupBox2.Controls.Add(this.ClubsBox2);
+            this.groupBox2.Location = new System.Drawing.Point(418, 137);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(191, 85);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Secound Card";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.ClubsBox3);
+            this.groupBox3.Controls.Add(this.SpadesBox3);
+            this.groupBox3.Controls.Add(this.DiamondBox3);
+            this.groupBox3.Controls.Add(this.HeartsBox3);
+            this.groupBox3.Location = new System.Drawing.Point(418, 239);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(191, 85);
+            this.groupBox3.TabIndex = 40;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Community Cards";
             // 
             // Form1
             // 
@@ -458,23 +498,12 @@
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1101, 463);
             this.ControlBox = false;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.ClubsBox3);
-            this.Controls.Add(this.SpadesBox3);
-            this.Controls.Add(this.DiamondBox3);
-            this.Controls.Add(this.HeartsBox3);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chancenumberlabel);
             this.Controls.Add(this.Chancewinninglabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.ClubsBox2);
-            this.Controls.Add(this.SpadesBox2);
-            this.Controls.Add(this.DiamondBox2);
-            this.Controls.Add(this.HeartsBox2);
-            this.Controls.Add(this.ClubsBox1);
-            this.Controls.Add(this.SpadesBox1);
-            this.Controls.Add(this.DiamondBox1);
-            this.Controls.Add(this.HeartsBox1);
             this.Controls.Add(this.JackCard);
             this.Controls.Add(this.KingCard);
             this.Controls.Add(this.QueenCard);
@@ -501,6 +530,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).EndInit();
@@ -521,6 +551,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.QueenCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.KingCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.JackCard)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -549,23 +585,24 @@
         private System.Windows.Forms.PictureBox QueenCard;
         private System.Windows.Forms.PictureBox KingCard;
         private System.Windows.Forms.PictureBox JackCard;
-        private System.Windows.Forms.CheckBox HeartsBox1;
-        private System.Windows.Forms.CheckBox DiamondBox1;
-        private System.Windows.Forms.CheckBox ClubsBox1;
-        private System.Windows.Forms.CheckBox SpadesBox1;
         private System.Windows.Forms.CheckBox ClubsBox2;
         private System.Windows.Forms.CheckBox SpadesBox2;
         private System.Windows.Forms.CheckBox DiamondBox2;
         private System.Windows.Forms.CheckBox HeartsBox2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label Chancewinninglabel;
         private System.Windows.Forms.Label chancenumberlabel;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox ClubsBox3;
         private System.Windows.Forms.CheckBox SpadesBox3;
         private System.Windows.Forms.CheckBox DiamondBox3;
         private System.Windows.Forms.CheckBox HeartsBox3;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox ClubsBox1;
+        private System.Windows.Forms.CheckBox HeartsBox1;
+        private System.Windows.Forms.CheckBox SpadesBox1;
+        private System.Windows.Forms.CheckBox DiamondBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
