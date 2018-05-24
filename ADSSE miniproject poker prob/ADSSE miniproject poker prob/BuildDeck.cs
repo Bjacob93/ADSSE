@@ -9,17 +9,17 @@ namespace ADSSE_miniproject_poker_prob
 
     public class BuildDeck
     {
-        enum Suit { Diamonds, Hearts, Clubs, Spades}
-        
+        enum Suit { Diamonds, Hearts, Clubs, Spades }
+
         class Deck
         {
             public List<Card> Cards { get; set; }
             public Deck()
             {
                 Cards = new List<Card>();
-                foreach(Suit s in Enum.GetValues(typeof(Suit)))
+                foreach (Suit s in Enum.GetValues(typeof(Suit)))
                 {
-                    for(int i = 1; i < 13; i++)
+                    for (int i = 1; i < 13; i++)
                     {
                         Cards.Add(new Card(s, i));
                     }
