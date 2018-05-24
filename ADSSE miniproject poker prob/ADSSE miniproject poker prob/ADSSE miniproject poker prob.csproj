@@ -120,6 +120,123 @@
   <ItemGroup>
     <None Include="Images\Spades_Q.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Clubs_Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Diamond_Q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Hearts_Q.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

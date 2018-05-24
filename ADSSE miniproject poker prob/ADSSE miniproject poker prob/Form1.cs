@@ -13,7 +13,9 @@ namespace ADSSE_miniproject_poker_prob
 {
     public partial class Form1 : Form
     {
+        int check = 0;
         BuildDeck deck = new BuildDeck();
+        
 
         public Form1()
         {
@@ -99,7 +101,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             ClubsBox2.Checked = false;
             DiamondBox2.Checked = false;
-            SpadesBox2.Text = SpadesBox2.Text;
+            CardSuit2.Text = SpadesBox2.Text;
         }
 
         private void ClubsBox3_CheckedChanged(object sender, EventArgs e)
@@ -135,7 +137,503 @@ namespace ADSSE_miniproject_poker_prob
 
         private void AceCard_Click(object sender, EventArgs e)
         {
-            CardNumber1.Text = "1";
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "0";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "0";
+            if (CardNumber1.Text == "0" && CardSuit1.Text == "Spades") {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_A;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_A;
+            }
+            if (CardNumber1.Text == "0" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_A;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_A;
+            }
+            if (CardNumber1.Text == "0" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_A;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_A;
+            }
+            if (CardNumber1.Text == "0" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_A;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_A;
+            }
+
+
+        }
+
+        private void TwoCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "1";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "1";
+            if (CardNumber1.Text == "1" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_2;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_2;
+            }
+            if (CardNumber1.Text == "1" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_2;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_2;
+            }
+            if (CardNumber1.Text == "1" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_2;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_2;
+            }
+            if (CardNumber1.Text == "1" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_2;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_2;
+            }
+
+        }
+
+        private void ThirdCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "2";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "2";
+            if (CardNumber1.Text == "2" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_3;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_3;
+            }
+            if (CardNumber1.Text == "2" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_3;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_3;
+            }
+            if (CardNumber1.Text == "2" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_3;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_3;
+            }
+            if (CardNumber1.Text == "2" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_3;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_3;
+            }
+        }
+
+        private void FouthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "3";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "3";
+            if (CardNumber1.Text == "3" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_4;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_4;
+            }
+            if (CardNumber1.Text == "3" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_4;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_4;
+            }
+            if (CardNumber1.Text == "3" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_4;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_4;
+            }
+            if (CardNumber1.Text == "3" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_4;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_4;
+            }
+        }
+
+        private void FifthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "4";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "4";
+            if (CardNumber1.Text == "4" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_5;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_5;
+            }
+            if (CardNumber1.Text == "4" && CardSuit1.Text == "Hearts")
+            {
+                if (CardNumber1.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_5;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_5;
+            }
+            if (CardNumber1.Text == "4" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_5;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_5;
+            }
+            if (CardNumber1.Text == "4" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_5;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_5;
+            }
+        }
+
+        private void SixthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "5";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "5";
+            if (CardNumber1.Text == "5" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_6;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_6;
+            }
+            if (CardNumber1.Text == "5" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_6;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_6;
+            }
+            if (CardNumber1.Text == "5" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_6;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_6;
+            }
+            if (CardNumber1.Text == "5" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_6;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_6;
+            }
+        }
+
+        private void SeventhCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "6";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "6";
+            if (CardNumber1.Text == "6" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_7;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_7;
+            }
+            if (CardNumber1.Text == "6" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_7;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_7;
+            }
+            if (CardNumber1.Text == "6" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_7;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_7;
+            }
+            if (CardNumber1.Text == "6" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_7;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_7;
+            }
+        }
+
+        private void EigthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "7";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "7";
+            if (CardNumber1.Text == "7" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_8;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_8;
+            }
+            if (CardNumber1.Text == "7" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_8;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_8;
+            }
+            if (CardNumber1.Text == "7" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_8;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_8;
+            }
+            if (CardNumber1.Text == "7" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_8;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_8;
+            }
+        }
+
+        private void NinthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "8";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "8";
+            if (CardNumber1.Text == "8" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_9;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_9;
+            }
+            if (CardNumber1.Text == "8" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_9;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_9;
+            }
+            if (CardNumber1.Text == "8" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_9;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_9;
+            }
+            if (CardNumber1.Text == "8" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_9;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_9;
+            }
+        }
+
+        private void TenthCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "9";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "9";
+            if (CardNumber1.Text == "9" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_10;
+                 else
+                    SecoundHandCard.Image = Properties.Resources.Spades_10;
+            }
+            if (CardNumber1.Text == "9" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_10;
+                 else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_10;
+            }
+            if (CardNumber1.Text == "9" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_10;
+                 else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_10;
+            }
+            if (CardNumber1.Text == "9" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_10;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_10;
+
+            }
+        }
+
+        private void JackCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "10";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "10";
+            if (CardNumber1.Text == "10" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_J;else
+                    SecoundHandCard.Image = Properties.Resources.Spades_J;
+            }
+            if (CardNumber1.Text == "10" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_J;else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_J;
+            }
+            if (CardNumber1.Text == "10" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_J;else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_J;
+            }
+            if (CardNumber1.Text == "10" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_J;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_J;
+            }
+        }
+
+        private void QueenCard_Click(object sender, EventArgs e)
+        {
+            if(FirstBox.Visible==true)
+                               CardNumber1.Text = "11";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "11";
+            if (CardNumber1.Text == "11" && CardSuit1.Text == "Spades")
+            {
+                FirstHandCard.Image = Properties.Resources.Spades_Q;
+            }
+            else if (CardNumber2.Text == "11" && CardSuit2.Text == "Spades") { 
+                SecoundHandCard.Image = Properties.Resources.Spades_Q;
+            }
+            if (CardNumber1.Text == "11" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_Q;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_Q;
+            }
+            if (CardNumber1.Text == "11" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_Q;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_Q;
+            }
+            if (CardNumber1.Text == "11" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_Q;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_Q;
+            }
+        }
+
+        private void KingCard_Click(object sender, EventArgs e)
+        {
+            if (FirstBox.Visible == true)
+                CardNumber1.Text = "12";
+            if (SecoundBox.Visible == true)
+                CardNumber2.Text = "12";
+            if (CardNumber1.Text == "12" && CardSuit1.Text == "Spades")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Spades_K;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Spades_K;
+
+            }
+            if (CardNumber1.Text == "12" && CardSuit1.Text == "Hearts")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Hearts_K;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Hearts_K;
+
+            }
+            if (CardNumber1.Text == "12" && CardSuit1.Text == "Diamond")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Diamond_K;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Diamond_K;
+            }
+            if (CardNumber1.Text == "12" && CardSuit1.Text == "Clubs")
+            {
+                if (FirstBox.Visible == true)
+                    FirstHandCard.Image = Properties.Resources.Clubs_K;
+                else
+                    SecoundHandCard.Image = Properties.Resources.Clubs_K;
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            check++;
+            label1.Text = Convert.ToString(check);
+
+            if (check==1) {
+                FirstBox.Visible = false;
+                SecoundBox.Visible = true;
+            }
+            if (check==2) {
+                SecoundBox.Visible = false;
+                CommunityBox.Visible=true;
+            }
+                
+
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            if (SecoundBox.Visible == true || SecoundBox.Visible == false && CommunityBox.Visible == true)
+            {
+                FirstBox.Visible = true;
+                SecoundBox.Visible = false;
+                CommunityBox.Visible = false;
+                check = 0;
+            }
         }
     }
 }
