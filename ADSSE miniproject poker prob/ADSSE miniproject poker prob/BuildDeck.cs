@@ -57,6 +57,16 @@ namespace ADSSE_miniproject_poker_prob
             return amountOfCardsLeft;
         }
 
+        public int TypeOfCardLeft(List<Card> deck, int i)
+        {
+            int typeLeft = 0;
+            for (int a = 0; a < deck.Count; a++)
+            {
+                if (deck[a].rank == i && deck[a].available) typeLeft += 1;
+            }
+            return typeLeft;
+        }
+
         public int AcesLeft(List<Card> deck)
         {
             int acesLeft = 0;
