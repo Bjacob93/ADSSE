@@ -22,7 +22,10 @@ namespace ADSSE_miniproject_poker_prob
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hello");
+            List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
+            GameDeck = deck.myDeck();
+            int i = 14;
+            MessageBox.Show(Convert.ToString(GameDeck[i].suit + "   " + GameDeck[i].rank));
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
