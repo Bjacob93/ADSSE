@@ -26,8 +26,9 @@ namespace ADSSE_miniproject_poker_prob
         {
             List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
             GameDeck = deck.myDeck();
-            int i = 14;
-            MessageBox.Show(Convert.ToString(GameDeck[i].suit + "   " + GameDeck[i].rank));
+            int i = 0;
+            GameDeck[i].available = false;
+            MessageBox.Show(Convert.ToString(GameDeck[i].suit + " " + GameDeck[i].rank + " " + GameDeck[i].available +"\n cards left: "+ deck.HeartsLeft(GameDeck)));
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
