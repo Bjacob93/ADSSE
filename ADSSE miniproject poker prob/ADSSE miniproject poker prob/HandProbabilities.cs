@@ -8,14 +8,15 @@ namespace ADSSE_miniproject_poker_prob
 {
     class HandProbabilities
     {
-
-        List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
         BuildDeck deck = new BuildDeck();
         bool pair = false;
+        float probability = 0;
 
-        public float[] Probabilities(List<BuildDeck.Card> currentCards)
+        public float ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
-            float[] probabilities = new float[9];
+
+            float probabilityOfFirstCard = 0;
+            float probabilityOfSecondCard = 0;
             if (currentCards.Count == 2)
             {
                 //probability for a pair if you have two cards in hand.
@@ -24,31 +25,58 @@ namespace ADSSE_miniproject_poker_prob
                         if (c != d){
                             if (c.rank == d.rank){
                                 pair = true;
-                                probabilities[0] = 100;
+                                probability = 1;
                             }
                             else{
-                                probabilities[0] = (((deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / deck.CardsLeft(GameDeck)) * 100);
+                                probabilityOfFirstCard = (deck.TypeOfCardLeft(GameDeck, c.rank) / deck.CardsLeft(GameDeck));
+                                probabilityOfSecondCard = (deck.TypeOfCardLeft(GameDeck, d.rank) / deck.CardsLeft(GameDeck));
+                                probability = (float)(deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (float)(deck.CardsLeft(GameDeck));
                             }
-                        }
-                    }
-                }
-                //probability of three of a kind
-                foreach(BuildDeck.Card c in currentCards){
-                    foreach(BuildDeck.Card d in currentCards){if(c != d){ 
-                            if(c != d){
-                                //if i already have a pair
-                                if (c.rank == d.rank){
-                                    probabilities[2] = ((deck.TypeOfCardLeft(GameDeck, c.rank)) / deck.CardsLeft(GameDeck)) * 100;
-                                }else
-                                {
-                                }
-                            }
-                            
                         }
                     }
                 }
             }
-            return probabilities;
+
+            if(currentCards.Count == 5 || currentCards.Count == 7)
+            {
+                foreach(BuildDeck.Card c in currentCards){
+                    foreach(BuildDeck.Card d in currentCards){
+                        if(c != d){
+                            if(c.rank == d.rank){
+                                pair = true;
+                                probability = 100;
+                            }else
+                            {
+                                probability = probability * ((deck.TypeOfCardLeft(GameDeck, c.rank) / deck.CardsLeft(GameDeck)));
+                            }
+                        }
+                    }
+                }
+            }
+            return probability * 100f;
+        }
+
+        public float ProbabilityOfThreeOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            foreach (BuildDeck.Card c in currentCards)
+            {
+                foreach(BuildDeck.Card d in currentCards)
+{
+                    if(currentCards.Count == 2)
+                    {
+                        if(c != d)
+                        {
+                            if(c.rank == d.rank)
+                            {
+                                probability = ((float)(deck.TypeOfCardLeft(GameDeck, c.rank)) / (float)deck.CardsLeft(GameDeck));
+                            }else
+                            {
+                            }
+                        }
+                    }
+                }
+            }
+            return probability * 100f;
         }
     }
 }

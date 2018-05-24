@@ -15,6 +15,7 @@ namespace ADSSE_miniproject_poker_prob
     {
         int check = 0;
         BuildDeck deck = new BuildDeck();
+        HandProbabilities probabilityCalculater = new HandProbabilities();
         
 
         public Form1()
@@ -26,9 +27,16 @@ namespace ADSSE_miniproject_poker_prob
         {
             List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
             GameDeck = deck.myDeck();
-            int i = 0;
-            GameDeck[i].available = false;
-            MessageBox.Show(Convert.ToString(GameDeck[i].suit + " " + GameDeck[i].rank + " " + GameDeck[i].available +"\n cards left: "+ deck.HeartsLeft(GameDeck)));
+
+            GameDeck[0].available = false;
+            GameDeck[12].available = false;
+
+            List<BuildDeck.Card> currentHand = new List<BuildDeck.Card>();
+            currentHand.Add(GameDeck[0]);
+            currentHand.Add(GameDeck[12]);
+            MessageBox.Show(Convert.ToString("size of hand: " + currentHand.Count + 
+                                             "\n cardslet: " + deck.CardsLeft(GameDeck) + 
+                                             "\n " + probabilityCalculater.ProbabilityOfThreeOfaKind(currentHand, GameDeck)));
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
