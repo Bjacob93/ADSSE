@@ -129,5 +129,10 @@ namespace ADSSE_miniproject_poker_prob
        void setCard()
         {
         }
+
+        private void AceCard_Click(object sender, EventArgs e)
+        {
+            CardNumber1.Text = "1";
+        }
     }
 }

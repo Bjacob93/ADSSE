@@ -172,6 +172,7 @@
             this.AceCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AceCard.TabIndex = 8;
             this.AceCard.TabStop = false;
+            this.AceCard.Click += new System.EventHandler(this.AceCard_Click);
             // 
             // TwoCard
             // 
