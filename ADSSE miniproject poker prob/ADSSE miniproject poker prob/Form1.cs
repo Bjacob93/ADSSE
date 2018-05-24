@@ -21,5 +21,10 @@ namespace ADSSE_miniproject_poker_prob
         {
             MessageBox.Show("hallo");
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

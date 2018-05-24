@@ -29,33 +29,448 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.FirstPlayCard = new System.Windows.Forms.PictureBox();
+            this.FifthPlayCard = new System.Windows.Forms.PictureBox();
+            this.FirthPlayCard = new System.Windows.Forms.PictureBox();
+            this.ThirdPlayCard = new System.Windows.Forms.PictureBox();
+            this.SecondPlayCard = new System.Windows.Forms.PictureBox();
+            this.SecoundHandCard = new System.Windows.Forms.PictureBox();
+            this.FirstHandCard = new System.Windows.Forms.PictureBox();
+            this.AceCard = new System.Windows.Forms.PictureBox();
+            this.TwoCard = new System.Windows.Forms.PictureBox();
+            this.ThirdCard = new System.Windows.Forms.PictureBox();
+            this.FouthCard = new System.Windows.Forms.PictureBox();
+            this.FifthCard = new System.Windows.Forms.PictureBox();
+            this.TenthCard = new System.Windows.Forms.PictureBox();
+            this.SixthCard = new System.Windows.Forms.PictureBox();
+            this.SeventhCard = new System.Windows.Forms.PictureBox();
+            this.EigthCard = new System.Windows.Forms.PictureBox();
+            this.NinthCard = new System.Windows.Forms.PictureBox();
+            this.QueenCard = new System.Windows.Forms.PictureBox();
+            this.KingCard = new System.Windows.Forms.PictureBox();
+            this.JackCard = new System.Windows.Forms.PictureBox();
+            this.HeartCheckbox = new System.Windows.Forms.CheckBox();
+            this.DiamondBox2 = new System.Windows.Forms.CheckBox();
+            this.ClubsBox = new System.Windows.Forms.CheckBox();
+            this.SpadesBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Chancewinninglabel = new System.Windows.Forms.Label();
+            this.chancenumberlabel = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstHandCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AceCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TwoCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FouthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FifthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SixthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeventhCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EigthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NinthCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QueenCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KingCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JackCard)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(87, 148);
+            this.button1.Location = new System.Drawing.Point(157, 337);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // FirstPlayCard
+            // 
+            this.FirstPlayCard.Location = new System.Drawing.Point(49, 80);
+            this.FirstPlayCard.Name = "FirstPlayCard";
+            this.FirstPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FirstPlayCard.TabIndex = 1;
+            this.FirstPlayCard.TabStop = false;
+            // 
+            // FifthPlayCard
+            // 
+            this.FifthPlayCard.Location = new System.Drawing.Point(309, 80);
+            this.FifthPlayCard.Name = "FifthPlayCard";
+            this.FifthPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FifthPlayCard.TabIndex = 2;
+            this.FifthPlayCard.TabStop = false;
+            // 
+            // FirthPlayCard
+            // 
+            this.FirthPlayCard.Location = new System.Drawing.Point(244, 80);
+            this.FirthPlayCard.Name = "FirthPlayCard";
+            this.FirthPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.FirthPlayCard.TabIndex = 3;
+            this.FirthPlayCard.TabStop = false;
+            // 
+            // ThirdPlayCard
+            // 
+            this.ThirdPlayCard.Location = new System.Drawing.Point(179, 80);
+            this.ThirdPlayCard.Name = "ThirdPlayCard";
+            this.ThirdPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.ThirdPlayCard.TabIndex = 4;
+            this.ThirdPlayCard.TabStop = false;
+            // 
+            // SecondPlayCard
+            // 
+            this.SecondPlayCard.Location = new System.Drawing.Point(114, 80);
+            this.SecondPlayCard.Name = "SecondPlayCard";
+            this.SecondPlayCard.Size = new System.Drawing.Size(59, 87);
+            this.SecondPlayCard.TabIndex = 5;
+            this.SecondPlayCard.TabStop = false;
+            // 
+            // SecoundHandCard
+            // 
+            this.SecoundHandCard.Location = new System.Drawing.Point(244, 210);
+            this.SecoundHandCard.Name = "SecoundHandCard";
+            this.SecoundHandCard.Size = new System.Drawing.Size(59, 87);
+            this.SecoundHandCard.TabIndex = 6;
+            this.SecoundHandCard.TabStop = false;
+            // 
+            // FirstHandCard
+            // 
+            this.FirstHandCard.Location = new System.Drawing.Point(114, 210);
+            this.FirstHandCard.Name = "FirstHandCard";
+            this.FirstHandCard.Size = new System.Drawing.Size(59, 87);
+            this.FirstHandCard.TabIndex = 7;
+            this.FirstHandCard.TabStop = false;
+            // 
+            // AceCard
+            // 
+            this.AceCard.Location = new System.Drawing.Point(654, 12);
+            this.AceCard.Name = "AceCard";
+            this.AceCard.Size = new System.Drawing.Size(59, 87);
+            this.AceCard.TabIndex = 8;
+            this.AceCard.TabStop = false;
+            // 
+            // TwoCard
+            // 
+            this.TwoCard.Location = new System.Drawing.Point(719, 12);
+            this.TwoCard.Name = "TwoCard";
+            this.TwoCard.Size = new System.Drawing.Size(59, 87);
+            this.TwoCard.TabIndex = 9;
+            this.TwoCard.TabStop = false;
+            // 
+            // ThirdCard
+            // 
+            this.ThirdCard.Location = new System.Drawing.Point(784, 12);
+            this.ThirdCard.Name = "ThirdCard";
+            this.ThirdCard.Size = new System.Drawing.Size(59, 87);
+            this.ThirdCard.TabIndex = 10;
+            this.ThirdCard.TabStop = false;
+            // 
+            // FouthCard
+            // 
+            this.FouthCard.Location = new System.Drawing.Point(849, 12);
+            this.FouthCard.Name = "FouthCard";
+            this.FouthCard.Size = new System.Drawing.Size(59, 87);
+            this.FouthCard.TabIndex = 11;
+            this.FouthCard.TabStop = false;
+            // 
+            // FifthCard
+            // 
+            this.FifthCard.Location = new System.Drawing.Point(914, 12);
+            this.FifthCard.Name = "FifthCard";
+            this.FifthCard.Size = new System.Drawing.Size(59, 87);
+            this.FifthCard.TabIndex = 12;
+            this.FifthCard.TabStop = false;
+            // 
+            // TenthCard
+            // 
+            this.TenthCard.Location = new System.Drawing.Point(914, 155);
+            this.TenthCard.Name = "TenthCard";
+            this.TenthCard.Size = new System.Drawing.Size(59, 87);
+            this.TenthCard.TabIndex = 13;
+            this.TenthCard.TabStop = false;
+            // 
+            // SixthCard
+            // 
+            this.SixthCard.Location = new System.Drawing.Point(654, 155);
+            this.SixthCard.Name = "SixthCard";
+            this.SixthCard.Size = new System.Drawing.Size(59, 87);
+            this.SixthCard.TabIndex = 14;
+            this.SixthCard.TabStop = false;
+            // 
+            // SeventhCard
+            // 
+            this.SeventhCard.Location = new System.Drawing.Point(719, 155);
+            this.SeventhCard.Name = "SeventhCard";
+            this.SeventhCard.Size = new System.Drawing.Size(59, 87);
+            this.SeventhCard.TabIndex = 15;
+            this.SeventhCard.TabStop = false;
+            // 
+            // EigthCard
+            // 
+            this.EigthCard.Location = new System.Drawing.Point(784, 155);
+            this.EigthCard.Name = "EigthCard";
+            this.EigthCard.Size = new System.Drawing.Size(59, 87);
+            this.EigthCard.TabIndex = 16;
+            this.EigthCard.TabStop = false;
+            // 
+            // NinthCard
+            // 
+            this.NinthCard.Location = new System.Drawing.Point(849, 155);
+            this.NinthCard.Name = "NinthCard";
+            this.NinthCard.Size = new System.Drawing.Size(59, 87);
+            this.NinthCard.TabIndex = 17;
+            this.NinthCard.TabStop = false;
+            // 
+            // QueenCard
+            // 
+            this.QueenCard.Location = new System.Drawing.Point(784, 289);
+            this.QueenCard.Name = "QueenCard";
+            this.QueenCard.Size = new System.Drawing.Size(59, 87);
+            this.QueenCard.TabIndex = 18;
+            this.QueenCard.TabStop = false;
+            // 
+            // KingCard
+            // 
+            this.KingCard.Location = new System.Drawing.Point(849, 289);
+            this.KingCard.Name = "KingCard";
+            this.KingCard.Size = new System.Drawing.Size(59, 87);
+            this.KingCard.TabIndex = 19;
+            this.KingCard.TabStop = false;
+            // 
+            // JackCard
+            // 
+            this.JackCard.Location = new System.Drawing.Point(719, 289);
+            this.JackCard.Name = "JackCard";
+            this.JackCard.Size = new System.Drawing.Size(59, 87);
+            this.JackCard.TabIndex = 20;
+            this.JackCard.TabStop = false;
+            // 
+            // HeartCheckbox
+            // 
+            this.HeartCheckbox.AutoSize = true;
+            this.HeartCheckbox.Location = new System.Drawing.Point(435, 108);
+            this.HeartCheckbox.Name = "HeartCheckbox";
+            this.HeartCheckbox.Size = new System.Drawing.Size(72, 21);
+            this.HeartCheckbox.TabIndex = 21;
+            this.HeartCheckbox.Text = "Hearts";
+            this.HeartCheckbox.UseVisualStyleBackColor = true;
+            this.HeartCheckbox.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // DiamondBox2
+            // 
+            this.DiamondBox2.AutoSize = true;
+            this.DiamondBox2.Location = new System.Drawing.Point(435, 135);
+            this.DiamondBox2.Name = "DiamondBox2";
+            this.DiamondBox2.Size = new System.Drawing.Size(86, 21);
+            this.DiamondBox2.TabIndex = 22;
+            this.DiamondBox2.Text = "Diamond";
+            this.DiamondBox2.UseVisualStyleBackColor = true;
+            // 
+            // ClubsBox
+            // 
+            this.ClubsBox.AutoSize = true;
+            this.ClubsBox.Location = new System.Drawing.Point(539, 106);
+            this.ClubsBox.Name = "ClubsBox";
+            this.ClubsBox.Size = new System.Drawing.Size(65, 21);
+            this.ClubsBox.TabIndex = 24;
+            this.ClubsBox.Text = "Clubs";
+            this.ClubsBox.UseVisualStyleBackColor = true;
+            // 
+            // SpadesBox4
+            // 
+            this.SpadesBox4.AutoSize = true;
+            this.SpadesBox4.Location = new System.Drawing.Point(539, 133);
+            this.SpadesBox4.Name = "SpadesBox4";
+            this.SpadesBox4.Size = new System.Drawing.Size(78, 21);
+            this.SpadesBox4.TabIndex = 23;
+            this.SpadesBox4.Text = "Spades";
+            this.SpadesBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(539, 274);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(65, 21);
+            this.checkBox1.TabIndex = 28;
+            this.checkBox1.Text = "Clubs";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(539, 301);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(78, 21);
+            this.checkBox2.TabIndex = 27;
+            this.checkBox2.Text = "Spades";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(435, 303);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(86, 21);
+            this.checkBox3.TabIndex = 26;
+            this.checkBox3.Text = "Diamond";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(435, 276);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(72, 21);
+            this.checkBox4.TabIndex = 25;
+            this.checkBox4.Text = "Hearts";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(485, 88);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "First Card";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(485, 253);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 17);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Second Card";
+            // 
+            // Chancewinninglabel
+            // 
+            this.Chancewinninglabel.AutoSize = true;
+            this.Chancewinninglabel.Location = new System.Drawing.Point(46, 418);
+            this.Chancewinninglabel.Name = "Chancewinninglabel";
+            this.Chancewinninglabel.Size = new System.Drawing.Size(131, 17);
+            this.Chancewinninglabel.TabIndex = 31;
+            this.Chancewinninglabel.Text = "Chance of Winning:";
+            // 
+            // chancenumberlabel
+            // 
+            this.chancenumberlabel.AutoSize = true;
+            this.chancenumberlabel.Location = new System.Drawing.Point(176, 418);
+            this.chancenumberlabel.Name = "chancenumberlabel";
+            this.chancenumberlabel.Size = new System.Drawing.Size(12, 17);
+            this.chancenumberlabel.TabIndex = 32;
+            this.chancenumberlabel.Text = " ";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(996, 463);
+            this.Controls.Add(this.chancenumberlabel);
+            this.Controls.Add(this.Chancewinninglabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.ClubsBox);
+            this.Controls.Add(this.SpadesBox4);
+            this.Controls.Add(this.DiamondBox2);
+            this.Controls.Add(this.HeartCheckbox);
+            this.Controls.Add(this.JackCard);
+            this.Controls.Add(this.KingCard);
+            this.Controls.Add(this.QueenCard);
+            this.Controls.Add(this.NinthCard);
+            this.Controls.Add(this.EigthCard);
+            this.Controls.Add(this.SeventhCard);
+            this.Controls.Add(this.SixthCard);
+            this.Controls.Add(this.TenthCard);
+            this.Controls.Add(this.FifthCard);
+            this.Controls.Add(this.FouthCard);
+            this.Controls.Add(this.ThirdCard);
+            this.Controls.Add(this.TwoCard);
+            this.Controls.Add(this.AceCard);
+            this.Controls.Add(this.FirstHandCard);
+            this.Controls.Add(this.SecoundHandCard);
+            this.Controls.Add(this.SecondPlayCard);
+            this.Controls.Add(this.ThirdPlayCard);
+            this.Controls.Add(this.FirthPlayCard);
+            this.Controls.Add(this.FifthPlayCard);
+            this.Controls.Add(this.FirstPlayCard);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FirstHandCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AceCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TwoCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ThirdCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FouthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FifthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TenthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SixthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SeventhCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EigthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NinthCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QueenCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KingCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.JackCard)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox FirstPlayCard;
+        private System.Windows.Forms.PictureBox FifthPlayCard;
+        private System.Windows.Forms.PictureBox FirthPlayCard;
+        private System.Windows.Forms.PictureBox ThirdPlayCard;
+        private System.Windows.Forms.PictureBox SecondPlayCard;
+        private System.Windows.Forms.PictureBox SecoundHandCard;
+        private System.Windows.Forms.PictureBox FirstHandCard;
+        private System.Windows.Forms.PictureBox AceCard;
+        private System.Windows.Forms.PictureBox TwoCard;
+        private System.Windows.Forms.PictureBox ThirdCard;
+        private System.Windows.Forms.PictureBox FouthCard;
+        private System.Windows.Forms.PictureBox FifthCard;
+        private System.Windows.Forms.PictureBox TenthCard;
+        private System.Windows.Forms.PictureBox SixthCard;
+        private System.Windows.Forms.PictureBox SeventhCard;
+        private System.Windows.Forms.PictureBox EigthCard;
+        private System.Windows.Forms.PictureBox NinthCard;
+        private System.Windows.Forms.PictureBox QueenCard;
+        private System.Windows.Forms.PictureBox KingCard;
+        private System.Windows.Forms.PictureBox JackCard;
+        private System.Windows.Forms.CheckBox HeartCheckbox;
+        private System.Windows.Forms.CheckBox DiamondBox2;
+        private System.Windows.Forms.CheckBox ClubsBox;
+        private System.Windows.Forms.CheckBox SpadesBox4;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label Chancewinninglabel;
+        private System.Windows.Forms.Label chancenumberlabel;
     }
 }
 
