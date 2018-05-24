@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuildDeck.cs" />
+    <Compile Include="Deck.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_J.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_K.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Spades_Q.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
