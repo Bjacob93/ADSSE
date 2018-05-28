@@ -147,30 +147,29 @@ namespace ADSSE_miniproject_poker_prob
 
                 //check if we have three of a kind with five cards
                 //combinations in a sorted list
-                // 1,2,3
-                // 2,3,4
-                // 3,4,5
-                if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank))
-                 || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank))
-                 || ((currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank)))
+                // 0 = 1 = 2
+                // 1 = 2 = 3
+                // 2 = 3 = 4
+                if(((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank)) || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank)) || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank)))
                 {
                     threeOfAKind = true;
                     probability = 1f;
                 }
+
             }
 
             if(currentCards.Count == 6){
 
                 //check if we have three of a kind with six cards
                 //combinations in a sorted list
-                // 1,2,3
-                // 2,3,4
-                // 3,4,5
-                // 4,5,6
+                // 0 = 1 = 2
+                // 1 = 2 = 3
+                // 2 = 3 = 4
+                // 3 = 4 = 5
                 if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank))
                  || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank))
-                 || ((currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank))
-                 || ((currentCards[4].rank == currentCards[5].rank) && (currentCards[1].rank == currentCards[6].rank)))
+                 || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank))
+                 || ((currentCards[3].rank == currentCards[4].rank) && (currentCards[3].rank == currentCards[5].rank)))
                     {
                     threeOfAKind = true;
                     probability = 1f;
@@ -189,9 +188,9 @@ namespace ADSSE_miniproject_poker_prob
                 // 5,6,7
                 if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank))
                  || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank))
-                 || ((currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank))
-                 || ((currentCards[4].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank))
-                 || ((currentCards[5].rank == currentCards[6].rank) && (currentCards[5].rank == currentCards[7].rank)))
+                 || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank))
+                 || ((currentCards[3].rank == currentCards[4].rank) && (currentCards[3].rank == currentCards[5].rank))
+                 || ((currentCards[4].rank == currentCards[5].rank) && (currentCards[4].rank == currentCards[6].rank)))
                 {
                     probability = 1f;
                 }else
