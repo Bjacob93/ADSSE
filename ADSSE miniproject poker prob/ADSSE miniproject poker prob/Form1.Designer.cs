@@ -723,7 +723,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1008, 34);
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Change of Winning:";
+            this.groupBox1.Text = "Probability of Hand:";
             // 
             // pairnumber
             // 
