@@ -181,6 +181,9 @@ namespace ADSSE_miniproject_poker_prob
 
             if (currentCards.Count == 2)
             {
+                if (pair)
+                    probability = 1;
+
                 foreach (BuildDeck.Card c in currentCards)
                 {
                     foreach (BuildDeck.Card d in currentCards)
