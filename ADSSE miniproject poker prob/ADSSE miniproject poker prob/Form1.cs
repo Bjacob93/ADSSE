@@ -202,9 +202,9 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "0" && CardSuit2.Text == "Hearts")
                      SecoundHandCard.Image = Properties.Resources.Hearts_A;
             
-            if (CardNumber1.Text == "0" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "0" && CardSuit1.Text == "Diamonds")
                       FirstHandCard.Image = Properties.Resources.Diamond_A;
-                if (CardNumber2.Text == "0" && CardSuit2.Text == "Diamond")
+                if (CardNumber2.Text == "0" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_A;
             
             if (CardNumber1.Text == "0" && CardSuit1.Text == "Clubs")
@@ -232,9 +232,9 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "1" && CardSuit2.Text == "Hearts")
                     SecoundHandCard.Image = Properties.Resources.Hearts_2;
             
-            if (CardNumber1.Text == "1" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "1" && CardSuit1.Text == "Diamonds")
                       FirstHandCard.Image = Properties.Resources.Diamond_2;
-                if (CardNumber2.Text == "1" && CardSuit2.Text == "Diamond")
+                if (CardNumber2.Text == "1" && CardSuit2.Text == "Diamonds")
                      SecoundHandCard.Image = Properties.Resources.Diamond_2;
             
             if (CardNumber1.Text == "1" && CardSuit1.Text == "Clubs")
@@ -259,9 +259,9 @@ namespace ADSSE_miniproject_poker_prob
             if (CardNumber2.Text == "2" && CardSuit2.Text == "Hearts")
                 SecoundHandCard.Image = Properties.Resources.Hearts_3;
             
-            if (CardNumber1.Text == "2" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "2" && CardSuit1.Text == "Diamonds")
                      FirstHandCard.Image = Properties.Resources.Diamond_3;
-                if (CardNumber2.Text == "2" && CardSuit2.Text == "Diamond")
+                if (CardNumber2.Text == "2" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_3;
             
             if (CardNumber1.Text == "2" && CardSuit1.Text == "Clubs")
@@ -289,10 +289,10 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "3" && CardSuit2.Text == "Hearts")
                                     SecoundHandCard.Image = Properties.Resources.Hearts_4;
             
-            if (CardNumber1.Text == "3" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "3" && CardSuit1.Text == "Diamonds")
             
                     FirstHandCard.Image = Properties.Resources.Diamond_4;
-            if (CardNumber2.Text == "3" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "3" && CardSuit2.Text == "Diamonds")
 
                 SecoundHandCard.Image = Properties.Resources.Diamond_4;
             
@@ -321,10 +321,10 @@ namespace ADSSE_miniproject_poker_prob
             if (CardNumber2.Text == "4" && CardSuit2.Text == "Hearts")
                 SecoundHandCard.Image = Properties.Resources.Hearts_5;
             
-            if (CardNumber1.Text == "4" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "4" && CardSuit1.Text == "Diamonds")
             
                     FirstHandCard.Image = Properties.Resources.Diamond_5;
-            if (CardNumber2.Text == "4" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "4" && CardSuit2.Text == "Diamonds")
                 SecoundHandCard.Image = Properties.Resources.Diamond_5;
             
             if (CardNumber1.Text == "4" && CardSuit1.Text == "Clubs")
@@ -351,10 +351,10 @@ namespace ADSSE_miniproject_poker_prob
 
                 SecoundHandCard.Image = Properties.Resources.Hearts_6;
             
-            if (CardNumber1.Text == "5" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "5" && CardSuit1.Text == "Diamonds")
             
                     FirstHandCard.Image = Properties.Resources.Diamond_6;
-            if (CardNumber2.Text == "5" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "5" && CardSuit2.Text == "Diamonds")
                 SecoundHandCard.Image = Properties.Resources.Diamond_6;
             
             if (CardNumber1.Text == "5" && CardSuit1.Text == "Clubs")
@@ -384,9 +384,9 @@ namespace ADSSE_miniproject_poker_prob
             if (CardNumber2.Text == "6" && CardSuit2.Text == "Hearts")
                 SecoundHandCard.Image = Properties.Resources.Hearts_7;
             
-            if (CardNumber1.Text == "6" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "6" && CardSuit1.Text == "Diamonds")
                      FirstHandCard.Image = Properties.Resources.Diamond_7;
-            if (CardNumber2.Text == "6" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "6" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_7;
             
             if (CardNumber1.Text == "6" && CardSuit1.Text == "Clubs")
@@ -412,9 +412,9 @@ namespace ADSSE_miniproject_poker_prob
             if (CardNumber2.Text == "7" && CardSuit2.Text == "Hearts")
                 SecoundHandCard.Image = Properties.Resources.Hearts_8;
             
-            if (CardNumber1.Text == "7" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "7" && CardSuit1.Text == "Diamonds")
                 FirstHandCard.Image = Properties.Resources.Diamond_8;
-            if (CardNumber2.Text == "7" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "7" && CardSuit2.Text == "Diamonds")
                 SecoundHandCard.Image = Properties.Resources.Diamond_8;
             
             if (CardNumber1.Text == "7" && CardSuit1.Text == "Clubs")
@@ -441,9 +441,9 @@ namespace ADSSE_miniproject_poker_prob
             if (CardNumber2.Text == "8" && CardSuit2.Text == "Hearts")
                 SecoundHandCard.Image = Properties.Resources.Hearts_9;
             
-            if (CardNumber1.Text == "8" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "8" && CardSuit1.Text == "Diamonds")
                     FirstHandCard.Image = Properties.Resources.Diamond_9;
-                if (CardNumber2.Text == "8" && CardSuit2.Text == "Diamond")
+                if (CardNumber2.Text == "8" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_9;
             
             if (CardNumber1.Text == "8" && CardSuit1.Text == "Clubs")
@@ -469,9 +469,9 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "9" && CardSuit2.Text == "Hearts")
                     SecoundHandCard.Image = Properties.Resources.Hearts_10;
             
-            if (CardNumber1.Text == "9" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "9" && CardSuit1.Text == "Diamonds")
                 FirstHandCard.Image = Properties.Resources.Diamond_10;
-                if (CardNumber2.Text == "9" && CardSuit2.Text == "Diamond")
+                if (CardNumber2.Text == "9" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_10;
             
             if (CardNumber1.Text == "9" && CardSuit1.Text == "Clubs")
@@ -501,9 +501,9 @@ namespace ADSSE_miniproject_poker_prob
 
                     SecoundHandCard.Image = Properties.Resources.Hearts_J;
             
-            if (CardNumber1.Text == "10" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "10" && CardSuit1.Text == "Diamonds")
                     FirstHandCard.Image = Properties.Resources.Diamond_J;
-            if (CardNumber2.Text == "10" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "10" && CardSuit2.Text == "Diamonds")
                     SecoundHandCard.Image = Properties.Resources.Diamond_J;
            if (CardNumber1.Text == "10" && CardSuit1.Text == "Clubs")
                     FirstHandCard.Image = Properties.Resources.Clubs_J;
@@ -519,6 +519,16 @@ namespace ADSSE_miniproject_poker_prob
                                CardNumber1.Text = "11";
             if (SecoundBox.Visible == true)
                 CardNumber2.Text = "11";
+            if (CommunityBox.Visible == true && ComCard1.Checked == false)
+                cardnumberchoice1.Text = "11";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == false)
+                cardnumberchoice2.Text = "11";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
+                cardnumberchoice3.Text = "11";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
+                cardnumberchoice4.Text = "11";
+            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
+                cardnumberchoice5.Text = "11";
             if (CardNumber1.Text == "11" && CardSuit1.Text == "Spades")
                 FirstHandCard.Image = Properties.Resources.Spades_Q;
             
@@ -530,15 +540,25 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "11" && CardSuit2.Text == "Hearts")
                     SecoundHandCard.Image = Properties.Resources.Hearts_Q;
             
-            if (CardNumber1.Text == "11" && CardSuit1.Text == "Diamond")           
+            if (CardNumber1.Text == "11" && CardSuit1.Text == "Diamonds")           
                     FirstHandCard.Image = Properties.Resources.Diamond_Q;
-            if (CardNumber2.Text == "11" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "11" && CardSuit2.Text == "Diamonds")
                 SecoundHandCard.Image = Properties.Resources.Diamond_Q;
 
             if (CardNumber1.Text == "11" && CardSuit1.Text == "Clubs")
                     FirstHandCard.Image = Properties.Resources.Clubs_Q;
                 if (CardNumber2.Text == "11" && CardSuit2.Text == "Clubs")
                     SecoundHandCard.Image = Properties.Resources.Clubs_Q;
+            if (cardnumberchoice1.Text == "11" && cardsuitchoice1.Text == "Clubs")
+                FirstPlayCard.Image = Properties.Resources.Clubs_Q;
+            if (cardnumberchoice2.Text == "11" && cardsuitchoice2.Text == "Clubs")
+                SecondPlayCard.Image = Properties.Resources.Clubs_Q;
+            if (cardnumberchoice3.Text == "11" && cardsuitchoice3.Text == "Clubs")
+                ThirdPlayCard.Image = Properties.Resources.Clubs_Q;
+            if (cardnumberchoice4.Text == "11" && cardsuitchoice4.Text == "Clubs")
+                FirthPlayCard.Image = Properties.Resources.Clubs_Q;
+            if (cardnumberchoice5.Text == "11" && cardsuitchoice5.Text == "Clubs")
+                FifthCard.Image = Properties.Resources.Clubs_Q;
         }
 
         private void KingCard_Click(object sender, EventArgs e)
@@ -571,10 +591,10 @@ namespace ADSSE_miniproject_poker_prob
                 if (CardNumber2.Text == "12" && CardSuit2.Text == "Hearts")
                     SecoundHandCard.Image = Properties.Resources.Hearts_K;
 
-            if (CardNumber1.Text == "12" && CardSuit1.Text == "Diamond")
+            if (CardNumber1.Text == "12" && CardSuit1.Text == "Diamonds")
 
                     FirstHandCard.Image = Properties.Resources.Diamond_K;
-            if (CardNumber2.Text == "12" && CardSuit2.Text == "Diamond")
+            if (CardNumber2.Text == "12" && CardSuit2.Text == "Diamonds")
                 SecoundHandCard.Image = Properties.Resources.Diamond_K;
            
             if (CardNumber1.Text == "12" && CardSuit1.Text == "Clubs")
@@ -584,13 +604,43 @@ namespace ADSSE_miniproject_poker_prob
             if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Clubs")
                 FirstPlayCard.Image = Properties.Resources.Clubs_K;
             if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+                SecondPlayCard.Image = Properties.Resources.Clubs_K;
             if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+                ThirdPlayCard.Image = Properties.Resources.Clubs_K;
             if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+                FirthPlayCard.Image = Properties.Resources.Clubs_K;
             if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_K;
+                FifthCard.Image = Properties.Resources.Clubs_K;
+            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Hearts")
+                FirstPlayCard.Image = Properties.Resources.Hearts_K;
+            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Hearts")
+                SecondPlayCard.Image = Properties.Resources.Hearts_K;
+            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Hearts")
+                ThirdPlayCard.Image = Properties.Resources.Hearts_K;
+            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Hearts")
+                FirthPlayCard.Image = Properties.Resources.Hearts_K;
+            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Hearts")
+                FifthCard.Image = Properties.Resources.Hearts_K;
+            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Spades")
+                FirstPlayCard.Image = Properties.Resources.Spades_K;
+            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Spades")
+                SecondPlayCard.Image = Properties.Resources.Spades_K;
+            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Spades")
+                ThirdPlayCard.Image = Properties.Resources.Spades_K;
+            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Spades")
+                FirthPlayCard.Image = Properties.Resources.Spades_K;
+            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Spades")
+                FifthCard.Image = Properties.Resources.Spades_K;
+            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Diamonds")
+                FirstPlayCard.Image = Properties.Resources.Diamond_K;
+            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Diamonds")
+                SecondPlayCard.Image = Properties.Resources.Diamond_K;
+            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Diamonds")
+                ThirdPlayCard.Image = Properties.Resources.Diamond_K;
+            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Diamonds")
+                FirthPlayCard.Image = Properties.Resources.Diamond_K;
+            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Diamonds")
+                FifthCard.Image = Properties.Resources.Diamond_K;
 
 
 
@@ -701,6 +751,11 @@ namespace ADSSE_miniproject_poker_prob
                 ComCard5.Checked = false;
 
             }
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
