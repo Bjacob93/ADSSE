@@ -184,7 +184,7 @@ namespace ADSSE_miniproject_poker_prob
                     probability = 1f;
                     }
 
-                if (!threeOfAKind) probability = 0f;
+                if (!pair) probability = 0f;
             }
 
 
@@ -246,8 +246,50 @@ namespace ADSSE_miniproject_poker_prob
             }
             if (currentCards.Count == 5)
 
-
             return probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
+        }
+
+        public double ProbabilityOfTwoPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            //sort the list in decending order by rank
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
+            currentCards.Reverse();
+
+            if (currentCards.Count == 2)
+            {
+                if (pair)
+                {
+                    probability = ((deck.CardsLeft(GameDeck) - deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) / deck.CardsLeft(GameDeck)) * (3f / (deck.CardsLeft(GameDeck) - 1));
+                }else
+                {
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank)) / (deck.CardsLeft(GameDeck))) * (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) / (deck.CardsLeft(GameDeck) - 1));
+                }
+            }
+
+            if (currentCards.Count == 5)
+            {
+                if (pair)
+                {
+
+                }else
+                {
+                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck));
+                }
+            }
+
+            if (currentCards.Count == 6)
+            {
+
+            }
+
+            if (currentCards.Count == 7)
+            {
+
+            }
+
+            probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;
         }
