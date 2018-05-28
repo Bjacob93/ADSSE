@@ -2086,6 +2086,7 @@ namespace ADSSE_miniproject_poker_prob
             if(currentHand.Count == 2 || currentHand.Count == 5 || currentHand.Count == 6)
             {
                 pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck)) + "%";
+                threeofkindnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfThreeOfaKind(currentHand, GameDeck)) + "%";
             }
 
             if (check == 1)
