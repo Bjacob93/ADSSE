@@ -9,7 +9,7 @@ namespace ADSSE_miniproject_poker_prob
     class HandProbabilities
     {
         BuildDeck deck = new BuildDeck();
-        bool pair, threeOfAKind = false;
+        bool pair, threeOfAKind, fourofkind = false;
         float probability;
 
         public void ResetHandCombinations()
@@ -222,9 +222,6 @@ namespace ADSSE_miniproject_poker_prob
 
             if (currentCards.Count == 2)
             {
-                if (pair)
-                    probability = 1;
-
                 foreach (BuildDeck.Card c in currentCards)
                 {
                     foreach (BuildDeck.Card d in currentCards)
@@ -234,7 +231,7 @@ namespace ADSSE_miniproject_poker_prob
                             if (c.rank == d.rank)
                             {
                                 pair = true;
-                                probability = 1;
+                                probability =  2f / deck.CardsLeft(GameDeck);
                             }
                             else
                             {
@@ -245,8 +242,68 @@ namespace ADSSE_miniproject_poker_prob
                 }
             }
             if (currentCards.Count == 5)
+            {
+                if (pair == true)
+                {
+                    probability = 2f / deck.CardsLeft(GameDeck);
+                }
+                if (threeOfAKind == true)
+                {
+                    probability = 1f / deck.CardsLeft(GameDeck);
+                }
+                else
+                {
+                probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / deck.CardsLeft(GameDeck))
+                    * (2 / (deck.CardsLeft(GameDeck) - 1));
+                }
+                //check if we have three of a kind with five cards
+                //combinations in a sorted list
+                // 0 = 1 = 2 = 3
+                // 1 = 2 = 3 = 4
+                // 2 = 3 = 4 = 0
+                // 3 = 4 = 0 = 1
+                // 4 = 0 = 1 = 2
+                if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank))
+                || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank)))
+                {
+                    fourofkind = true;
+                    probability = 1f;
+                }
 
-            return probability * 100f;
+            }
+            if (currentCards.Count == 6) {
+                if (pair == true)
+                {
+                    probability = 0f;
+                }
+                if (threeOfAKind == true)
+                {
+                    probability = 1f / deck.CardsLeft(GameDeck);
+                }
+                else
+                {
+                    probability = 0f;
+                }
+
+                //check if we have three of a kind with six cards
+                //combinations in a sorted list
+                // 0 = 1 = 2 = 3 = 4
+                // 1 = 2 = 3 = 4 = 5
+                // 2 = 3 = 4 = 5 = 0
+                // 3 = 4 = 5 = 0 = 1
+                // 4 = 5 = 0 = 1 = 2
+                // 5 = 0 = 1 = 2 = 3
+
+                if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank) && (currentCards[0].rank == currentCards[4].rank))
+                || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank) && (currentCards[1].rank == currentCards[5].rank))
+                || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank) && (currentCards[2].rank == currentCards[0].rank)))
+                {
+                    fourofkind = true;
+                    probability = 1f;
+                }
+            }
+
+            probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;
         }

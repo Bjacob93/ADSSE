@@ -2087,7 +2087,9 @@ namespace ADSSE_miniproject_poker_prob
             {
                 pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck)) + "%";
                 threeofkindnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfThreeOfaKind(currentHand, GameDeck)) + "%";
-            }else if(currentHand.Count == 1)
+                fourofkindnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFourOfaKind(currentHand, GameDeck)) + "%";
+            }
+            else if(currentHand.Count == 1)
             {
                 MessageBox.Show("The chance will only update on legal tables i.e. 2 Cards, 5 Cards, 6 Cards, or 7 Cards");
             }
@@ -2210,6 +2212,7 @@ namespace ADSSE_miniproject_poker_prob
 
                 pairnumber.Text = "";
                 twopairnumber.Text = "";
+                fourofkindnumber.Text = "";
 
 
                 //reset GameDeck and currentHand
