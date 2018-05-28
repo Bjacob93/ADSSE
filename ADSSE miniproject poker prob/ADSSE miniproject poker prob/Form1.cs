@@ -2085,7 +2085,7 @@ namespace ADSSE_miniproject_poker_prob
 
             if(currentHand.Count == 2 || currentHand.Count == 5 || currentHand.Count == 6)
             {
-                pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck));
+                pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck)) + "%";
             }
 
             if (check == 1)
@@ -2203,6 +2203,10 @@ namespace ADSSE_miniproject_poker_prob
                 ThirdPlayCard.Image = null;
                 FourthPlayCard.Image = null;
                 FifthPlayCard.Image = null;
+
+                pairnumber = null;
+                twopairnumber = null;
+
 
                 //reset GameDeck and currentHand
                 currentHand.Clear();

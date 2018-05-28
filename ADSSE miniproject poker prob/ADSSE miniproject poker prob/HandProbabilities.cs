@@ -13,13 +13,11 @@ namespace ADSSE_miniproject_poker_prob
         float probability = 0;
 
         //calculates the probability of getting a pair
-        public float ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        public double ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
             //sort the list in decending order by rank
             currentCards = currentCards.OrderBy(o => o.rank).ToList();
             currentCards.Reverse();
-
-
 
             if (currentCards.Count == 2)
             {
@@ -76,8 +74,9 @@ namespace ADSSE_miniproject_poker_prob
                 }
 
             }
-
-            return probability * 100f;
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
         }
 
         public float ProbabilityOfThreeOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
