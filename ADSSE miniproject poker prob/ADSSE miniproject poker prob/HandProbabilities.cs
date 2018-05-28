@@ -15,9 +15,10 @@ namespace ADSSE_miniproject_poker_prob
         //calculates the probability of getting a pair
         public float ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
-            //sort the list in decending order
-            currentCards.Sort();
+            //sort the list in decending order by rank
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
             currentCards.Reverse();
+
 
 
             if (currentCards.Count == 2)
