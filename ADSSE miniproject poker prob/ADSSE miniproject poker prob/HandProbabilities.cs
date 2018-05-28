@@ -173,24 +173,35 @@ namespace ADSSE_miniproject_poker_prob
             return prob;
         }
 
-        public float ProbabilityOfFourOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck) {
+        public double ProbabilityOfFourOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck) {
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
+            currentCards.Reverse();
+
+            probability = 0;
+
             if (currentCards.Count == 2)
             {
-                for (int i = 0; i < currentCards.Count - 1; i++)
+                foreach (BuildDeck.Card c in currentCards)
                 {
-                    for (int j = 1; j < currentCards.Count; j++)
+                    foreach (BuildDeck.Card d in currentCards)
                     {
-                        if (currentCards[i].rank == currentCards[j].rank)
+                        if (c != d)
                         {
-                            probability = (float)(deck.TypeOfCardLeft(GameDeck, currentCards[i].rank)) / (float)(deck.CardsLeft(GameDeck));
-                        }
-                        else
-                        {
-
+                            if (c.rank == d.rank)
+                            {
+                                pair = true;
+                                probability = 1;
+                            }
+                            else
+                            {
+                                probability = (float)(deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (float)(deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
             }
+            if (currentCards.Count == 5)
+
 
             return probability * 100f;
             double prob = System.Math.Round(probability, 2);
