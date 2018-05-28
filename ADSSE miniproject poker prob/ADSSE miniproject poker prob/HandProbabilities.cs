@@ -12,6 +12,13 @@ namespace ADSSE_miniproject_poker_prob
         bool pair, threeOfAKind = false;
         float probability;
 
+        public void ResetHandCombinations()
+        {
+            pair = false;
+            threeOfAKind = false;
+        }
+
+
         //calculates the probability of getting a pair
         public double ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
@@ -24,14 +31,19 @@ namespace ADSSE_miniproject_poker_prob
             if (currentCards.Count == 2)
             {
                 //probability for a pair if you have two cards in hand.
-                foreach (BuildDeck.Card c in currentCards){
-                    foreach (BuildDeck.Card d in currentCards){
-                        if (c != d){
-                            if (c.rank == d.rank){
+                foreach (BuildDeck.Card c in currentCards)
+                {
+                    foreach (BuildDeck.Card d in currentCards)
+                    {
+                        if (c != d)
+                        {
+                            if (c.rank == d.rank)
+                            {
                                 pair = true;
                                 probability = 1;
                             }
-                            else{
+                            else
+                            {
                                 probability = (float)(deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (float)(deck.CardsLeft(GameDeck));
                             }
                         }
@@ -39,43 +51,62 @@ namespace ADSSE_miniproject_poker_prob
                 }
             }
 
-            if(currentCards.Count == 5)
+            if (currentCards.Count == 5)
             {
-                for(int i = 0; i < currentCards.Count-1; i++){
-                    for(int j = 1; j < currentCards.Count; j++){
-                            if(currentCards[i].rank == currentCards[j].rank){
+                //probability for a pair if you have two cards in hand.
+                foreach (BuildDeck.Card c in currentCards)
+                {
+                    foreach (BuildDeck.Card d in currentCards)
+                    {
+                        if (c != d)
+                        {
+                            if (c.rank == d.rank)
+                            {
                                 pair = true;
                                 probability = 1;
                             }
-                        else {
-                            probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
-                                               + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (float)(deck.CardsLeft(GameDeck));
+                            else
+                            {
+                                probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
+                                                   + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (float)(deck.CardsLeft(GameDeck));
                             }
+                        }
                     }
                 }
             }
-            if(currentCards.Count == 6){
-                for (int i = 0; i < currentCards.Count - 1; i++){
-                    for (int j = 1; j < currentCards.Count; j++){
-                        if (currentCards[i].rank == currentCards[j].rank){
-                            pair = true;
-                            probability = 1;
-                        }
-                        else{
-                            probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
-                                               + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank))) +
-                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[5].rank)))) / (float)(deck.CardsLeft(GameDeck));
-                        }
-                    }
-                }
 
+            if (currentCards.Count == 6)
+            {
+                //probability for a pair if you have two cards in hand.
+                foreach (BuildDeck.Card c in currentCards)
+                {
+                    foreach (BuildDeck.Card d in currentCards)
+                    {
+                        if (c != d)
+                        {
+                            if (c.rank == d.rank)
+                            {
+                                pair = true;
+                                probability = 1;
+                            }
+                            else
+                            {
+                                probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
+                                                   + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank))) +
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[5].rank)))) / (float)(deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+
+                }
             }
+
             probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;
@@ -105,13 +136,13 @@ namespace ADSSE_miniproject_poker_prob
             }
             if(currentCards.Count == 5){
 
-                if (pair)
+                if (pair == true)
                 {
                     probability = 2f / (float)(deck.CardsLeft(GameDeck));
                 }else
                 {
-                    probability = ((float)((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (float)deck.CardsLeft(GameDeck)) *
-                        (float)(2 / deck.CardsLeft(GameDeck) - 1));
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / deck.CardsLeft(GameDeck))
+                        * (2 / (deck.CardsLeft(GameDeck) - 1));
                 }
 
                 //check if we have three of a kind with five cards
