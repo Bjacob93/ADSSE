@@ -236,7 +236,8 @@ namespace ADSSE_miniproject_poker_prob
                             }
                             else
                             {
-                                probability = (deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (deck.CardsLeft(GameDeck));
+                                probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) / (deck.CardsLeft(GameDeck)) *
+                                                                          ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1))*((deck.TypeOfCardLeft(GameDeck,currentCards[0].rank)-1) / (deck.CardsLeft(GameDeck) - 1)));
                             }
                         }
                     }
@@ -246,7 +247,7 @@ namespace ADSSE_miniproject_poker_prob
             {
                 if (pair == true)
                 {
-                    probability = 2f / deck.CardsLeft(GameDeck);
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank))/(deck.CardsLeft(GameDeck))* ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank-1)) / (deck.CardsLeft(GameDeck)-1) / (deck.CardsLeft(GameDeck)-1)));
                 }
                 if (threeOfAKind == true)
                 {
@@ -254,8 +255,8 @@ namespace ADSSE_miniproject_poker_prob
                 }
                 else
                 {
-                probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / deck.CardsLeft(GameDeck))
-                    * (2 / (deck.CardsLeft(GameDeck) - 1));
+                    probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))+ (deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))+ (deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))+ (deck.TypeOfCardLeft(GameDeck, currentCards[4].rank))) / (deck.CardsLeft(GameDeck))) *
+                                                                                           ( 2 / (deck.CardsLeft(GameDeck) - 1 ))* (1 / (deck.CardsLeft(GameDeck)-1));
                 }
                 //check if we have three of a kind with five cards
                 //combinations in a sorted list
@@ -272,7 +273,8 @@ namespace ADSSE_miniproject_poker_prob
                 }
 
             }
-            if (currentCards.Count == 6) {
+            if (currentCards.Count == 6)
+            {
                 if (pair == true)
                 {
                     probability = 0f;
@@ -288,22 +290,33 @@ namespace ADSSE_miniproject_poker_prob
 
                 //check if we have three of a kind with six cards
                 //combinations in a sorted list
-                // 0 = 1 = 2 = 3 = 4
+                // 0 = 1 = 2 = 3 
                 // 1 = 2 = 3 = 4 = 5
                 // 2 = 3 = 4 = 5 = 0
                 // 3 = 4 = 5 = 0 = 1
                 // 4 = 5 = 0 = 1 = 2
                 // 5 = 0 = 1 = 2 = 3
 
-                if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank) && (currentCards[0].rank == currentCards[4].rank))
-                || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank) && (currentCards[1].rank == currentCards[5].rank))
-                || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank) && (currentCards[2].rank == currentCards[0].rank)))
+                if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank))
+                || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank))
+                || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank)))
                 {
                     fourofkind = true;
                     probability = 1f;
                 }
+                if (currentCards.Count == 7)
+                {
+                   if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank))
+               || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank))
+               || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank))
+               || ((currentCards[3].rank == currentCards[4].rank) && (currentCards[3].rank == currentCards[5].rank) && (currentCards[3].rank == currentCards[6].rank))
+               || ((currentCards[4].rank == currentCards[5].rank) && (currentCards[4].rank == currentCards[6].rank) && (currentCards[4].rank == currentCards[7].rank)))
+                    {
+                        fourofkind = true;
+                        probability = 1f;
+                    }
+                }
             }
-
             probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;
