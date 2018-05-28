@@ -215,6 +215,7 @@ namespace ADSSE_miniproject_poker_prob
         }
 
         public double ProbabilityOfFourOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck) {
+
             currentCards = currentCards.OrderBy(o => o.rank).ToList();
             currentCards.Reverse();
 
@@ -231,7 +232,7 @@ namespace ADSSE_miniproject_poker_prob
                             if (c.rank == d.rank)
                             {
                                 pair = true;
-                                probability =  2f / deck.CardsLeft(GameDeck);
+                                probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1));
                             }
                             else
                             {
