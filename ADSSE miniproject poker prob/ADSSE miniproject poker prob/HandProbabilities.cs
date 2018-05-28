@@ -328,6 +328,8 @@ namespace ADSSE_miniproject_poker_prob
             currentCards = currentCards.OrderBy(o => o.rank).ToList();
             currentCards.Reverse();
 
+            probability = 0f;
+
             if (currentCards.Count == 2)
             {
                 if (pair)
@@ -346,18 +348,29 @@ namespace ADSSE_miniproject_poker_prob
 
                 }else
                 {
-                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck));
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) * (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank)) / (deck.CardsLeft(GameDeck) - 1);
                 }
             }
 
             if (currentCards.Count == 6)
             {
+                if (pair)
+                {
+                }else
+                {
 
+                }
             }
 
             if (currentCards.Count == 7)
             {
+                if (pair)
+                {
 
+                }else
+                {
+
+                }
             }
 
             probability = probability * 100f;
