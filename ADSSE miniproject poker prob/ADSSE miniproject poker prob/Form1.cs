@@ -804,13 +804,5 @@ namespace ADSSE_miniproject_poker_prob
             }
         }
 
-<<<<<<< HEAD
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-=======
-        private void ThirdPlayCard_Click(object sender, EventArgs e)
->>>>>>> aadb9452179c050129fff05672f49417b53bf789
-        {
-
-        }
     }
 }

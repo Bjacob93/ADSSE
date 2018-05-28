@@ -156,11 +156,7 @@
             this.DiamondBox2.Location = new System.Drawing.Point(10, 39);
             this.DiamondBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DiamondBox2.Name = "DiamondBox2";
-<<<<<<< HEAD
             this.DiamondBox2.Size = new System.Drawing.Size(73, 17);
-=======
-            this.DiamondBox2.Size = new System.Drawing.Size(68, 17);
->>>>>>> aadb9452179c050129fff05672f49417b53bf789
             this.DiamondBox2.TabIndex = 26;
             this.DiamondBox2.Text = "Diamonds";
             this.DiamondBox2.UseVisualStyleBackColor = true;
@@ -237,11 +233,7 @@
             this.DiamondBox3.Location = new System.Drawing.Point(7, 43);
             this.DiamondBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DiamondBox3.Name = "DiamondBox3";
-<<<<<<< HEAD
             this.DiamondBox3.Size = new System.Drawing.Size(73, 17);
-=======
-            this.DiamondBox3.Size = new System.Drawing.Size(68, 17);
->>>>>>> aadb9452179c050129fff05672f49417b53bf789
             this.DiamondBox3.TabIndex = 34;
             this.DiamondBox3.Text = "Diamonds";
             this.DiamondBox3.UseVisualStyleBackColor = true;
@@ -316,11 +308,7 @@
             this.DiamondBox1.Location = new System.Drawing.Point(4, 46);
             this.DiamondBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DiamondBox1.Name = "DiamondBox1";
-<<<<<<< HEAD
             this.DiamondBox1.Size = new System.Drawing.Size(73, 17);
-=======
-            this.DiamondBox1.Size = new System.Drawing.Size(68, 17);
->>>>>>> aadb9452179c050129fff05672f49417b53bf789
             this.DiamondBox1.TabIndex = 40;
             this.DiamondBox1.Text = "Diamonds";
             this.DiamondBox1.UseVisualStyleBackColor = true;
@@ -593,7 +581,6 @@
             this.ThirdPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThirdPlayCard.TabIndex = 4;
             this.ThirdPlayCard.TabStop = false;
-            this.ThirdPlayCard.Click += new System.EventHandler(this.ThirdPlayCard_Click);
             // 
             // FirthPlayCard
             // 
@@ -822,7 +809,6 @@
             this.Cardchoise1.TabIndex = 62;
             this.Cardchoise1.Text = "checkBox5";
             this.Cardchoise1.UseVisualStyleBackColor = true;
-            this.Cardchoise1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // Cardchoice2
             // 
