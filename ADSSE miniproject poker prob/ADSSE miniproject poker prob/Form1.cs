@@ -195,16 +195,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_A;
+                        SecondHandCard.Image = Properties.Resources.Hearts_A;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_A;
+                        SecondHandCard.Image = Properties.Resources.Spades_A;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_A;
+                        SecondHandCard.Image = Properties.Resources.Diamond_A;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_A;
+                        SecondHandCard.Image = Properties.Resources.Clubs_A;
                         return;
                     default:
                         break;
@@ -340,16 +340,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_2;
+                        SecondHandCard.Image = Properties.Resources.Hearts_2;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_2;
+                        SecondHandCard.Image = Properties.Resources.Spades_2;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_2;
+                        SecondHandCard.Image = Properties.Resources.Diamond_2;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_2;
+                        SecondHandCard.Image = Properties.Resources.Clubs_2;
                         return;
                     default:
                         break;
@@ -485,16 +485,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_3;
+                        SecondHandCard.Image = Properties.Resources.Hearts_3;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_3;
+                        SecondHandCard.Image = Properties.Resources.Spades_3;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_3;
+                        SecondHandCard.Image = Properties.Resources.Diamond_3;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_3;
+                        SecondHandCard.Image = Properties.Resources.Clubs_3;
                         return;
                     default:
                         break;
@@ -631,16 +631,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_4;
+                        SecondHandCard.Image = Properties.Resources.Hearts_4;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_4;
+                        SecondHandCard.Image = Properties.Resources.Spades_4;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_4;
+                        SecondHandCard.Image = Properties.Resources.Diamond_4;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_4;
+                        SecondHandCard.Image = Properties.Resources.Clubs_4;
                         return;
                     default:
                         break;
@@ -777,16 +777,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_5;
+                        SecondHandCard.Image = Properties.Resources.Hearts_5;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_5;
+                        SecondHandCard.Image = Properties.Resources.Spades_5;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_5;
+                        SecondHandCard.Image = Properties.Resources.Diamond_5;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_5;
+                        SecondHandCard.Image = Properties.Resources.Clubs_5;
                         return;
                     default:
                         break;
@@ -923,16 +923,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_6;
+                        SecondHandCard.Image = Properties.Resources.Hearts_6;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_6;
+                        SecondHandCard.Image = Properties.Resources.Spades_6;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_6;
+                        SecondHandCard.Image = Properties.Resources.Diamond_6;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_6;
+                        SecondHandCard.Image = Properties.Resources.Clubs_6;
                         return;
                     default:
                         break;
@@ -1069,16 +1069,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_7;
+                        SecondHandCard.Image = Properties.Resources.Hearts_7;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_7;
+                        SecondHandCard.Image = Properties.Resources.Spades_7;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_7;
+                        SecondHandCard.Image = Properties.Resources.Diamond_7;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_7;
+                        SecondHandCard.Image = Properties.Resources.Clubs_7;
                         return;
                     default:
                         break;
@@ -1215,16 +1215,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_8;
+                        SecondHandCard.Image = Properties.Resources.Hearts_8;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_8;
+                        SecondHandCard.Image = Properties.Resources.Spades_8;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_8;
+                        SecondHandCard.Image = Properties.Resources.Diamond_8;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_8;
+                        SecondHandCard.Image = Properties.Resources.Clubs_8;
                         return;
                     default:
                         break;
@@ -1361,16 +1361,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_9;
+                        SecondHandCard.Image = Properties.Resources.Hearts_9;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_9;
+                        SecondHandCard.Image = Properties.Resources.Spades_9;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_9;
+                        SecondHandCard.Image = Properties.Resources.Diamond_9;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_9;
+                        SecondHandCard.Image = Properties.Resources.Clubs_9;
                         return;
                     default:
                         break;
@@ -1507,16 +1507,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_10;
+                        SecondHandCard.Image = Properties.Resources.Hearts_10;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_10;
+                        SecondHandCard.Image = Properties.Resources.Spades_10;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_10;
+                        SecondHandCard.Image = Properties.Resources.Diamond_10;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_10;
+                        SecondHandCard.Image = Properties.Resources.Clubs_10;
                         return;
                     default:
                         break;
@@ -1652,16 +1652,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_J;
+                        SecondHandCard.Image = Properties.Resources.Hearts_J;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_J;
+                        SecondHandCard.Image = Properties.Resources.Spades_J;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_J;
+                        SecondHandCard.Image = Properties.Resources.Diamond_J;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_J;
+                        SecondHandCard.Image = Properties.Resources.Clubs_J;
                         return;
                     default:
                         break;
@@ -1797,16 +1797,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_Q;
+                        SecondHandCard.Image = Properties.Resources.Hearts_Q;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_Q;
+                        SecondHandCard.Image = Properties.Resources.Spades_Q;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_Q;
+                        SecondHandCard.Image = Properties.Resources.Diamond_Q;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_Q;
+                        SecondHandCard.Image = Properties.Resources.Clubs_Q;
                         return;
                     default:
                         break;
@@ -1943,16 +1943,16 @@ namespace ADSSE_miniproject_poker_prob
                 switch (CardSuit1.Text)
                 {
                     case "Hearts":
-                        SecoundHandCard.Image = Properties.Resources.Hearts_K;
+                        SecondHandCard.Image = Properties.Resources.Hearts_K;
                         break;
                     case "Spades":
-                        SecoundHandCard.Image = Properties.Resources.Spades_K;
+                        SecondHandCard.Image = Properties.Resources.Spades_K;
                         break;
                     case "Diamonds":
-                        SecoundHandCard.Image = Properties.Resources.Diamond_K;
+                        SecondHandCard.Image = Properties.Resources.Diamond_K;
                         break;
                     case "Clubs":
-                        SecoundHandCard.Image = Properties.Resources.Clubs_K;
+                        SecondHandCard.Image = Properties.Resources.Clubs_K;
                         return;
                     default:
                         break;
@@ -2199,6 +2199,14 @@ namespace ADSSE_miniproject_poker_prob
                 ComCard3.Checked = false;
                 ComCard4.Checked = false;
                 ComCard5.Checked = false;
+
+                FirstHandCard.Image = null;
+                SecondHandCard.Image = null;
+                FirstPlayCard.Image = null;
+                SecondPlayCard.Image = null;
+                ThirdPlayCard.Image = null;
+                FourthPlayCard.Image = null;
+                FifthPlayCard.Image = null;
 
                 //reset GameDeck and currentHand
                 currentHand.Clear();

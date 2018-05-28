@@ -63,7 +63,7 @@
             this.TwoCard = new System.Windows.Forms.PictureBox();
             this.AceCard = new System.Windows.Forms.PictureBox();
             this.FirstHandCard = new System.Windows.Forms.PictureBox();
-            this.SecoundHandCard = new System.Windows.Forms.PictureBox();
+            this.SecondHandCard = new System.Windows.Forms.PictureBox();
             this.SecondPlayCard = new System.Windows.Forms.PictureBox();
             this.ThirdPlayCard = new System.Windows.Forms.PictureBox();
             this.FourthPlayCard = new System.Windows.Forms.PictureBox();
@@ -96,7 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TwoCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AceCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstHandCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondHandCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).BeginInit();
@@ -520,15 +520,15 @@
             this.FirstHandCard.TabIndex = 7;
             this.FirstHandCard.TabStop = false;
             // 
-            // SecoundHandCard
+            // SecondHandCard
             // 
-            this.SecoundHandCard.Location = new System.Drawing.Point(228, 160);
-            this.SecoundHandCard.Margin = new System.Windows.Forms.Padding(2);
-            this.SecoundHandCard.Name = "SecoundHandCard";
-            this.SecoundHandCard.Size = new System.Drawing.Size(67, 103);
-            this.SecoundHandCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SecoundHandCard.TabIndex = 6;
-            this.SecoundHandCard.TabStop = false;
+            this.SecondHandCard.Location = new System.Drawing.Point(228, 160);
+            this.SecondHandCard.Margin = new System.Windows.Forms.Padding(2);
+            this.SecondHandCard.Name = "SecondHandCard";
+            this.SecondHandCard.Size = new System.Drawing.Size(67, 103);
+            this.SecondHandCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SecondHandCard.TabIndex = 6;
+            this.SecondHandCard.TabStop = false;
             // 
             // SecondPlayCard
             // 
@@ -728,7 +728,7 @@
             this.Controls.Add(this.TwoCard);
             this.Controls.Add(this.AceCard);
             this.Controls.Add(this.FirstHandCard);
-            this.Controls.Add(this.SecoundHandCard);
+            this.Controls.Add(this.SecondHandCard);
             this.Controls.Add(this.SecondPlayCard);
             this.Controls.Add(this.ThirdPlayCard);
             this.Controls.Add(this.FourthPlayCard);
@@ -761,7 +761,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TwoCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AceCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstHandCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SecondHandCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).EndInit();
@@ -780,7 +780,7 @@
         private System.Windows.Forms.PictureBox FourthPlayCard;
         private System.Windows.Forms.PictureBox ThirdPlayCard;
         private System.Windows.Forms.PictureBox SecondPlayCard;
-        private System.Windows.Forms.PictureBox SecoundHandCard;
+        private System.Windows.Forms.PictureBox SecondHandCard;
         private System.Windows.Forms.PictureBox FirstHandCard;
         private System.Windows.Forms.PictureBox AceCard;
         private System.Windows.Forms.PictureBox TwoCard;
