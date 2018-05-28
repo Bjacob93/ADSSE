@@ -2083,6 +2083,11 @@ namespace ADSSE_miniproject_poker_prob
                     break;
             }
 
+            if(currentHand.Count == 2 || currentHand.Count == 5 || currentHand.Count == 6)
+            {
+                pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck));
+            }
+
             if (check == 1)
             {
                 if (FirstBox.Visible == true && CardSuit1.Text == "label1" || CardNumber1.Text == "label3")
