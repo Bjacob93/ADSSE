@@ -12,11 +12,14 @@ namespace ADSSE_miniproject_poker_prob
         bool pair = false;
         float probability = 0;
 
+        //calculates the probability of getting a pair
         public float ProbabilityOfPair(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
+            //sort the list in decending order
+            currentCards.Sort();
+            currentCards.Reverse();
 
-            float probabilityOfFirstCard = 0;
-            float probabilityOfSecondCard = 0;
+
             if (currentCards.Count == 2)
             {
                 //probability for a pair if you have two cards in hand.
@@ -28,8 +31,6 @@ namespace ADSSE_miniproject_poker_prob
                                 probability = 1;
                             }
                             else{
-                                probabilityOfFirstCard = (deck.TypeOfCardLeft(GameDeck, c.rank) / deck.CardsLeft(GameDeck));
-                                probabilityOfSecondCard = (deck.TypeOfCardLeft(GameDeck, d.rank) / deck.CardsLeft(GameDeck));
                                 probability = (float)(deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (float)(deck.CardsLeft(GameDeck));
                             }
                         }
@@ -37,45 +38,69 @@ namespace ADSSE_miniproject_poker_prob
                 }
             }
 
-            if(currentCards.Count == 5 || currentCards.Count == 7)
+            if(currentCards.Count == 5)
             {
-                foreach(BuildDeck.Card c in currentCards){
-                    foreach(BuildDeck.Card d in currentCards){
-                        if(c != d){
-                            if(c.rank == d.rank){
+                for(int i = 0; i < currentCards.Count-1; i++){
+                    for(int j = 1; j < currentCards.Count; j++){
+                            if(currentCards[i].rank == currentCards[j].rank){
                                 pair = true;
                                 probability = 100;
-                            }else
-                            {
-                                probability = probability * ((deck.TypeOfCardLeft(GameDeck, c.rank) / deck.CardsLeft(GameDeck)));
                             }
-                        }
+                        else {
+                            probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
+                                               + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (float)(deck.CardsLeft(GameDeck));
+                            }
                     }
                 }
             }
+            if(currentCards.Count == 6){
+                for (int i = 0; i < currentCards.Count - 1; i++){
+                    for (int j = 1; j < currentCards.Count; j++){
+                        if (currentCards[i].rank == currentCards[j].rank){
+                            pair = true;
+                            probability = 100;
+                        }
+                        else{
+                            probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
+                                               + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank))) +
+                                                 ((deck.TypeOfCardLeft(GameDeck, currentCards[5].rank)))) / (float)(deck.CardsLeft(GameDeck));
+                        }
+                    }
+                }
+
+            }
+
             return probability * 100f;
         }
 
         public float ProbabilityOfThreeOfaKind(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
-            foreach (BuildDeck.Card c in currentCards)
-            {
-                foreach(BuildDeck.Card d in currentCards)
-{
-                    if(currentCards.Count == 2)
-                    {
-                        if(c != d)
-                        {
-                            if(c.rank == d.rank)
-                            {
-                                probability = ((float)(deck.TypeOfCardLeft(GameDeck, c.rank)) / (float)deck.CardsLeft(GameDeck));
-                            }else
-                            {
-                            }
+            if(currentCards.Count == 2){
+                for(int i = 0; i < currentCards.Count - 1; i++){
+                    for(int j = 1; j < currentCards.Count; j++){
+                        if(currentCards[i].rank == currentCards[j].rank){
+                            probability = (float)(deck.TypeOfCardLeft(GameDeck, currentCards[i].rank)) / (float)(deck.CardsLeft(GameDeck));
+                        }
+                        else{
+
                         }
                     }
                 }
             }
+            else if(currentCards.Count == 5){
+
+            }
+            else if(currentCards.Count == 6){
+
+            }
+
+
             return probability * 100f;
         }
     }
