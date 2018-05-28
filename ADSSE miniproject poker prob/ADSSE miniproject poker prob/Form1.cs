@@ -101,7 +101,7 @@ namespace ADSSE_miniproject_poker_prob
             ClubsBox2.Checked = false;
             SpadesBox2.Checked = false;
             DiamondBox2.Checked = false;
-            CardSuit2.Text = HeartsBox2.Text;
+            CardSuit1.Text = HeartsBox2.Text;
         }
 
         private void ClubsBox2_CheckedChanged(object sender, EventArgs e)
@@ -109,7 +109,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             SpadesBox2.Checked = false;
             DiamondBox2.Checked = false;
-            CardSuit2.Text = ClubsBox2.Text;
+            CardSuit1.Text = ClubsBox2.Text;
         }
 
         private void DiamondBox2_CheckedChanged(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             SpadesBox2.Checked = false;
             ClubsBox2.Checked = false;
-            CardSuit2.Text = DiamondBox2.Text;
+            CardSuit1.Text = DiamondBox2.Text;
         }
 
         private void SpadesBox2_CheckedChanged(object sender, EventArgs e)
@@ -125,7 +125,7 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox2.Checked = false;
             ClubsBox2.Checked = false;
             DiamondBox2.Checked = false;
-            CardSuit2.Text = SpadesBox2.Text;
+            CardSuit1.Text = SpadesBox2.Text;
         }
 
         private void ClubsBox3_CheckedChanged(object sender, EventArgs e)
@@ -133,16 +133,8 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             SpadesBox3.Checked = false;
             DiamondBox3.Checked = false;
-            if(ComCard1.Checked==false)
-            cardsuitchoice1.Text = ClubsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked==false)
-                cardsuitchoice2.Text = ClubsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked==false)
-                cardsuitchoice3.Text = ClubsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
-                cardsuitchoice4.Text = ClubsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardsuitchoice5.Text = ClubsBox3.Text;
+            CardSuit1.Text = ClubsBox3.Text;
+
         }
 
         private void DiamondBox3_CheckedChanged(object sender, EventArgs e)
@@ -150,16 +142,8 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             SpadesBox3.Checked = false;
             ClubsBox3.Checked = false;
-            if (ComCard1.Checked == false)
-                cardsuitchoice1.Text = DiamondBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == false)
-                cardsuitchoice2.Text = DiamondBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
-                cardsuitchoice3.Text = DiamondBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
-                cardsuitchoice4.Text = DiamondBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardsuitchoice5.Text = DiamondBox3.Text;
+            CardSuit1.Text = DiamondBox3.Text;
+
         }
 
         private void SpadesBox3_CheckedChanged(object sender, EventArgs e)
@@ -167,16 +151,8 @@ namespace ADSSE_miniproject_poker_prob
             HeartsBox3.Checked = false;
             ClubsBox3.Checked = false;
             DiamondBox3.Checked = false;
-            if (ComCard1.Checked == false)
-                cardsuitchoice1.Text = SpadesBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == false)
-                cardsuitchoice2.Text = SpadesBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
-                cardsuitchoice3.Text = SpadesBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
-                cardsuitchoice4.Text = SpadesBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardsuitchoice5.Text = SpadesBox3.Text;
+            CardSuit1.Text = SpadesBox3.Text;
+
         }
 
         private void HeartsBox3_CheckedChanged(object sender, EventArgs e)
@@ -184,16 +160,8 @@ namespace ADSSE_miniproject_poker_prob
             ClubsBox3.Checked = false;
             SpadesBox3.Checked = false;
             DiamondBox3.Checked = false;
-            if (ComCard1.Checked == false)
-                cardsuitchoice1.Text = HeartsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == false)
-                cardsuitchoice2.Text = HeartsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
-                cardsuitchoice3.Text = HeartsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
-                cardsuitchoice4.Text = HeartsBox3.Text;
-            if (ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardsuitchoice5.Text = HeartsBox3.Text;
+            CardSuit1.Text = HeartsBox3.Text;
+
         }
        void setCard()
         {
@@ -201,465 +169,1895 @@ namespace ADSSE_miniproject_poker_prob
 
         private void AceCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "0";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "0";
-            if (CardNumber1.Text == "0" && CardSuit1.Text == "Spades") 
-                    FirstHandCard.Image = Properties.Resources.Spades_A;
-                if (CardNumber2.Text == "0" && CardSuit2.Text == "Spades")
-                      SecoundHandCard.Image = Properties.Resources.Spades_A;
-            if (cardnumberchoice1.Text == "0" && cardsuitchoice1.Text == "Spades")
-                FirstPlayCard.Image = Properties.Resources.Spades_A;
-
-                if (CardNumber1.Text == "0" && CardSuit1.Text == "Hearts")
-                      FirstHandCard.Image = Properties.Resources.Hearts_A;
-                if (CardNumber2.Text == "0" && CardSuit2.Text == "Hearts")
-                     SecoundHandCard.Image = Properties.Resources.Hearts_A;
-            
-            if (CardNumber1.Text == "0" && CardSuit1.Text == "Diamonds")
-                      FirstHandCard.Image = Properties.Resources.Diamond_A;
-                if (CardNumber2.Text == "0" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_A;
-            
-            if (CardNumber1.Text == "0" && CardSuit1.Text == "Clubs")
-                FirstHandCard.Image = Properties.Resources.Clubs_A;
-            if (CardNumber2.Text == "0" && CardSuit2.Text == "Clubs")
-                SecoundHandCard.Image = Properties.Resources.Clubs_A;
-           
-
-
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_A;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_A;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_A;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_A;
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void TwoCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "1";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "1";
-            if (CardNumber1.Text == "1" && CardSuit1.Text == "Spades")
-                      FirstHandCard.Image = Properties.Resources.Spades_2;
-                if (CardNumber2.Text == "1" && CardSuit2.Text == "Spades")
-                    SecoundHandCard.Image = Properties.Resources.Spades_2;
-            
-            if (CardNumber1.Text == "1" && CardSuit1.Text == "Hearts")
-                      FirstHandCard.Image = Properties.Resources.Hearts_2;
-                if (CardNumber2.Text == "1" && CardSuit2.Text == "Hearts")
-                    SecoundHandCard.Image = Properties.Resources.Hearts_2;
-            
-            if (CardNumber1.Text == "1" && CardSuit1.Text == "Diamonds")
-                      FirstHandCard.Image = Properties.Resources.Diamond_2;
-                if (CardNumber2.Text == "1" && CardSuit2.Text == "Diamonds")
-                     SecoundHandCard.Image = Properties.Resources.Diamond_2;
-            
-            if (CardNumber1.Text == "1" && CardSuit1.Text == "Clubs")
-                      FirstHandCard.Image = Properties.Resources.Clubs_2;
-                if (CardNumber2.Text == "1" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_2;
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_2;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_2;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_2;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_2;
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void ThirdCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "2";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "2";
-            if (CardNumber1.Text == "2" && CardSuit1.Text == "Spades")
-                      FirstHandCard.Image = Properties.Resources.Spades_3;
-                if (CardNumber2.Text == "2" && CardSuit2.Text == "Spades")
-                      SecoundHandCard.Image = Properties.Resources.Spades_3;
-            
-            if (CardNumber1.Text == "2" && CardSuit1.Text == "Hearts")
-                       FirstHandCard.Image = Properties.Resources.Hearts_3;
-            if (CardNumber2.Text == "2" && CardSuit2.Text == "Hearts")
-                SecoundHandCard.Image = Properties.Resources.Hearts_3;
-            
-            if (CardNumber1.Text == "2" && CardSuit1.Text == "Diamonds")
-                     FirstHandCard.Image = Properties.Resources.Diamond_3;
-                if (CardNumber2.Text == "2" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_3;
-            
-            if (CardNumber1.Text == "2" && CardSuit1.Text == "Clubs")
-                    FirstHandCard.Image = Properties.Resources.Clubs_3;
-                if (CardNumber2.Text == "2" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_3;
-            
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_3;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_3;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_3;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_3;
+                        return;
+                    default:
+                        break;
+                }
+            }
+
         }
 
         private void FouthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "3";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "3";
-            if (CardNumber1.Text == "3" && CardSuit1.Text == "Spades")
-            
-                    FirstHandCard.Image = Properties.Resources.Spades_4;
-            if (CardNumber2.Text == "3" && CardSuit2.Text == "Spades")
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_4;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_4;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_4;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_4;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-                SecoundHandCard.Image = Properties.Resources.Spades_4;
-            
-            if (CardNumber1.Text == "3" && CardSuit1.Text == "Hearts")
-                                FirstHandCard.Image = Properties.Resources.Hearts_4;
-                if (CardNumber2.Text == "3" && CardSuit2.Text == "Hearts")
-                                    SecoundHandCard.Image = Properties.Resources.Hearts_4;
-            
-            if (CardNumber1.Text == "3" && CardSuit1.Text == "Diamonds")
-            
-                    FirstHandCard.Image = Properties.Resources.Diamond_4;
-            if (CardNumber2.Text == "3" && CardSuit2.Text == "Diamonds")
-
-                SecoundHandCard.Image = Properties.Resources.Diamond_4;
-            
-            if (CardNumber1.Text == "3" && CardSuit1.Text == "Clubs")
-                      FirstHandCard.Image = Properties.Resources.Clubs_4;
-                if (CardNumber2.Text == "3" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_4;
-            
         }
 
         private void FifthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "4";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "4";
-            if (CardNumber1.Text == "4" && CardSuit1.Text == "Spades")
-                            FirstHandCard.Image = Properties.Resources.Spades_5;
-            if (CardNumber2.Text == "4" && CardSuit2.Text == "Spades")
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_5;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_5;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_5;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_5;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-                SecoundHandCard.Image = Properties.Resources.Spades_5;
-            
-            if (CardNumber1.Text == "4" && CardSuit1.Text == "Hearts")
-            
-                    FirstHandCard.Image = Properties.Resources.Hearts_5;
-            if (CardNumber2.Text == "4" && CardSuit2.Text == "Hearts")
-                SecoundHandCard.Image = Properties.Resources.Hearts_5;
-            
-            if (CardNumber1.Text == "4" && CardSuit1.Text == "Diamonds")
-            
-                    FirstHandCard.Image = Properties.Resources.Diamond_5;
-            if (CardNumber2.Text == "4" && CardSuit2.Text == "Diamonds")
-                SecoundHandCard.Image = Properties.Resources.Diamond_5;
-            
-            if (CardNumber1.Text == "4" && CardSuit1.Text == "Clubs")
-                    FirstHandCard.Image = Properties.Resources.Clubs_5;
-            if (CardNumber2.Text == "4" && CardSuit2.Text == "Clubs")
-                SecoundHandCard.Image = Properties.Resources.Clubs_5;
-            
         }
 
         private void SixthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "5";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "5";
-            if (CardNumber1.Text == "5" && CardSuit1.Text == "Spades")
-                FirstHandCard.Image = Properties.Resources.Spades_6;
-                
-            if (CardNumber2.Text == "5" && CardSuit2.Text == "Spades")
-                SecoundHandCard.Image = Properties.Resources.Spades_6;
-            
-            if (CardNumber1.Text == "5" && CardSuit1.Text == "Hearts")
-                                FirstHandCard.Image = Properties.Resources.Hearts_6;
-            if (CardNumber2.Text == "5" && CardSuit2.Text == "Hearts")
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_6;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_6;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_6;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_6;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-                SecoundHandCard.Image = Properties.Resources.Hearts_6;
-            
-            if (CardNumber1.Text == "5" && CardSuit1.Text == "Diamonds")
-            
-                    FirstHandCard.Image = Properties.Resources.Diamond_6;
-            if (CardNumber2.Text == "5" && CardSuit2.Text == "Diamonds")
-                SecoundHandCard.Image = Properties.Resources.Diamond_6;
-            
-            if (CardNumber1.Text == "5" && CardSuit1.Text == "Clubs")
-            
-                    FirstHandCard.Image = Properties.Resources.Clubs_6;
-            if (CardNumber2.Text == "5" && CardSuit2.Text == "Clubs")
-
-                SecoundHandCard.Image = Properties.Resources.Clubs_6;
-            
         }
 
         private void SeventhCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "6";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "6";
-            if (CardNumber1.Text == "6" && CardSuit1.Text == "Spades")
-                                FirstHandCard.Image = Properties.Resources.Spades_7;
-            if (CardNumber2.Text == "6" && CardSuit2.Text == "Spades")
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_7;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_7;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_7;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_7;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-                SecoundHandCard.Image = Properties.Resources.Spades_7;
-            
-            if (CardNumber1.Text == "6" && CardSuit1.Text == "Hearts")
-            
-                    FirstHandCard.Image = Properties.Resources.Hearts_7;
-            if (CardNumber2.Text == "6" && CardSuit2.Text == "Hearts")
-                SecoundHandCard.Image = Properties.Resources.Hearts_7;
-            
-            if (CardNumber1.Text == "6" && CardSuit1.Text == "Diamonds")
-                     FirstHandCard.Image = Properties.Resources.Diamond_7;
-            if (CardNumber2.Text == "6" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_7;
-            
-            if (CardNumber1.Text == "6" && CardSuit1.Text == "Clubs")
-                              FirstHandCard.Image = Properties.Resources.Clubs_7;
-            if (CardNumber2.Text == "6" && CardSuit2.Text == "Clubs")
-                SecoundHandCard.Image = Properties.Resources.Clubs_7;
-            
         }
 
         private void EigthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "7";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "7";
-            if (CardNumber1.Text == "7" && CardSuit1.Text == "Spades")
-                             FirstHandCard.Image = Properties.Resources.Spades_8;
-            if (CardNumber2.Text == "7" && CardSuit2.Text == "Spades")
-                SecoundHandCard.Image = Properties.Resources.Spades_8;
-            
-            if (CardNumber1.Text == "7" && CardSuit1.Text == "Hearts")
-                          FirstHandCard.Image = Properties.Resources.Hearts_8;
-            if (CardNumber2.Text == "7" && CardSuit2.Text == "Hearts")
-                SecoundHandCard.Image = Properties.Resources.Hearts_8;
-            
-            if (CardNumber1.Text == "7" && CardSuit1.Text == "Diamonds")
-                FirstHandCard.Image = Properties.Resources.Diamond_8;
-            if (CardNumber2.Text == "7" && CardSuit2.Text == "Diamonds")
-                SecoundHandCard.Image = Properties.Resources.Diamond_8;
-            
-            if (CardNumber1.Text == "7" && CardSuit1.Text == "Clubs")
-                FirstHandCard.Image = Properties.Resources.Clubs_8;
-            if (CardNumber2.Text == "7" && CardSuit2.Text == "Clubs")
-                SecoundHandCard.Image = Properties.Resources.Clubs_8;
-            
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_8;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_8;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_8;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_8;
+                        return;
+                    default:
+                        break;
+                }
+            }
+
         }
 
         private void NinthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "8";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "8";
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_9;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_9;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_9;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_9;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-            if (CardNumber1.Text == "8" && CardSuit1.Text == "Spades")
-                    FirstHandCard.Image = Properties.Resources.Spades_9;
-            if (CardNumber2.Text == "8" && CardSuit2.Text == "Spades")
-                SecoundHandCard.Image = Properties.Resources.Spades_9;
-            
-            if (CardNumber1.Text == "8" && CardSuit1.Text == "Hearts")
-                    FirstHandCard.Image = Properties.Resources.Hearts_9;
-            if (CardNumber2.Text == "8" && CardSuit2.Text == "Hearts")
-                SecoundHandCard.Image = Properties.Resources.Hearts_9;
-            
-            if (CardNumber1.Text == "8" && CardSuit1.Text == "Diamonds")
-                    FirstHandCard.Image = Properties.Resources.Diamond_9;
-                if (CardNumber2.Text == "8" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_9;
-            
-            if (CardNumber1.Text == "8" && CardSuit1.Text == "Clubs")
-                               FirstHandCard.Image = Properties.Resources.Clubs_9;
-                if (CardNumber2.Text == "8" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_9;
-            
         }
 
         private void TenthCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
                 CardNumber1.Text = "9";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "9";
-            if (CardNumber1.Text == "9" && CardSuit1.Text == "Spades")
-                    FirstHandCard.Image = Properties.Resources.Spades_10;
-                if (CardNumber2.Text == "9" && CardSuit2.Text == "Spades")
-                    SecoundHandCard.Image = Properties.Resources.Spades_10;
-           
-            if (CardNumber1.Text == "9" && CardSuit1.Text == "Hearts")
-                     FirstHandCard.Image = Properties.Resources.Hearts_10;
-                if (CardNumber2.Text == "9" && CardSuit2.Text == "Hearts")
-                    SecoundHandCard.Image = Properties.Resources.Hearts_10;
-            
-            if (CardNumber1.Text == "9" && CardSuit1.Text == "Diamonds")
-                FirstHandCard.Image = Properties.Resources.Diamond_10;
-                if (CardNumber2.Text == "9" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_10;
-            
-            if (CardNumber1.Text == "9" && CardSuit1.Text == "Clubs")
-                      FirstHandCard.Image = Properties.Resources.Clubs_10;
-                if (CardNumber2.Text == "9" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_10;
-
-        
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_10;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_10;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_10;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_10;
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void JackCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
-                CardNumber1.Text = "10";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "10";
-            if (CardNumber1.Text == "10" && CardSuit1.Text == "Spades")
-                             FirstHandCard.Image = Properties.Resources.Spades_J;
-                if (CardNumber2.Text == "10" && CardSuit2.Text == "Spades")
-
-                    SecoundHandCard.Image = Properties.Resources.Spades_J;
-            
-            if (CardNumber1.Text == "10" && CardSuit1.Text == "Hearts")
-            
-                    FirstHandCard.Image = Properties.Resources.Hearts_J;
-                if (CardNumber2.Text == "10" && CardSuit2.Text == "Hearts")
-
-                    SecoundHandCard.Image = Properties.Resources.Hearts_J;
-            
-            if (CardNumber1.Text == "10" && CardSuit1.Text == "Diamonds")
-                    FirstHandCard.Image = Properties.Resources.Diamond_J;
-            if (CardNumber2.Text == "10" && CardSuit2.Text == "Diamonds")
-                    SecoundHandCard.Image = Properties.Resources.Diamond_J;
-           if (CardNumber1.Text == "10" && CardSuit1.Text == "Clubs")
-                    FirstHandCard.Image = Properties.Resources.Clubs_J;
-            if (CardNumber2.Text == "10" && CardSuit2.Text == "Clubs")
-
-                    SecoundHandCard.Image = Properties.Resources.Clubs_J;
-            
+          CardNumber1.Text = "10";
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_J;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_J;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_J;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_J;
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void QueenCard_Click(object sender, EventArgs e)
         {
-            if(FirstBox.Visible==true)
-                               CardNumber1.Text = "11";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "11";
-            if (CommunityBox.Visible == true && ComCard1.Checked == false)
-                cardnumberchoice1.Text = "11";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == false)
-                cardnumberchoice2.Text = "11";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == false)
-                cardnumberchoice3.Text = "11";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == false)
-                cardnumberchoice4.Text = "11";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardnumberchoice5.Text = "11";
-            if (CardNumber1.Text == "11" && CardSuit1.Text == "Spades")
-                FirstHandCard.Image = Properties.Resources.Spades_Q;
-            
-            if (CardNumber2.Text == "11" && CardSuit2.Text == "Spades") 
-                SecoundHandCard.Image = Properties.Resources.Spades_Q;
-            
-            if (CardNumber1.Text == "11" && CardSuit1.Text == "Hearts")
-                    FirstHandCard.Image = Properties.Resources.Hearts_Q;
-                if (CardNumber2.Text == "11" && CardSuit2.Text == "Hearts")
-                    SecoundHandCard.Image = Properties.Resources.Hearts_Q;
-            
-            if (CardNumber1.Text == "11" && CardSuit1.Text == "Diamonds")           
-                    FirstHandCard.Image = Properties.Resources.Diamond_Q;
-            if (CardNumber2.Text == "11" && CardSuit2.Text == "Diamonds")
-                SecoundHandCard.Image = Properties.Resources.Diamond_Q;
+            CardNumber1.Text = "11";
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_Q;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_Q;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_Q;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_Q;
+                        return;
+                    default:
+                        break;
+                }
+            }
 
-            if (CardNumber1.Text == "11" && CardSuit1.Text == "Clubs")
-                    FirstHandCard.Image = Properties.Resources.Clubs_Q;
-                if (CardNumber2.Text == "11" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_Q;
-            if (cardnumberchoice1.Text == "11" && cardsuitchoice1.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_Q;
-            if (cardnumberchoice2.Text == "11" && cardsuitchoice2.Text == "Clubs")
-                SecondPlayCard.Image = Properties.Resources.Clubs_Q;
-            if (cardnumberchoice3.Text == "11" && cardsuitchoice3.Text == "Clubs")
-                ThirdPlayCard.Image = Properties.Resources.Clubs_Q;
-            if (cardnumberchoice4.Text == "11" && cardsuitchoice4.Text == "Clubs")
-                FirthPlayCard.Image = Properties.Resources.Clubs_Q;
-            if (cardnumberchoice5.Text == "11" && cardsuitchoice5.Text == "Clubs")
-                FifthCard.Image = Properties.Resources.Clubs_Q;
         }
 
         private void KingCard_Click(object sender, EventArgs e)
         {
-            if (FirstBox.Visible == true)
-                CardNumber1.Text = "12";
-            if (SecoundBox.Visible == true)
-                CardNumber2.Text = "12";
-            if (CommunityBox.Visible == true && ComCard1.Checked == false)
-                cardnumberchoice1.Text = "12";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked==false)
-                cardnumberchoice2.Text = "12";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked==false)
-                cardnumberchoice3.Text = "12";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked==false)
-                cardnumberchoice4.Text = "12";
-            if (CommunityBox.Visible == true && ComCard1.Checked == true && ComCard2.Checked == true && ComCard3.Checked == true && ComCard4.Checked == true)
-                cardnumberchoice5.Text = "12";
-
-
-            if (CardNumber1.Text == "12" && CardSuit1.Text == "Spades")
-                FirstHandCard.Image = Properties.Resources.Spades_K;
-            if (CardNumber2.Text == "12" && CardSuit2.Text == "Spades")
-                SecoundHandCard.Image = Properties.Resources.Spades_K;
-
-            
-            if (CardNumber1.Text == "12" && CardSuit1.Text == "Hearts")
-            
-                    FirstHandCard.Image = Properties.Resources.Hearts_K;
-                if (CardNumber2.Text == "12" && CardSuit2.Text == "Hearts")
-                    SecoundHandCard.Image = Properties.Resources.Hearts_K;
-
-            if (CardNumber1.Text == "12" && CardSuit1.Text == "Diamonds")
-
-                    FirstHandCard.Image = Properties.Resources.Diamond_K;
-            if (CardNumber2.Text == "12" && CardSuit2.Text == "Diamonds")
-                SecoundHandCard.Image = Properties.Resources.Diamond_K;
-           
-            if (CardNumber1.Text == "12" && CardSuit1.Text == "Clubs")
-                FirstHandCard.Image = Properties.Resources.Clubs_K;
-                if (CardNumber2.Text == "12" && CardSuit2.Text == "Clubs")
-                    SecoundHandCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Clubs")
-                FirstPlayCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Clubs")
-                SecondPlayCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Clubs")
-                ThirdPlayCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Clubs")
-                FirthPlayCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Clubs")
-                FifthCard.Image = Properties.Resources.Clubs_K;
-            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Hearts")
-                FirstPlayCard.Image = Properties.Resources.Hearts_K;
-            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Hearts")
-                SecondPlayCard.Image = Properties.Resources.Hearts_K;
-            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Hearts")
-                ThirdPlayCard.Image = Properties.Resources.Hearts_K;
-            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Hearts")
-                FirthPlayCard.Image = Properties.Resources.Hearts_K;
-            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Hearts")
-                FifthCard.Image = Properties.Resources.Hearts_K;
-            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Spades")
-                FirstPlayCard.Image = Properties.Resources.Spades_K;
-            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Spades")
-                SecondPlayCard.Image = Properties.Resources.Spades_K;
-            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Spades")
-                ThirdPlayCard.Image = Properties.Resources.Spades_K;
-            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Spades")
-                FirthPlayCard.Image = Properties.Resources.Spades_K;
-            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Spades")
-                FifthCard.Image = Properties.Resources.Spades_K;
-            if (cardnumberchoice1.Text == "12" && cardsuitchoice1.Text == "Diamonds")
-                FirstPlayCard.Image = Properties.Resources.Diamond_K;
-            if (cardnumberchoice2.Text == "12" && cardsuitchoice2.Text == "Diamonds")
-                SecondPlayCard.Image = Properties.Resources.Diamond_K;
-            if (cardnumberchoice3.Text == "12" && cardsuitchoice3.Text == "Diamonds")
-                ThirdPlayCard.Image = Properties.Resources.Diamond_K;
-            if (cardnumberchoice4.Text == "12" && cardsuitchoice4.Text == "Diamonds")
-                FirthPlayCard.Image = Properties.Resources.Diamond_K;
-            if (cardnumberchoice5.Text == "12" && cardsuitchoice5.Text == "Diamonds")
-                FifthCard.Image = Properties.Resources.Diamond_K;
-
-
-
+            CardNumber1.Text = "12";
+            if (Cardchoice1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstHandCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        FirstHandCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        FirstHandCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        FirstHandCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice1.Checked == true && Cardchoice2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecoundHandCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        SecoundHandCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        SecoundHandCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        SecoundHandCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (Cardchoice2.Checked == true && ComCard1.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FirstPlayCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        FirstPlayCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        FirstPlayCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        FirstPlayCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard1.Checked == true && ComCard2.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        SecondPlayCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        SecondPlayCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        SecondPlayCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        SecondPlayCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard2.Checked == true && ComCard3.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        ThirdPlayCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        ThirdPlayCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        ThirdPlayCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        ThirdPlayCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard3.Checked == true && ComCard4.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FourthPlayCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        FourthPlayCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        FourthPlayCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        FourthPlayCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
+            if (ComCard4.Checked == true && ComCard5.Checked == false)
+            {
+                switch (CardSuit1.Text)
+                {
+                    case "Hearts":
+                        FifthPlayCard.Image = Properties.Resources.Hearts_K;
+                        break;
+                    case "Spades":
+                        FifthPlayCard.Image = Properties.Resources.Spades_K;
+                        break;
+                    case "Diamonds":
+                        FifthPlayCard.Image = Properties.Resources.Diamond_K;
+                        break;
+                    case "Clubs":
+                        FifthPlayCard.Image = Properties.Resources.Clubs_K;
+                        return;
+                    default:
+                        break;
+                }
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -700,6 +2098,9 @@ namespace ADSSE_miniproject_poker_prob
                     check--;
                 else
                 {
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
+                    Cardchoice1.Checked = true;
                     FirstBox.Visible = false;
                     SecoundBox.Visible = true;
                 }
@@ -708,10 +2109,13 @@ namespace ADSSE_miniproject_poker_prob
             
             if (check == 2)
             {
-                if (SecoundBox.Visible == true && CardSuit2.Text == "label4" || CardNumber2.Text=="label5")
+                if (SecoundBox.Visible == true && Cardchoice1.Checked==false)
                     check--;
                 else
                 {
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
+                    Cardchoice2.Checked = true;
                     SecoundBox.Visible = false;
                     CommunityBox.Visible = true;
                 }
@@ -720,59 +2124,59 @@ namespace ADSSE_miniproject_poker_prob
 
             if (check == 3)
             {
-                if (CommunityBox.Visible == true && cardsuitchoice1.Text == "label1" || cardnumberchoice1.Text == "label3" )
+                if (CommunityBox.Visible == true && Cardchoice2.Checked==false)
                     check--;
                 else {
                     ComCard1.Checked = true;
-                    cardnumberchoice1.Text = cardnumberchoice1.Text;
-                    cardsuitchoice1.Text = cardsuitchoice1.Text;
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
                 }
 
             }
 
             if (check == 4)
             {
-                if (ComCard1.Checked == true && cardsuitchoice2.Text == "label1" || cardnumberchoice2.Text == "label3")
+                if (CommunityBox.Visible == true && ComCard1.Checked == false)
                     check--;
                 else
                 {
                     ComCard2.Checked = true;
-                    cardnumberchoice2.Text = cardnumberchoice2.Text;
-                    cardsuitchoice2.Text = cardsuitchoice2.Text;
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
                 }
             }
             if (check == 5)
             {
-                if (ComCard2.Checked == true && cardsuitchoice3.Text == "label1" || cardnumberchoice3.Text == "label3")
+                if (CommunityBox.Visible == true && ComCard2.Checked == false)
                     check--;
                 else
                 {
                     ComCard3.Checked = true;
-                    cardnumberchoice3.Text = cardnumberchoice3.Text;
-                    cardsuitchoice3.Text = cardsuitchoice3.Text;
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
                 }
             }
             if (check == 6 )
             {
-                if (ComCard3.Checked == true && cardsuitchoice4.Text == "label1" || cardnumberchoice4.Text == "label3")
+                if (CommunityBox.Visible == true && ComCard3.Checked == false)
                     check--;
                 else
                 {
                     ComCard4.Checked = true;
-                    cardnumberchoice4.Text = cardnumberchoice4.Text;
-                    cardsuitchoice4.Text = cardsuitchoice4.Text;
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
                 }
             }
 
             if (check == 7)
             {
-                if (ComCard4.Checked == true && cardsuitchoice5.Text == "label1" || cardnumberchoice5.Text == "label3")
+                if (CommunityBox.Visible == true && ComCard4.Checked == false)
                     check--;
                 else
                 {
                     ComCard5.Checked = true;
-                    cardnumberchoice5.Text = cardnumberchoice5.Text;
-                    cardsuitchoice5.Text = cardsuitchoice5.Text;
+                    CardNumber1.Text = CardNumber1.Text;
+                    CardSuit1.Text = CardSuit1.Text;
                     ConfirmButton.Visible = false;
 
                 }
@@ -803,6 +2207,5 @@ namespace ADSSE_miniproject_poker_prob
 
             }
         }
-
     }
 }

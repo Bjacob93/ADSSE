@@ -49,8 +49,6 @@
             this.CommunityBox = new System.Windows.Forms.GroupBox();
             this.CardSuit1 = new System.Windows.Forms.Label();
             this.CardNumber1 = new System.Windows.Forms.Label();
-            this.CardSuit2 = new System.Windows.Forms.Label();
-            this.CardNumber2 = new System.Windows.Forms.Label();
             this.JackCard = new System.Windows.Forms.PictureBox();
             this.KingCard = new System.Windows.Forms.PictureBox();
             this.QueenCard = new System.Windows.Forms.PictureBox();
@@ -68,28 +66,18 @@
             this.SecoundHandCard = new System.Windows.Forms.PictureBox();
             this.SecondPlayCard = new System.Windows.Forms.PictureBox();
             this.ThirdPlayCard = new System.Windows.Forms.PictureBox();
-            this.FirthPlayCard = new System.Windows.Forms.PictureBox();
+            this.FourthPlayCard = new System.Windows.Forms.PictureBox();
             this.FifthPlayCard = new System.Windows.Forms.PictureBox();
             this.FirstPlayCard = new System.Windows.Forms.PictureBox();
             this.ConfirmButton = new System.Windows.Forms.Button();
             this.ResetButton = new System.Windows.Forms.Button();
-            this.cardsuitchoice1 = new System.Windows.Forms.Label();
-            this.cardnumberchoice1 = new System.Windows.Forms.Label();
-            this.cardnumberchoice2 = new System.Windows.Forms.Label();
-            this.cardsuitchoice2 = new System.Windows.Forms.Label();
-            this.cardnumberchoice3 = new System.Windows.Forms.Label();
-            this.cardsuitchoice3 = new System.Windows.Forms.Label();
-            this.cardnumberchoice4 = new System.Windows.Forms.Label();
-            this.cardsuitchoice4 = new System.Windows.Forms.Label();
-            this.cardnumberchoice5 = new System.Windows.Forms.Label();
-            this.cardsuitchoice5 = new System.Windows.Forms.Label();
             this.ComCard1 = new System.Windows.Forms.CheckBox();
             this.ComCard2 = new System.Windows.Forms.CheckBox();
             this.ComCard3 = new System.Windows.Forms.CheckBox();
             this.ComCard4 = new System.Windows.Forms.CheckBox();
             this.ComCard5 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Cardchoise1 = new System.Windows.Forms.CheckBox();
+            this.Cardchoice1 = new System.Windows.Forms.CheckBox();
             this.Cardchoice2 = new System.Windows.Forms.CheckBox();
             this.FirstBox.SuspendLayout();
             this.SecoundBox.SuspendLayout();
@@ -111,7 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).BeginInit();
             this.SuspendLayout();
@@ -130,7 +118,7 @@
             // 
             this.ClubsBox2.AutoSize = true;
             this.ClubsBox2.Location = new System.Drawing.Point(88, 15);
-            this.ClubsBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClubsBox2.Margin = new System.Windows.Forms.Padding(2);
             this.ClubsBox2.Name = "ClubsBox2";
             this.ClubsBox2.Size = new System.Drawing.Size(52, 17);
             this.ClubsBox2.TabIndex = 28;
@@ -142,7 +130,7 @@
             // 
             this.SpadesBox2.AutoSize = true;
             this.SpadesBox2.Location = new System.Drawing.Point(88, 37);
-            this.SpadesBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SpadesBox2.Margin = new System.Windows.Forms.Padding(2);
             this.SpadesBox2.Name = "SpadesBox2";
             this.SpadesBox2.Size = new System.Drawing.Size(62, 17);
             this.SpadesBox2.TabIndex = 27;
@@ -154,7 +142,7 @@
             // 
             this.DiamondBox2.AutoSize = true;
             this.DiamondBox2.Location = new System.Drawing.Point(10, 39);
-            this.DiamondBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DiamondBox2.Margin = new System.Windows.Forms.Padding(2);
             this.DiamondBox2.Name = "DiamondBox2";
             this.DiamondBox2.Size = new System.Drawing.Size(73, 17);
             this.DiamondBox2.TabIndex = 26;
@@ -166,7 +154,7 @@
             // 
             this.HeartsBox2.AutoSize = true;
             this.HeartsBox2.Location = new System.Drawing.Point(10, 17);
-            this.HeartsBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HeartsBox2.Margin = new System.Windows.Forms.Padding(2);
             this.HeartsBox2.Name = "HeartsBox2";
             this.HeartsBox2.Size = new System.Drawing.Size(57, 17);
             this.HeartsBox2.TabIndex = 25;
@@ -207,7 +195,7 @@
             // 
             this.ClubsBox3.AutoSize = true;
             this.ClubsBox3.Location = new System.Drawing.Point(85, 20);
-            this.ClubsBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClubsBox3.Margin = new System.Windows.Forms.Padding(2);
             this.ClubsBox3.Name = "ClubsBox3";
             this.ClubsBox3.Size = new System.Drawing.Size(52, 17);
             this.ClubsBox3.TabIndex = 36;
@@ -219,7 +207,7 @@
             // 
             this.SpadesBox3.AutoSize = true;
             this.SpadesBox3.Location = new System.Drawing.Point(85, 41);
-            this.SpadesBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SpadesBox3.Margin = new System.Windows.Forms.Padding(2);
             this.SpadesBox3.Name = "SpadesBox3";
             this.SpadesBox3.Size = new System.Drawing.Size(62, 17);
             this.SpadesBox3.TabIndex = 35;
@@ -231,7 +219,7 @@
             // 
             this.DiamondBox3.AutoSize = true;
             this.DiamondBox3.Location = new System.Drawing.Point(7, 43);
-            this.DiamondBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DiamondBox3.Margin = new System.Windows.Forms.Padding(2);
             this.DiamondBox3.Name = "DiamondBox3";
             this.DiamondBox3.Size = new System.Drawing.Size(73, 17);
             this.DiamondBox3.TabIndex = 34;
@@ -243,7 +231,7 @@
             // 
             this.HeartsBox3.AutoSize = true;
             this.HeartsBox3.Location = new System.Drawing.Point(7, 21);
-            this.HeartsBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HeartsBox3.Margin = new System.Windows.Forms.Padding(2);
             this.HeartsBox3.Name = "HeartsBox3";
             this.HeartsBox3.Size = new System.Drawing.Size(57, 17);
             this.HeartsBox3.TabIndex = 33;
@@ -258,9 +246,9 @@
             this.FirstBox.Controls.Add(this.SpadesBox1);
             this.FirstBox.Controls.Add(this.DiamondBox1);
             this.FirstBox.Location = new System.Drawing.Point(379, 30);
-            this.FirstBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FirstBox.Margin = new System.Windows.Forms.Padding(2);
             this.FirstBox.Name = "FirstBox";
-            this.FirstBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FirstBox.Padding = new System.Windows.Forms.Padding(2);
             this.FirstBox.Size = new System.Drawing.Size(143, 69);
             this.FirstBox.TabIndex = 38;
             this.FirstBox.TabStop = false;
@@ -270,7 +258,7 @@
             // 
             this.ClubsBox1.AutoSize = true;
             this.ClubsBox1.Location = new System.Drawing.Point(82, 23);
-            this.ClubsBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClubsBox1.Margin = new System.Windows.Forms.Padding(2);
             this.ClubsBox1.Name = "ClubsBox1";
             this.ClubsBox1.Size = new System.Drawing.Size(52, 17);
             this.ClubsBox1.TabIndex = 42;
@@ -282,7 +270,7 @@
             // 
             this.HeartsBox1.AutoSize = true;
             this.HeartsBox1.Location = new System.Drawing.Point(4, 24);
-            this.HeartsBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.HeartsBox1.Margin = new System.Windows.Forms.Padding(2);
             this.HeartsBox1.Name = "HeartsBox1";
             this.HeartsBox1.Size = new System.Drawing.Size(57, 17);
             this.HeartsBox1.TabIndex = 39;
@@ -294,7 +282,7 @@
             // 
             this.SpadesBox1.AutoSize = true;
             this.SpadesBox1.Location = new System.Drawing.Point(82, 45);
-            this.SpadesBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SpadesBox1.Margin = new System.Windows.Forms.Padding(2);
             this.SpadesBox1.Name = "SpadesBox1";
             this.SpadesBox1.Size = new System.Drawing.Size(62, 17);
             this.SpadesBox1.TabIndex = 41;
@@ -306,7 +294,7 @@
             // 
             this.DiamondBox1.AutoSize = true;
             this.DiamondBox1.Location = new System.Drawing.Point(4, 46);
-            this.DiamondBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DiamondBox1.Margin = new System.Windows.Forms.Padding(2);
             this.DiamondBox1.Name = "DiamondBox1";
             this.DiamondBox1.Size = new System.Drawing.Size(73, 17);
             this.DiamondBox1.TabIndex = 40;
@@ -321,9 +309,9 @@
             this.SecoundBox.Controls.Add(this.SpadesBox2);
             this.SecoundBox.Controls.Add(this.ClubsBox2);
             this.SecoundBox.Location = new System.Drawing.Point(379, 113);
-            this.SecoundBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SecoundBox.Margin = new System.Windows.Forms.Padding(2);
             this.SecoundBox.Name = "SecoundBox";
-            this.SecoundBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SecoundBox.Padding = new System.Windows.Forms.Padding(2);
             this.SecoundBox.Size = new System.Drawing.Size(143, 69);
             this.SecoundBox.TabIndex = 39;
             this.SecoundBox.TabStop = false;
@@ -337,9 +325,9 @@
             this.CommunityBox.Controls.Add(this.DiamondBox3);
             this.CommunityBox.Controls.Add(this.HeartsBox3);
             this.CommunityBox.Location = new System.Drawing.Point(379, 196);
-            this.CommunityBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CommunityBox.Margin = new System.Windows.Forms.Padding(2);
             this.CommunityBox.Name = "CommunityBox";
-            this.CommunityBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CommunityBox.Padding = new System.Windows.Forms.Padding(2);
             this.CommunityBox.Size = new System.Drawing.Size(143, 69);
             this.CommunityBox.TabIndex = 40;
             this.CommunityBox.TabStop = false;
@@ -366,31 +354,11 @@
             this.CardNumber1.TabIndex = 41;
             this.CardNumber1.Text = "label3";
             // 
-            // CardSuit2
-            // 
-            this.CardSuit2.AutoSize = true;
-            this.CardSuit2.Location = new System.Drawing.Point(46, 292);
-            this.CardSuit2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CardSuit2.Name = "CardSuit2";
-            this.CardSuit2.Size = new System.Drawing.Size(35, 13);
-            this.CardSuit2.TabIndex = 42;
-            this.CardSuit2.Text = "label4";
-            // 
-            // CardNumber2
-            // 
-            this.CardNumber2.AutoSize = true;
-            this.CardNumber2.Location = new System.Drawing.Point(48, 315);
-            this.CardNumber2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.CardNumber2.Name = "CardNumber2";
-            this.CardNumber2.Size = new System.Drawing.Size(35, 13);
-            this.CardNumber2.TabIndex = 43;
-            this.CardNumber2.Text = "label5";
-            // 
             // JackCard
             // 
             this.JackCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_J;
             this.JackCard.Location = new System.Drawing.Point(604, 229);
-            this.JackCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.JackCard.Margin = new System.Windows.Forms.Padding(2);
             this.JackCard.Name = "JackCard";
             this.JackCard.Size = new System.Drawing.Size(67, 102);
             this.JackCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -402,7 +370,7 @@
             // 
             this.KingCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_K;
             this.KingCard.Location = new System.Drawing.Point(747, 229);
-            this.KingCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.KingCard.Margin = new System.Windows.Forms.Padding(2);
             this.KingCard.Name = "KingCard";
             this.KingCard.Size = new System.Drawing.Size(67, 102);
             this.KingCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -414,7 +382,7 @@
             // 
             this.QueenCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_Q;
             this.QueenCard.Location = new System.Drawing.Point(676, 229);
-            this.QueenCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.QueenCard.Margin = new System.Windows.Forms.Padding(2);
             this.QueenCard.Name = "QueenCard";
             this.QueenCard.Size = new System.Drawing.Size(67, 102);
             this.QueenCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -426,7 +394,7 @@
             // 
             this.NinthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_9;
             this.NinthCard.Location = new System.Drawing.Point(747, 113);
-            this.NinthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NinthCard.Margin = new System.Windows.Forms.Padding(2);
             this.NinthCard.Name = "NinthCard";
             this.NinthCard.Size = new System.Drawing.Size(67, 102);
             this.NinthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -438,7 +406,7 @@
             // 
             this.EigthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_8;
             this.EigthCard.Location = new System.Drawing.Point(676, 113);
-            this.EigthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EigthCard.Margin = new System.Windows.Forms.Padding(2);
             this.EigthCard.Name = "EigthCard";
             this.EigthCard.Size = new System.Drawing.Size(67, 102);
             this.EigthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -450,7 +418,7 @@
             // 
             this.SeventhCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_7;
             this.SeventhCard.Location = new System.Drawing.Point(604, 113);
-            this.SeventhCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SeventhCard.Margin = new System.Windows.Forms.Padding(2);
             this.SeventhCard.Name = "SeventhCard";
             this.SeventhCard.Size = new System.Drawing.Size(67, 102);
             this.SeventhCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -462,7 +430,7 @@
             // 
             this.SixthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_6;
             this.SixthCard.Location = new System.Drawing.Point(533, 113);
-            this.SixthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SixthCard.Margin = new System.Windows.Forms.Padding(2);
             this.SixthCard.Name = "SixthCard";
             this.SixthCard.Size = new System.Drawing.Size(67, 102);
             this.SixthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -474,7 +442,7 @@
             // 
             this.TenthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_10;
             this.TenthCard.Location = new System.Drawing.Point(818, 113);
-            this.TenthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TenthCard.Margin = new System.Windows.Forms.Padding(2);
             this.TenthCard.Name = "TenthCard";
             this.TenthCard.Size = new System.Drawing.Size(67, 102);
             this.TenthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -486,19 +454,19 @@
             // 
             this.FifthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_5;
             this.FifthCard.Location = new System.Drawing.Point(818, 6);
-            this.FifthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FifthCard.Margin = new System.Windows.Forms.Padding(2);
             this.FifthCard.Name = "FifthCard";
             this.FifthCard.Size = new System.Drawing.Size(67, 102);
             this.FifthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FifthCard.TabIndex = 12;
             this.FifthCard.TabStop = false;
-            this.FifthCard.Click += new System.EventHandler(this.FifthCard_Click);
+           this.FifthCard.Click += new System.EventHandler(this.FifthCard_Click);
             // 
             // FouthCard
             // 
             this.FouthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_4;
             this.FouthCard.Location = new System.Drawing.Point(747, 6);
-            this.FouthCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FouthCard.Margin = new System.Windows.Forms.Padding(2);
             this.FouthCard.Name = "FouthCard";
             this.FouthCard.Size = new System.Drawing.Size(67, 102);
             this.FouthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -510,7 +478,7 @@
             // 
             this.ThirdCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_3;
             this.ThirdCard.Location = new System.Drawing.Point(676, 6);
-            this.ThirdCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ThirdCard.Margin = new System.Windows.Forms.Padding(2);
             this.ThirdCard.Name = "ThirdCard";
             this.ThirdCard.Size = new System.Drawing.Size(67, 102);
             this.ThirdCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -522,7 +490,7 @@
             // 
             this.TwoCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_2;
             this.TwoCard.Location = new System.Drawing.Point(604, 6);
-            this.TwoCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TwoCard.Margin = new System.Windows.Forms.Padding(2);
             this.TwoCard.Name = "TwoCard";
             this.TwoCard.Size = new System.Drawing.Size(67, 102);
             this.TwoCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -534,7 +502,7 @@
             // 
             this.AceCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_A;
             this.AceCard.Location = new System.Drawing.Point(533, 6);
-            this.AceCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AceCard.Margin = new System.Windows.Forms.Padding(2);
             this.AceCard.Name = "AceCard";
             this.AceCard.Size = new System.Drawing.Size(67, 102);
             this.AceCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -545,7 +513,7 @@
             // FirstHandCard
             // 
             this.FirstHandCard.Location = new System.Drawing.Point(86, 160);
-            this.FirstHandCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FirstHandCard.Margin = new System.Windows.Forms.Padding(2);
             this.FirstHandCard.Name = "FirstHandCard";
             this.FirstHandCard.Size = new System.Drawing.Size(67, 103);
             this.FirstHandCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -555,7 +523,7 @@
             // SecoundHandCard
             // 
             this.SecoundHandCard.Location = new System.Drawing.Point(228, 160);
-            this.SecoundHandCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SecoundHandCard.Margin = new System.Windows.Forms.Padding(2);
             this.SecoundHandCard.Name = "SecoundHandCard";
             this.SecoundHandCard.Size = new System.Drawing.Size(67, 103);
             this.SecoundHandCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -565,7 +533,7 @@
             // SecondPlayCard
             // 
             this.SecondPlayCard.Location = new System.Drawing.Point(86, 44);
-            this.SecondPlayCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SecondPlayCard.Margin = new System.Windows.Forms.Padding(2);
             this.SecondPlayCard.Name = "SecondPlayCard";
             this.SecondPlayCard.Size = new System.Drawing.Size(67, 102);
             this.SecondPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -575,27 +543,27 @@
             // ThirdPlayCard
             // 
             this.ThirdPlayCard.Location = new System.Drawing.Point(157, 44);
-            this.ThirdPlayCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ThirdPlayCard.Margin = new System.Windows.Forms.Padding(2);
             this.ThirdPlayCard.Name = "ThirdPlayCard";
             this.ThirdPlayCard.Size = new System.Drawing.Size(67, 102);
             this.ThirdPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ThirdPlayCard.TabIndex = 4;
             this.ThirdPlayCard.TabStop = false;
             // 
-            // FirthPlayCard
+            // FourthPlayCard
             // 
-            this.FirthPlayCard.Location = new System.Drawing.Point(228, 44);
-            this.FirthPlayCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.FirthPlayCard.Name = "FirthPlayCard";
-            this.FirthPlayCard.Size = new System.Drawing.Size(67, 102);
-            this.FirthPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.FirthPlayCard.TabIndex = 3;
-            this.FirthPlayCard.TabStop = false;
+            this.FourthPlayCard.Location = new System.Drawing.Point(228, 44);
+            this.FourthPlayCard.Margin = new System.Windows.Forms.Padding(2);
+            this.FourthPlayCard.Name = "FourthPlayCard";
+            this.FourthPlayCard.Size = new System.Drawing.Size(67, 102);
+            this.FourthPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.FourthPlayCard.TabIndex = 3;
+            this.FourthPlayCard.TabStop = false;
             // 
             // FifthPlayCard
             // 
             this.FifthPlayCard.Location = new System.Drawing.Point(299, 44);
-            this.FifthPlayCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FifthPlayCard.Margin = new System.Windows.Forms.Padding(2);
             this.FifthPlayCard.Name = "FifthPlayCard";
             this.FifthPlayCard.Size = new System.Drawing.Size(67, 102);
             this.FifthPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -605,7 +573,7 @@
             // FirstPlayCard
             // 
             this.FirstPlayCard.Location = new System.Drawing.Point(14, 44);
-            this.FirstPlayCard.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FirstPlayCard.Margin = new System.Windows.Forms.Padding(2);
             this.FirstPlayCard.Name = "FirstPlayCard";
             this.FirstPlayCard.Size = new System.Drawing.Size(67, 102);
             this.FirstPlayCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -615,7 +583,7 @@
             // ConfirmButton
             // 
             this.ConfirmButton.Location = new System.Drawing.Point(406, 280);
-            this.ConfirmButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConfirmButton.Margin = new System.Windows.Forms.Padding(2);
             this.ConfirmButton.Name = "ConfirmButton";
             this.ConfirmButton.Size = new System.Drawing.Size(91, 23);
             this.ConfirmButton.TabIndex = 44;
@@ -626,7 +594,7 @@
             // ResetButton
             // 
             this.ResetButton.Location = new System.Drawing.Point(425, 307);
-            this.ResetButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ResetButton.Margin = new System.Windows.Forms.Padding(2);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(56, 19);
             this.ResetButton.TabIndex = 45;
@@ -634,111 +602,11 @@
             this.ResetButton.UseVisualStyleBackColor = true;
             this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
-            // cardsuitchoice1
-            // 
-            this.cardsuitchoice1.AutoSize = true;
-            this.cardsuitchoice1.Location = new System.Drawing.Point(34, 80);
-            this.cardsuitchoice1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardsuitchoice1.Name = "cardsuitchoice1";
-            this.cardsuitchoice1.Size = new System.Drawing.Size(35, 13);
-            this.cardsuitchoice1.TabIndex = 46;
-            this.cardsuitchoice1.Text = "label1";
-            // 
-            // cardnumberchoice1
-            // 
-            this.cardnumberchoice1.AutoSize = true;
-            this.cardnumberchoice1.Location = new System.Drawing.Point(34, 94);
-            this.cardnumberchoice1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardnumberchoice1.Name = "cardnumberchoice1";
-            this.cardnumberchoice1.Size = new System.Drawing.Size(35, 13);
-            this.cardnumberchoice1.TabIndex = 47;
-            this.cardnumberchoice1.Text = "label3";
-            // 
-            // cardnumberchoice2
-            // 
-            this.cardnumberchoice2.AutoSize = true;
-            this.cardnumberchoice2.Location = new System.Drawing.Point(106, 94);
-            this.cardnumberchoice2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardnumberchoice2.Name = "cardnumberchoice2";
-            this.cardnumberchoice2.Size = new System.Drawing.Size(35, 13);
-            this.cardnumberchoice2.TabIndex = 49;
-            this.cardnumberchoice2.Text = "label3";
-            // 
-            // cardsuitchoice2
-            // 
-            this.cardsuitchoice2.AutoSize = true;
-            this.cardsuitchoice2.Location = new System.Drawing.Point(106, 80);
-            this.cardsuitchoice2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardsuitchoice2.Name = "cardsuitchoice2";
-            this.cardsuitchoice2.Size = new System.Drawing.Size(35, 13);
-            this.cardsuitchoice2.TabIndex = 48;
-            this.cardsuitchoice2.Text = "label1";
-            // 
-            // cardnumberchoice3
-            // 
-            this.cardnumberchoice3.AutoSize = true;
-            this.cardnumberchoice3.Location = new System.Drawing.Point(176, 94);
-            this.cardnumberchoice3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardnumberchoice3.Name = "cardnumberchoice3";
-            this.cardnumberchoice3.Size = new System.Drawing.Size(35, 13);
-            this.cardnumberchoice3.TabIndex = 51;
-            this.cardnumberchoice3.Text = "label3";
-            // 
-            // cardsuitchoice3
-            // 
-            this.cardsuitchoice3.AutoSize = true;
-            this.cardsuitchoice3.Location = new System.Drawing.Point(176, 80);
-            this.cardsuitchoice3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardsuitchoice3.Name = "cardsuitchoice3";
-            this.cardsuitchoice3.Size = new System.Drawing.Size(35, 13);
-            this.cardsuitchoice3.TabIndex = 50;
-            this.cardsuitchoice3.Text = "label1";
-            // 
-            // cardnumberchoice4
-            // 
-            this.cardnumberchoice4.AutoSize = true;
-            this.cardnumberchoice4.Location = new System.Drawing.Point(246, 94);
-            this.cardnumberchoice4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardnumberchoice4.Name = "cardnumberchoice4";
-            this.cardnumberchoice4.Size = new System.Drawing.Size(35, 13);
-            this.cardnumberchoice4.TabIndex = 53;
-            this.cardnumberchoice4.Text = "label3";
-            // 
-            // cardsuitchoice4
-            // 
-            this.cardsuitchoice4.AutoSize = true;
-            this.cardsuitchoice4.Location = new System.Drawing.Point(246, 80);
-            this.cardsuitchoice4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardsuitchoice4.Name = "cardsuitchoice4";
-            this.cardsuitchoice4.Size = new System.Drawing.Size(35, 13);
-            this.cardsuitchoice4.TabIndex = 52;
-            this.cardsuitchoice4.Text = "label1";
-            // 
-            // cardnumberchoice5
-            // 
-            this.cardnumberchoice5.AutoSize = true;
-            this.cardnumberchoice5.Location = new System.Drawing.Point(318, 94);
-            this.cardnumberchoice5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardnumberchoice5.Name = "cardnumberchoice5";
-            this.cardnumberchoice5.Size = new System.Drawing.Size(35, 13);
-            this.cardnumberchoice5.TabIndex = 55;
-            this.cardnumberchoice5.Text = "label3";
-            // 
-            // cardsuitchoice5
-            // 
-            this.cardsuitchoice5.AutoSize = true;
-            this.cardsuitchoice5.Location = new System.Drawing.Point(318, 80);
-            this.cardsuitchoice5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.cardsuitchoice5.Name = "cardsuitchoice5";
-            this.cardsuitchoice5.Size = new System.Drawing.Size(35, 13);
-            this.cardsuitchoice5.TabIndex = 54;
-            this.cardsuitchoice5.Text = "label1";
-            // 
             // ComCard1
             // 
             this.ComCard1.AutoSize = true;
             this.ComCard1.Location = new System.Drawing.Point(14, 22);
-            this.ComCard1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComCard1.Margin = new System.Windows.Forms.Padding(2);
             this.ComCard1.Name = "ComCard1";
             this.ComCard1.Size = new System.Drawing.Size(80, 17);
             this.ComCard1.TabIndex = 56;
@@ -749,7 +617,7 @@
             // 
             this.ComCard2.AutoSize = true;
             this.ComCard2.Location = new System.Drawing.Point(86, 22);
-            this.ComCard2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComCard2.Margin = new System.Windows.Forms.Padding(2);
             this.ComCard2.Name = "ComCard2";
             this.ComCard2.Size = new System.Drawing.Size(80, 17);
             this.ComCard2.TabIndex = 57;
@@ -760,7 +628,7 @@
             // 
             this.ComCard3.AutoSize = true;
             this.ComCard3.Location = new System.Drawing.Point(157, 22);
-            this.ComCard3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComCard3.Margin = new System.Windows.Forms.Padding(2);
             this.ComCard3.Name = "ComCard3";
             this.ComCard3.Size = new System.Drawing.Size(80, 17);
             this.ComCard3.TabIndex = 58;
@@ -771,7 +639,7 @@
             // 
             this.ComCard4.AutoSize = true;
             this.ComCard4.Location = new System.Drawing.Point(228, 22);
-            this.ComCard4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComCard4.Margin = new System.Windows.Forms.Padding(2);
             this.ComCard4.Name = "ComCard4";
             this.ComCard4.Size = new System.Drawing.Size(80, 17);
             this.ComCard4.TabIndex = 59;
@@ -782,7 +650,7 @@
             // 
             this.ComCard5.AutoSize = true;
             this.ComCard5.Location = new System.Drawing.Point(299, 22);
-            this.ComCard5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ComCard5.Margin = new System.Windows.Forms.Padding(2);
             this.ComCard5.Name = "ComCard5";
             this.ComCard5.Size = new System.Drawing.Size(80, 17);
             this.ComCard5.TabIndex = 60;
@@ -799,16 +667,16 @@
             this.label1.TabIndex = 61;
             this.label1.Text = "label1";
             // 
-            // Cardchoise1
+            // Cardchoice1
             // 
-            this.Cardchoise1.AutoSize = true;
-            this.Cardchoise1.Location = new System.Drawing.Point(86, 267);
-            this.Cardchoise1.Margin = new System.Windows.Forms.Padding(2);
-            this.Cardchoise1.Name = "Cardchoise1";
-            this.Cardchoise1.Size = new System.Drawing.Size(80, 17);
-            this.Cardchoise1.TabIndex = 62;
-            this.Cardchoise1.Text = "checkBox5";
-            this.Cardchoise1.UseVisualStyleBackColor = true;
+            this.Cardchoice1.AutoSize = true;
+            this.Cardchoice1.Location = new System.Drawing.Point(86, 267);
+            this.Cardchoice1.Margin = new System.Windows.Forms.Padding(2);
+            this.Cardchoice1.Name = "Cardchoice1";
+            this.Cardchoice1.Size = new System.Drawing.Size(80, 17);
+            this.Cardchoice1.TabIndex = 62;
+            this.Cardchoice1.Text = "checkBox5";
+            this.Cardchoice1.UseVisualStyleBackColor = true;
             // 
             // Cardchoice2
             // 
@@ -829,27 +697,15 @@
             this.ClientSize = new System.Drawing.Size(913, 376);
             this.ControlBox = false;
             this.Controls.Add(this.Cardchoice2);
-            this.Controls.Add(this.Cardchoise1);
+            this.Controls.Add(this.Cardchoice1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ComCard5);
             this.Controls.Add(this.ComCard4);
             this.Controls.Add(this.ComCard3);
             this.Controls.Add(this.ComCard2);
             this.Controls.Add(this.ComCard1);
-            this.Controls.Add(this.cardnumberchoice5);
-            this.Controls.Add(this.cardsuitchoice5);
-            this.Controls.Add(this.cardnumberchoice4);
-            this.Controls.Add(this.cardsuitchoice4);
-            this.Controls.Add(this.cardnumberchoice3);
-            this.Controls.Add(this.cardsuitchoice3);
-            this.Controls.Add(this.cardnumberchoice2);
-            this.Controls.Add(this.cardsuitchoice2);
-            this.Controls.Add(this.cardnumberchoice1);
-            this.Controls.Add(this.cardsuitchoice1);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.ConfirmButton);
-            this.Controls.Add(this.CardNumber2);
-            this.Controls.Add(this.CardSuit2);
             this.Controls.Add(this.CardNumber1);
             this.Controls.Add(this.CardSuit1);
             this.Controls.Add(this.CommunityBox);
@@ -875,7 +731,7 @@
             this.Controls.Add(this.SecoundHandCard);
             this.Controls.Add(this.SecondPlayCard);
             this.Controls.Add(this.ThirdPlayCard);
-            this.Controls.Add(this.FirthPlayCard);
+            this.Controls.Add(this.FourthPlayCard);
             this.Controls.Add(this.FifthPlayCard);
             this.Controls.Add(this.FirstPlayCard);
             this.Controls.Add(this.button1);
@@ -908,7 +764,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SecoundHandCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SecondPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ThirdPlayCard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FirthPlayCard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).EndInit();
             this.ResumeLayout(false);
@@ -921,7 +777,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox FirstPlayCard;
         private System.Windows.Forms.PictureBox FifthPlayCard;
-        private System.Windows.Forms.PictureBox FirthPlayCard;
+        private System.Windows.Forms.PictureBox FourthPlayCard;
         private System.Windows.Forms.PictureBox ThirdPlayCard;
         private System.Windows.Forms.PictureBox SecondPlayCard;
         private System.Windows.Forms.PictureBox SecoundHandCard;
@@ -959,27 +815,15 @@
         private System.Windows.Forms.GroupBox CommunityBox;
         private System.Windows.Forms.Label CardSuit1;
         private System.Windows.Forms.Label CardNumber1;
-        private System.Windows.Forms.Label CardSuit2;
-        private System.Windows.Forms.Label CardNumber2;
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button ResetButton;
-        private System.Windows.Forms.Label cardsuitchoice1;
-        private System.Windows.Forms.Label cardnumberchoice1;
-        private System.Windows.Forms.Label cardnumberchoice2;
-        private System.Windows.Forms.Label cardsuitchoice2;
-        private System.Windows.Forms.Label cardnumberchoice3;
-        private System.Windows.Forms.Label cardsuitchoice3;
-        private System.Windows.Forms.Label cardnumberchoice4;
-        private System.Windows.Forms.Label cardsuitchoice4;
-        private System.Windows.Forms.Label cardnumberchoice5;
-        private System.Windows.Forms.Label cardsuitchoice5;
         private System.Windows.Forms.CheckBox ComCard1;
         private System.Windows.Forms.CheckBox ComCard2;
         private System.Windows.Forms.CheckBox ComCard3;
         private System.Windows.Forms.CheckBox ComCard4;
         private System.Windows.Forms.CheckBox ComCard5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox Cardchoise1;
+        private System.Windows.Forms.CheckBox Cardchoice1;
         private System.Windows.Forms.CheckBox Cardchoice2;
     }
 }
