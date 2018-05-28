@@ -227,7 +227,7 @@ namespace ADSSE_miniproject_poker_prob
                             }
                             else
                             {
-                                probability = (float)(deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (float)(deck.CardsLeft(GameDeck));
+                                probability = (deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (deck.CardsLeft(GameDeck));
                             }
                         }
                     }
