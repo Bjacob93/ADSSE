@@ -249,7 +249,7 @@
             this.FirstBox.Margin = new System.Windows.Forms.Padding(2);
             this.FirstBox.Name = "FirstBox";
             this.FirstBox.Padding = new System.Windows.Forms.Padding(2);
-            this.FirstBox.Size = new System.Drawing.Size(143, 69);
+            this.FirstBox.Size = new System.Drawing.Size(150, 69);
             this.FirstBox.TabIndex = 38;
             this.FirstBox.TabStop = false;
             this.FirstBox.Text = "First Card";
@@ -312,7 +312,7 @@
             this.SecoundBox.Margin = new System.Windows.Forms.Padding(2);
             this.SecoundBox.Name = "SecoundBox";
             this.SecoundBox.Padding = new System.Windows.Forms.Padding(2);
-            this.SecoundBox.Size = new System.Drawing.Size(143, 69);
+            this.SecoundBox.Size = new System.Drawing.Size(150, 69);
             this.SecoundBox.TabIndex = 39;
             this.SecoundBox.TabStop = false;
             this.SecoundBox.Text = "Secound Card";
@@ -328,7 +328,7 @@
             this.CommunityBox.Margin = new System.Windows.Forms.Padding(2);
             this.CommunityBox.Name = "CommunityBox";
             this.CommunityBox.Padding = new System.Windows.Forms.Padding(2);
-            this.CommunityBox.Size = new System.Drawing.Size(143, 69);
+            this.CommunityBox.Size = new System.Drawing.Size(150, 69);
             this.CommunityBox.TabIndex = 40;
             this.CommunityBox.TabStop = false;
             this.CommunityBox.Text = "Community Cards";
@@ -460,7 +460,7 @@
             this.FifthCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.FifthCard.TabIndex = 12;
             this.FifthCard.TabStop = false;
-           this.FifthCard.Click += new System.EventHandler(this.FifthCard_Click);
+            this.FifthCard.Click += new System.EventHandler(this.FifthCard_Click);
             // 
             // FouthCard
             // 

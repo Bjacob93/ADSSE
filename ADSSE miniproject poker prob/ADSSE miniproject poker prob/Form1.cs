@@ -2192,6 +2192,8 @@ namespace ADSSE_miniproject_poker_prob
                 CommunityBox.Visible = false;
                 check = 0;
                 ConfirmButton.Visible = true;
+                Cardchoice1.Checked = false;
+                Cardchoice2.Checked = false;
                 ComCard1.Checked = false;
                 ComCard2.Checked = false;
                 ComCard3.Checked = false;
