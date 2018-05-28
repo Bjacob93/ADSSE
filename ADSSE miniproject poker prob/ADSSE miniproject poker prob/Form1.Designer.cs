@@ -34,7 +34,6 @@
             this.DiamondBox2 = new System.Windows.Forms.CheckBox();
             this.HeartsBox2 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.Chancewinninglabel = new System.Windows.Forms.Label();
             this.chancenumberlabel = new System.Windows.Forms.Label();
             this.ClubsBox3 = new System.Windows.Forms.CheckBox();
             this.SpadesBox3 = new System.Windows.Forms.CheckBox();
@@ -79,6 +78,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Cardchoice1 = new System.Windows.Forms.CheckBox();
             this.Cardchoice2 = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pairnumber = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.twopairnumber = new System.Windows.Forms.Label();
+            this.threeofkindnumber = new System.Windows.Forms.Label();
+            this.straightnumber = new System.Windows.Forms.Label();
+            this.flushnumber = new System.Windows.Forms.Label();
+            this.fullhousenumber = new System.Windows.Forms.Label();
+            this.fourofkindnumber = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Sflushnumber = new System.Windows.Forms.Label();
+            this.Rflushnumber = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.FirstBox.SuspendLayout();
             this.SecoundBox.SuspendLayout();
             this.CommunityBox.SuspendLayout();
@@ -102,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -170,16 +189,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 30;
-            // 
-            // Chancewinninglabel
-            // 
-            this.Chancewinninglabel.AutoSize = true;
-            this.Chancewinninglabel.Location = new System.Drawing.Point(34, 340);
-            this.Chancewinninglabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Chancewinninglabel.Name = "Chancewinninglabel";
-            this.Chancewinninglabel.Size = new System.Drawing.Size(101, 13);
-            this.Chancewinninglabel.TabIndex = 31;
-            this.Chancewinninglabel.Text = "Chance of Winning:";
             // 
             // chancenumberlabel
             // 
@@ -337,7 +346,7 @@
             // CardSuit1
             // 
             this.CardSuit1.AutoSize = true;
-            this.CardSuit1.Location = new System.Drawing.Point(9, 292);
+            this.CardSuit1.Location = new System.Drawing.Point(11, 156);
             this.CardSuit1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CardSuit1.Name = "CardSuit1";
             this.CardSuit1.Size = new System.Drawing.Size(35, 13);
@@ -347,7 +356,7 @@
             // CardNumber1
             // 
             this.CardNumber1.AutoSize = true;
-            this.CardNumber1.Location = new System.Drawing.Point(9, 315);
+            this.CardNumber1.Location = new System.Drawing.Point(11, 179);
             this.CardNumber1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CardNumber1.Name = "CardNumber1";
             this.CardNumber1.Size = new System.Drawing.Size(35, 13);
@@ -357,7 +366,7 @@
             // JackCard
             // 
             this.JackCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_J;
-            this.JackCard.Location = new System.Drawing.Point(604, 229);
+            this.JackCard.Location = new System.Drawing.Point(635, 233);
             this.JackCard.Margin = new System.Windows.Forms.Padding(2);
             this.JackCard.Name = "JackCard";
             this.JackCard.Size = new System.Drawing.Size(67, 102);
@@ -369,7 +378,7 @@
             // KingCard
             // 
             this.KingCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_K;
-            this.KingCard.Location = new System.Drawing.Point(747, 229);
+            this.KingCard.Location = new System.Drawing.Point(834, 233);
             this.KingCard.Margin = new System.Windows.Forms.Padding(2);
             this.KingCard.Name = "KingCard";
             this.KingCard.Size = new System.Drawing.Size(67, 102);
@@ -381,7 +390,7 @@
             // QueenCard
             // 
             this.QueenCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_Q;
-            this.QueenCard.Location = new System.Drawing.Point(676, 229);
+            this.QueenCard.Location = new System.Drawing.Point(731, 233);
             this.QueenCard.Margin = new System.Windows.Forms.Padding(2);
             this.QueenCard.Name = "QueenCard";
             this.QueenCard.Size = new System.Drawing.Size(67, 102);
@@ -393,7 +402,7 @@
             // NinthCard
             // 
             this.NinthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_9;
-            this.NinthCard.Location = new System.Drawing.Point(747, 113);
+            this.NinthCard.Location = new System.Drawing.Point(834, 113);
             this.NinthCard.Margin = new System.Windows.Forms.Padding(2);
             this.NinthCard.Name = "NinthCard";
             this.NinthCard.Size = new System.Drawing.Size(67, 102);
@@ -405,7 +414,7 @@
             // EigthCard
             // 
             this.EigthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_8;
-            this.EigthCard.Location = new System.Drawing.Point(676, 113);
+            this.EigthCard.Location = new System.Drawing.Point(731, 113);
             this.EigthCard.Margin = new System.Windows.Forms.Padding(2);
             this.EigthCard.Name = "EigthCard";
             this.EigthCard.Size = new System.Drawing.Size(67, 102);
@@ -417,7 +426,7 @@
             // SeventhCard
             // 
             this.SeventhCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_7;
-            this.SeventhCard.Location = new System.Drawing.Point(604, 113);
+            this.SeventhCard.Location = new System.Drawing.Point(635, 113);
             this.SeventhCard.Margin = new System.Windows.Forms.Padding(2);
             this.SeventhCard.Name = "SeventhCard";
             this.SeventhCard.Size = new System.Drawing.Size(67, 102);
@@ -441,7 +450,7 @@
             // TenthCard
             // 
             this.TenthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_10;
-            this.TenthCard.Location = new System.Drawing.Point(818, 113);
+            this.TenthCard.Location = new System.Drawing.Point(924, 113);
             this.TenthCard.Margin = new System.Windows.Forms.Padding(2);
             this.TenthCard.Name = "TenthCard";
             this.TenthCard.Size = new System.Drawing.Size(67, 102);
@@ -453,7 +462,7 @@
             // FifthCard
             // 
             this.FifthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_5;
-            this.FifthCard.Location = new System.Drawing.Point(818, 6);
+            this.FifthCard.Location = new System.Drawing.Point(924, 6);
             this.FifthCard.Margin = new System.Windows.Forms.Padding(2);
             this.FifthCard.Name = "FifthCard";
             this.FifthCard.Size = new System.Drawing.Size(67, 102);
@@ -465,7 +474,7 @@
             // FouthCard
             // 
             this.FouthCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_4;
-            this.FouthCard.Location = new System.Drawing.Point(747, 6);
+            this.FouthCard.Location = new System.Drawing.Point(834, 6);
             this.FouthCard.Margin = new System.Windows.Forms.Padding(2);
             this.FouthCard.Name = "FouthCard";
             this.FouthCard.Size = new System.Drawing.Size(67, 102);
@@ -477,7 +486,7 @@
             // ThirdCard
             // 
             this.ThirdCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_3;
-            this.ThirdCard.Location = new System.Drawing.Point(676, 6);
+            this.ThirdCard.Location = new System.Drawing.Point(731, 6);
             this.ThirdCard.Margin = new System.Windows.Forms.Padding(2);
             this.ThirdCard.Name = "ThirdCard";
             this.ThirdCard.Size = new System.Drawing.Size(67, 102);
@@ -489,7 +498,7 @@
             // TwoCard
             // 
             this.TwoCard.Image = global::ADSSE_miniproject_poker_prob.Properties.Resources.Spades_2;
-            this.TwoCard.Location = new System.Drawing.Point(604, 6);
+            this.TwoCard.Location = new System.Drawing.Point(635, 7);
             this.TwoCard.Margin = new System.Windows.Forms.Padding(2);
             this.TwoCard.Name = "TwoCard";
             this.TwoCard.Size = new System.Drawing.Size(67, 102);
@@ -660,7 +669,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(332, 300);
+            this.label1.Location = new System.Drawing.Point(543, 318);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
@@ -689,13 +698,203 @@
             this.Cardchoice2.Text = "checkBox5";
             this.Cardchoice2.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.Rflushnumber);
+            this.groupBox1.Controls.Add(this.Sflushnumber);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.fourofkindnumber);
+            this.groupBox1.Controls.Add(this.fullhousenumber);
+            this.groupBox1.Controls.Add(this.flushnumber);
+            this.groupBox1.Controls.Add(this.straightnumber);
+            this.groupBox1.Controls.Add(this.threeofkindnumber);
+            this.groupBox1.Controls.Add(this.twopairnumber);
+            this.groupBox1.Controls.Add(this.pairnumber);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(-1, 340);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1008, 34);
+            this.groupBox1.TabIndex = 64;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Change of Winning:";
+            // 
+            // pairnumber
+            // 
+            this.pairnumber.AutoSize = true;
+            this.pairnumber.Location = new System.Drawing.Point(54, 18);
+            this.pairnumber.Name = "pairnumber";
+            this.pairnumber.Size = new System.Drawing.Size(41, 13);
+            this.pairnumber.TabIndex = 7;
+            this.pairnumber.Text = "label10";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(633, 18);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Four of a kind:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(196, 18);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(82, 13);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Three of a kind:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(518, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 13);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Full house: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(432, 18);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Flush:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(329, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Straight: ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(108, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "2 Pair:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "A Pair:";
+            // 
+            // twopairnumber
+            // 
+            this.twopairnumber.AutoSize = true;
+            this.twopairnumber.Location = new System.Drawing.Point(149, 18);
+            this.twopairnumber.Name = "twopairnumber";
+            this.twopairnumber.Size = new System.Drawing.Size(41, 13);
+            this.twopairnumber.TabIndex = 8;
+            this.twopairnumber.Text = "label10";
+            // 
+            // threeofkindnumber
+            // 
+            this.threeofkindnumber.AutoSize = true;
+            this.threeofkindnumber.Location = new System.Drawing.Point(281, 18);
+            this.threeofkindnumber.Name = "threeofkindnumber";
+            this.threeofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.threeofkindnumber.TabIndex = 9;
+            this.threeofkindnumber.Text = "label10";
+            // 
+            // straightnumber
+            // 
+            this.straightnumber.AutoSize = true;
+            this.straightnumber.Location = new System.Drawing.Point(384, 18);
+            this.straightnumber.Name = "straightnumber";
+            this.straightnumber.Size = new System.Drawing.Size(41, 13);
+            this.straightnumber.TabIndex = 10;
+            this.straightnumber.Text = "label11";
+            // 
+            // flushnumber
+            // 
+            this.flushnumber.AutoSize = true;
+            this.flushnumber.Location = new System.Drawing.Point(473, 18);
+            this.flushnumber.Name = "flushnumber";
+            this.flushnumber.Size = new System.Drawing.Size(41, 13);
+            this.flushnumber.TabIndex = 11;
+            this.flushnumber.Text = "label12";
+            // 
+            // fullhousenumber
+            // 
+            this.fullhousenumber.AutoSize = true;
+            this.fullhousenumber.Location = new System.Drawing.Point(585, 18);
+            this.fullhousenumber.Name = "fullhousenumber";
+            this.fullhousenumber.Size = new System.Drawing.Size(41, 13);
+            this.fullhousenumber.TabIndex = 12;
+            this.fullhousenumber.Text = "label13";
+            // 
+            // fourofkindnumber
+            // 
+            this.fourofkindnumber.AutoSize = true;
+            this.fourofkindnumber.Location = new System.Drawing.Point(714, 18);
+            this.fourofkindnumber.Name = "fourofkindnumber";
+            this.fourofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.fourofkindnumber.TabIndex = 13;
+            this.fourofkindnumber.Text = "label14";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(765, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 13);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "Straight Flush:";
+            // 
+            // Sflushnumber
+            // 
+            this.Sflushnumber.AutoSize = true;
+            this.Sflushnumber.Location = new System.Drawing.Point(845, 18);
+            this.Sflushnumber.Name = "Sflushnumber";
+            this.Sflushnumber.Size = new System.Drawing.Size(41, 13);
+            this.Sflushnumber.TabIndex = 15;
+            this.Sflushnumber.Text = "label16";
+            // 
+            // Rflushnumber
+            // 
+            this.Rflushnumber.AutoSize = true;
+            this.Rflushnumber.Location = new System.Drawing.Point(891, 18);
+            this.Rflushnumber.Name = "Rflushnumber";
+            this.Rflushnumber.Size = new System.Drawing.Size(65, 13);
+            this.Rflushnumber.TabIndex = 16;
+            this.Rflushnumber.Text = "Royal Flush:";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(962, 18);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 13);
+            this.label18.TabIndex = 17;
+            this.label18.Text = "label18";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(913, 376);
+            this.ClientSize = new System.Drawing.Size(1014, 376);
             this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Cardchoice2);
             this.Controls.Add(this.Cardchoice1);
             this.Controls.Add(this.label1);
@@ -712,7 +911,6 @@
             this.Controls.Add(this.SecoundBox);
             this.Controls.Add(this.FirstBox);
             this.Controls.Add(this.chancenumberlabel);
-            this.Controls.Add(this.Chancewinninglabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.JackCard);
             this.Controls.Add(this.KingCard);
@@ -767,6 +965,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.FourthPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FifthPlayCard)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FirstPlayCard)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -800,7 +1000,6 @@
         private System.Windows.Forms.CheckBox DiamondBox2;
         private System.Windows.Forms.CheckBox HeartsBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Chancewinninglabel;
         private System.Windows.Forms.Label chancenumberlabel;
         private System.Windows.Forms.CheckBox ClubsBox3;
         private System.Windows.Forms.CheckBox SpadesBox3;
@@ -825,6 +1024,25 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox Cardchoice1;
         private System.Windows.Forms.CheckBox Cardchoice2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label pairnumber;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label twopairnumber;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label Rflushnumber;
+        private System.Windows.Forms.Label Sflushnumber;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label fourofkindnumber;
+        private System.Windows.Forms.Label fullhousenumber;
+        private System.Windows.Forms.Label flushnumber;
+        private System.Windows.Forms.Label straightnumber;
+        private System.Windows.Forms.Label threeofkindnumber;
     }
 }
 
