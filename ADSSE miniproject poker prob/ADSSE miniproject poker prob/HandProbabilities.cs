@@ -160,6 +160,15 @@ namespace ADSSE_miniproject_poker_prob
 
             if(currentCards.Count == 6){
 
+                if (pair == true)
+                {
+                    probability = 2f / (float)(deck.CardsLeft(GameDeck));
+                }
+                else
+                {
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[5].rank)) / deck.CardsLeft(GameDeck))
+                        * (2 / (deck.CardsLeft(GameDeck) - 1));
+                }
                 //check if we have three of a kind with six cards
                 //combinations in a sorted list
                 // 0 = 1 = 2
@@ -174,11 +183,12 @@ namespace ADSSE_miniproject_poker_prob
                     threeOfAKind = true;
                     probability = 1f;
                     }
+
+                if (!threeOfAKind) probability = 0f;
             }
 
 
             if(currentCards.Count == 7){
-
                 //check if we have three of a kind with seven cards
                 //combinations in a sorted list
                 // 1,2,3
@@ -192,6 +202,7 @@ namespace ADSSE_miniproject_poker_prob
                  || ((currentCards[3].rank == currentCards[4].rank) && (currentCards[3].rank == currentCards[5].rank))
                  || ((currentCards[4].rank == currentCards[5].rank) && (currentCards[4].rank == currentCards[6].rank)))
                 {
+                    threeOfAKind = true;
                     probability = 1f;
                 }else
                 {
