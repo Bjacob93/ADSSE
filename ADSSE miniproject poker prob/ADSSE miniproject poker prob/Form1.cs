@@ -40,15 +40,6 @@ namespace ADSSE_miniproject_poker_prob
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-
-
-            GameDeck[0].available = false;
-            GameDeck[12].available = false;
-
-            List<BuildDeck.Card> currentHand = new List<BuildDeck.Card>();
-            currentHand.Add(GameDeck[0]);
-            currentHand.Add(GameDeck[12]);
             MessageBox.Show(Convert.ToString("size of hand: " + currentHand.Count + 
                                              "\n cardslet: " + deck.CardsLeft(GameDeck) + 
                                              "\n " + probabilityCalculater.ProbabilityOfThreeOfaKind(currentHand, GameDeck)));
@@ -2078,7 +2069,7 @@ namespace ADSSE_miniproject_poker_prob
                     currentHand.Add(GameDeck[suit + rank]);
                     GameDeck[suit + rank].available = false;
                     break;
-                case "Dimaonds":
+                case "Diamonds":
                     suit = 26;
                     currentHand.Add(GameDeck[suit + rank]);
                     GameDeck[suit + rank].available = false;
