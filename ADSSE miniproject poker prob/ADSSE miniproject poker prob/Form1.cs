@@ -13,20 +13,35 @@ namespace ADSSE_miniproject_poker_prob
 {
     public partial class Form1 : Form
     {
-        int check = 0;
+        //variables to add the correct card to the hand and make it unavailable in the deck.
+        int suit;
+        int rank;
+
+        List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
         BuildDeck deck = new BuildDeck();
+        List<BuildDeck.Card> currentHand = new List<BuildDeck.Card>();
+
+        int check = 0;
+
         HandProbabilities probabilityCalculater = new HandProbabilities();
-        
+
+        public void Form1_Load(object sender, EventArgs e)
+        {
+            GameDeck = deck.myDeck();
+        }
+
 
         public Form1()
         {
             InitializeComponent();
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            List<BuildDeck.Card> GameDeck = new List<BuildDeck.Card>();
-            GameDeck = deck.myDeck();
+            
+
 
             GameDeck[0].available = false;
             GameDeck[12].available = false;
@@ -342,6 +357,7 @@ namespace ADSSE_miniproject_poker_prob
                 CardNumber2.Text = "5";
             if (CardNumber1.Text == "5" && CardSuit1.Text == "Spades")
                 FirstHandCard.Image = Properties.Resources.Spades_6;
+                
             if (CardNumber2.Text == "5" && CardSuit2.Text == "Spades")
                 SecoundHandCard.Image = Properties.Resources.Spades_6;
             
@@ -600,6 +616,34 @@ namespace ADSSE_miniproject_poker_prob
         {
             check++;
             label1.Text = Convert.ToString(check);
+            rank = Convert.ToInt16(CardNumber1.Text);
+
+            switch (CardSuit1.Text)
+            {
+                case "Hearts":
+                    suit = 0;
+                    currentHand.Add(GameDeck[suit + rank]);
+                    GameDeck[suit + rank].available = false;
+                    break;
+                case "Clubs":
+                    suit = 13;
+                    currentHand.Add(GameDeck[suit + rank]);
+                    GameDeck[suit + rank].available = false;
+                    break;
+                case "Dimaonds":
+                    suit = 26;
+                    currentHand.Add(GameDeck[suit + rank]);
+                    GameDeck[suit + rank].available = false;
+                    break;
+                case "Spades":
+                    suit = 39;
+                    currentHand.Add(GameDeck[suit + rank]);
+                    GameDeck[suit + rank].available = false;
+                    break;
+                default:
+                    break;
+            }
+
             if (check == 1)
             {
                 if (FirstBox.Visible == true && CardSuit1.Text == "label1" || CardNumber1.Text == "label3")
@@ -700,7 +744,19 @@ namespace ADSSE_miniproject_poker_prob
                 ComCard4.Checked = false;
                 ComCard5.Checked = false;
 
+                //reset GameDeck and currentHand
+                currentHand.Clear();
+                foreach(BuildDeck.Card c in GameDeck)
+                {
+                    c.available = true;
+                }
+
             }
+        }
+
+        private void ThirdPlayCard_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
