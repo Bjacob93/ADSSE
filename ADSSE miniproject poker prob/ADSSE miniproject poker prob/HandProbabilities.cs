@@ -16,6 +16,7 @@ namespace ADSSE_miniproject_poker_prob
         public void ResetHandCombinations()
         {
             pair = false;
+            twoPair = false;
             threeOfAKind = false;
         }
 
@@ -55,7 +56,7 @@ namespace ADSSE_miniproject_poker_prob
 
             if (currentCards.Count == 5)
             {
-                //probability for a pair if you have two cards in hand.
+                //probability for a pair if you have five cards in hand.
                 foreach (BuildDeck.Card c in currentCards)
                 {
                     foreach (BuildDeck.Card d in currentCards)
@@ -83,7 +84,7 @@ namespace ADSSE_miniproject_poker_prob
 
             if (currentCards.Count == 6)
             {
-                //probability for a pair if you have two cards in hand.
+                //probability for a pair if you have six cards in hand.
                 foreach (BuildDeck.Card c in currentCards)
                 {
                     foreach (BuildDeck.Card d in currentCards)
@@ -108,6 +109,30 @@ namespace ADSSE_miniproject_poker_prob
                         }
                     }
 
+                }
+            }
+
+            if (currentCards.Count == 7)
+            {
+                //probability for a pair if you have seven cards in hand.
+                foreach (BuildDeck.Card c in currentCards)
+                {
+                    foreach (BuildDeck.Card d in currentCards)
+                    {
+                        if (c != d)
+                        {
+                            if (c.rank == d.rank)
+                            {
+                                pair = true;
+                                pairIndex = currentCards.IndexOf(c);
+                                probability = 1;
+                            }
+                            else
+                            {
+                                probability = 0;
+                            }
+                        }
+                    }
                 }
             }
 
@@ -142,7 +167,7 @@ namespace ADSSE_miniproject_poker_prob
 
                 if (pair == true)
                 {
-                    probability = 2f / (float)(deck.CardsLeft(GameDeck));
+                    probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank)) / (deck.CardsLeft(GameDeck))) + (( 9 / deck.CardsLeft(GameDeck))*( 2 / (deck.CardsLeft(GameDeck)-1))));
                 }else
                 {
                     probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / deck.CardsLeft(GameDeck))
@@ -166,7 +191,7 @@ namespace ADSSE_miniproject_poker_prob
 
                 if (pair == true)
                 {
-                    probability = 2f / (float)(deck.CardsLeft(GameDeck));
+                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank)) / (deck.CardsLeft(GameDeck));
                 }
                 else
                 {
@@ -191,8 +216,7 @@ namespace ADSSE_miniproject_poker_prob
                 if (!pair) probability = 0f;
             }
 
-
-            if(currentCards.Count == 7){
+            if (currentCards.Count == 7){
                 //check if we have three of a kind with seven cards
                 //combinations in a sorted list
                 // 1,2,3
@@ -362,21 +386,31 @@ namespace ADSSE_miniproject_poker_prob
             {
                 if (pair)
                 {
-
+                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[5].rank) - (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) * 2)) / deck.CardsLeft(GameDeck);
                 }else
                 {
-
+                    probability = 0;
                 }
             }
 
             if (currentCards.Count == 7)
             {
-                if (pair)
+               
+                /* check for two pairs with seven cards
+                 0 == 1 && 2 == 3 || 0 == 1 && 3 == 4 || 0 == 1 && 4 == 5 || 0 == 1 && 5 == 6
+                 1 == 2 && 3 == 4 || 1 == 2 && 4 == 5 || 1 == 2 && 5 == 6
+                 2 == 3 && 4 == 5 || 2 == 3 && 5 == 6
+                 3 == 4 && 5 == 6
+                 */
+                if ((currentCards[0].rank == currentCards[1].rank && currentCards[0].rank == currentCards[1].rank) || (currentCards[0].rank == currentCards[1].rank && currentCards[3].rank == currentCards[3].rank) || (currentCards[0].rank == currentCards[1].rank && currentCards[4].rank == currentCards[5].rank )|| (currentCards[0].rank == currentCards[1].rank && currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[1].rank == currentCards[2].rank && currentCards[3].rank == currentCards[4].rank) || (currentCards[1].rank == currentCards[2].rank && currentCards[4].rank == currentCards[5].rank) || (currentCards[1].rank == currentCards[2].rank && currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[2].rank == currentCards[3].rank && currentCards[4].rank == currentCards[5].rank) || (currentCards[3].rank == currentCards[4].rank && currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[3].rank == currentCards[4].rank && currentCards[5].rank == currentCards[6].rank))
                 {
-
+                    probability = 1;
                 }else
                 {
-
+                    probability = 0;
                 }
             }
 
@@ -384,6 +418,7 @@ namespace ADSSE_miniproject_poker_prob
             double prob = System.Math.Round(probability, 2);
             return prob;
         }
+
         public double ProbabilityOfFullHouse(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
             //sort the list in decending order by rank

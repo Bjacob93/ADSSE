@@ -2083,7 +2083,7 @@ namespace ADSSE_miniproject_poker_prob
                     break;
             }
 
-            if(currentHand.Count == 2 || currentHand.Count == 5 || currentHand.Count == 6)
+            if(currentHand.Count == 2 || currentHand.Count == 5 || currentHand.Count == 6 || currentHand.Count == 7)
             {
                 pairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfPair(currentHand,GameDeck)) + "%";
                 twopairnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfTwoPair(currentHand, GameDeck)) + "%";
