@@ -405,13 +405,13 @@ namespace ADSSE_miniproject_poker_prob
             {
                 if (pair)
                 {
-                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) / deck.CardsLeft(GameDeck)) + (((deck.CardsLeft(GameDeck) - 3f) / (deck.CardsLeft(GameDeck) - 1f)) * (3f / (deck.CardsLeft(GameDeck) - 2)));
+                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) / deck.CardsLeft(GameDeck)) + (( 9f / deck.CardsLeft(GameDeck)) * (2f / (deck.CardsLeft(GameDeck) - 1)));
                 }
                 if (threeOfAKind) {
-                    probability = (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) / deck.CardsLeft(GameDeck)) + (((deck.CardsLeft(GameDeck) - 3f) / (deck.CardsLeft(GameDeck) - 1f)) * (3f / (deck.CardsLeft(GameDeck) - 2)));
+                    probability = (6f / deck.CardsLeft(GameDeck)) + (((deck.CardsLeft(GameDeck) - 7f) / deck.CardsLeft(GameDeck)) * (3f / (deck.CardsLeft(GameDeck) - 1)));
 
                 }
-                else
+                if(!pair && !threeOfAKind)
                 {
                     probability = 0f;
                 }
@@ -419,27 +419,30 @@ namespace ADSSE_miniproject_poker_prob
 
             if (currentCards.Count == 6)
             {
-                if (pair)
-                {
-
+                if (pair) {
+                    probability = 0f;
                 }
-                else
+                if (twoPair)
+                {
+                    probability = 4f / deck.CardsLeft(GameDeck);
+                }
+                if (threeOfAKind) {
+                    probability = 9f / deck.CardsLeft(GameDeck);
+                }
+                if(!twoPair && !threeOfAKind)
                 {
                     probability = 0f;
-
                 }
             }
 
             if (currentCards.Count == 7)
             {
-                if (pair)
+                if (pair && threeOfAKind)
                 {
-
+                    probability = 1f;
                 }
                 else
-                {
-
-                }
+                    probability = 0f;
             }
 
             probability = probability * 100f;
