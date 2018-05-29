@@ -380,6 +380,13 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) * (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank)) / (deck.CardsLeft(GameDeck) - 1);
                 }
+                // 
+                if((currentCards[0].rank == currentCards[1].rank) && (currentCards[2].rank == currentCards[3].rank) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[3].rank == currentCards[4].rank) ||
+                    (currentCards[1].rank == currentCards[2].rank) && (currentCards[3].rank == currentCards[4].rank))
+                {
+                    probability = 1f;
+                    twoPair = true;
+                }
             }
 
             if (currentCards.Count == 6)
@@ -391,7 +398,16 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     probability = 0;
                 }
+                if ((currentCards[0].rank == currentCards[1].rank) && (currentCards[2].rank == currentCards[3].rank) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[3].rank == currentCards[4].rank) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[4].rank == currentCards[5].rank) ||
+                    (currentCards[1].rank == currentCards[2].rank) && (currentCards[3].rank == currentCards[4].rank) || (currentCards[1].rank == currentCards[2].rank) && (currentCards[4].rank == currentCards[5].rank) ||
+                    (currentCards[2].rank == currentCards[3].rank) && (currentCards[4].rank == currentCards[5].rank))
+                {
+                    probability = 1f;
+                    twoPair = true;
+                }
             }
+
+
 
             if (currentCards.Count == 7)
             {
@@ -402,13 +418,15 @@ namespace ADSSE_miniproject_poker_prob
                  2 == 3 && 4 == 5 || 2 == 3 && 5 == 6
                  3 == 4 && 5 == 6
                  */
-                if ((currentCards[0].rank == currentCards[1].rank && currentCards[0].rank == currentCards[1].rank) || (currentCards[0].rank == currentCards[1].rank && currentCards[3].rank == currentCards[3].rank) || (currentCards[0].rank == currentCards[1].rank && currentCards[4].rank == currentCards[5].rank )|| (currentCards[0].rank == currentCards[1].rank && currentCards[5].rank == currentCards[6].rank) ||
-                    (currentCards[1].rank == currentCards[2].rank && currentCards[3].rank == currentCards[4].rank) || (currentCards[1].rank == currentCards[2].rank && currentCards[4].rank == currentCards[5].rank) || (currentCards[1].rank == currentCards[2].rank && currentCards[5].rank == currentCards[6].rank) ||
-                    (currentCards[2].rank == currentCards[3].rank && currentCards[4].rank == currentCards[5].rank) || (currentCards[3].rank == currentCards[4].rank && currentCards[5].rank == currentCards[6].rank) ||
-                    (currentCards[3].rank == currentCards[4].rank && currentCards[5].rank == currentCards[6].rank))
+                if ((currentCards[0].rank == currentCards[1].rank) && (currentCards[2].rank == currentCards[3].rank) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[3].rank == currentCards[4].rank) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[4].rank == currentCards[5].rank ) || (currentCards[0].rank == currentCards[1].rank) && (currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[1].rank == currentCards[2].rank) && (currentCards[3].rank == currentCards[4].rank) || (currentCards[1].rank == currentCards[2].rank) && (currentCards[4].rank == currentCards[5].rank) || (currentCards[1].rank == currentCards[2].rank) && (currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[2].rank == currentCards[3].rank) && (currentCards[4].rank == currentCards[5].rank) || (currentCards[3].rank == currentCards[4].rank) && (currentCards[5].rank == currentCards[6].rank) ||
+                    (currentCards[3].rank == currentCards[4].rank) && (currentCards[5].rank == currentCards[6].rank))
                 {
                     probability = 1;
-                }else
+                    twoPair = true;
+                }
+                else
                 {
                     probability = 0;
                 }
