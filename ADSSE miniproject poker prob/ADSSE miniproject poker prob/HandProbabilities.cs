@@ -9,7 +9,7 @@ namespace ADSSE_miniproject_poker_prob
     class HandProbabilities
     {
         BuildDeck deck = new BuildDeck();
-        bool pair, twoPair, threeOfAKind, fourofkind = false;
+        bool pair, twoPair, threeOfAKind = false;
         float probability;
         int pairIndex;
 
@@ -507,6 +507,8 @@ namespace ADSSE_miniproject_poker_prob
             return prob;
         }
 
+
+ 
     }
 
 }
