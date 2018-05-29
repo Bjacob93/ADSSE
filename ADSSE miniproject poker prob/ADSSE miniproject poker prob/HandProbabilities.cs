@@ -9,7 +9,7 @@ namespace ADSSE_miniproject_poker_prob
     class HandProbabilities
     {
         BuildDeck deck = new BuildDeck();
-        bool pair, threeOfAKind, fourofkind = false;
+        bool pair, twoPair, threeOfAKind, fourofkind = false;
         float probability;
         int pairIndex;
 
@@ -349,8 +349,10 @@ namespace ADSSE_miniproject_poker_prob
             {
                 if (pair)
                 {
-
-                }else
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank) - (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) * 2)) / deck.CardsLeft(GameDeck)) +
+                        (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank) - (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank))) / (deck.CardsLeft(GameDeck)) * (3f / (deck.CardsLeft(GameDeck) - 1))));
+                }
+                else
                 {
                     probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) * (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank)) / (deck.CardsLeft(GameDeck) - 1);
                 }
@@ -360,6 +362,7 @@ namespace ADSSE_miniproject_poker_prob
             {
                 if (pair)
                 {
+
                 }else
                 {
 
