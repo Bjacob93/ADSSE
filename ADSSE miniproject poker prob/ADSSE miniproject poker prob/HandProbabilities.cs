@@ -377,5 +377,77 @@ namespace ADSSE_miniproject_poker_prob
             double prob = System.Math.Round(probability, 2);
             return prob;
         }
+        public double ProbabilityOfFullHouse(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            //sort the list in decending order by rank
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
+            currentCards.Reverse();
+
+            probability = 0f;
+
+            if (currentCards.Count == 2)
+            {
+                foreach (BuildDeck.Card c in currentCards)
+                {
+                    foreach (BuildDeck.Card d in currentCards)
+                    {
+                        if (c != d)
+                        {
+                            if (c.rank == d.rank)
+                            {
+                                pair = true;
+                                probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)/(deck.CardsLeft(GameDeck)))) +(((deck.CardsLeft(GameDeck) - 3) / (deck.CardsLeft(GameDeck) - 1))* (3f / deck.CardsLeft(GameDeck) - 2)));
+                            }
+                            else
+                            {
+                               //probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) / (deck.CardsLeft(GameDeck)) *
+                                                                          //((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1)));
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (currentCards.Count == 5)
+            {
+                if (pair)
+                {
+
+                }
+                else
+                {
+                    probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) * (deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[3].rank)) / (deck.CardsLeft(GameDeck) - 1);
+                }
+            }
+
+            if (currentCards.Count == 6)
+            {
+                if (pair)
+                {
+                }
+                else
+                {
+
+                }
+            }
+
+            if (currentCards.Count == 7)
+            {
+                if (pair)
+                {
+
+                }
+                else
+                {
+
+                }
+            }
+
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
+        }
+
     }
+
 }
