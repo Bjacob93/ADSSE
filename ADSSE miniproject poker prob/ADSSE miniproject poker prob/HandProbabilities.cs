@@ -603,9 +603,18 @@ namespace ADSSE_miniproject_poker_prob
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            straightCounter = 5 - straightCounter;
-                            straightCounter = straightCounter * 4;
-                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 8;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 4;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
@@ -618,9 +627,18 @@ namespace ADSSE_miniproject_poker_prob
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            straightCounter = 5 - straightCounter;
-                            straightCounter = straightCounter * 4;
-                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 8;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 4;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
@@ -633,9 +651,18 @@ namespace ADSSE_miniproject_poker_prob
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            straightCounter = 5 - straightCounter;
-                            straightCounter = straightCounter * 4; // four different suits
-                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            if ((currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 8;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 4;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
@@ -773,9 +800,18 @@ namespace ADSSE_miniproject_poker_prob
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            straightCounter = 5 - straightCounter;
-                            straightCounter = straightCounter * 4;
-                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank +1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 8;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 4;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
@@ -788,9 +824,18 @@ namespace ADSSE_miniproject_poker_prob
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            straightCounter = 5 - straightCounter;
-                            straightCounter = straightCounter * 4;
-                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 8;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 4;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
                         }
                     }
                 }
@@ -973,6 +1018,10 @@ namespace ADSSE_miniproject_poker_prob
             return prob;
         }
  
+        public double ProbabilityOfFlush(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            return probability;
+        }
     }
 
 }
