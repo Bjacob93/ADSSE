@@ -79,6 +79,16 @@
             this.Cardchoice1 = new System.Windows.Forms.CheckBox();
             this.Cardchoice2 = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rflushnumber = new System.Windows.Forms.Label();
+            this.RoyalFlush = new System.Windows.Forms.Label();
+            this.Sflushnumber = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.fourofkindnumber = new System.Windows.Forms.Label();
+            this.fullhousenumber = new System.Windows.Forms.Label();
+            this.flushnumber = new System.Windows.Forms.Label();
+            this.straightnumber = new System.Windows.Forms.Label();
+            this.threeofkindnumber = new System.Windows.Forms.Label();
+            this.twopairnumber = new System.Windows.Forms.Label();
             this.pairnumber = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -87,16 +97,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.twopairnumber = new System.Windows.Forms.Label();
-            this.threeofkindnumber = new System.Windows.Forms.Label();
-            this.straightnumber = new System.Windows.Forms.Label();
-            this.flushnumber = new System.Windows.Forms.Label();
-            this.fullhousenumber = new System.Windows.Forms.Label();
-            this.fourofkindnumber = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Sflushnumber = new System.Windows.Forms.Label();
-            this.Rflushnumber = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.FirstBox.SuspendLayout();
             this.SecoundBox.SuspendLayout();
             this.CommunityBox.SuspendLayout();
@@ -700,8 +700,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.Rflushnumber);
+            this.groupBox1.Controls.Add(this.rflushnumber);
+            this.groupBox1.Controls.Add(this.RoyalFlush);
             this.groupBox1.Controls.Add(this.Sflushnumber);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.fourofkindnumber);
@@ -724,6 +724,96 @@
             this.groupBox1.TabIndex = 64;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Probability of Hand:";
+            // 
+            // rflushnumber
+            // 
+            this.rflushnumber.AutoSize = true;
+            this.rflushnumber.Location = new System.Drawing.Point(962, 18);
+            this.rflushnumber.Name = "rflushnumber";
+            this.rflushnumber.Size = new System.Drawing.Size(41, 13);
+            this.rflushnumber.TabIndex = 17;
+            this.rflushnumber.Text = "label18";
+            // 
+            // RoyalFlush
+            // 
+            this.RoyalFlush.AutoSize = true;
+            this.RoyalFlush.Location = new System.Drawing.Point(891, 18);
+            this.RoyalFlush.Name = "RoyalFlush";
+            this.RoyalFlush.Size = new System.Drawing.Size(65, 13);
+            this.RoyalFlush.TabIndex = 16;
+            this.RoyalFlush.Text = "Royal Flush:";
+            // 
+            // Sflushnumber
+            // 
+            this.Sflushnumber.AutoSize = true;
+            this.Sflushnumber.Location = new System.Drawing.Point(845, 18);
+            this.Sflushnumber.Name = "Sflushnumber";
+            this.Sflushnumber.Size = new System.Drawing.Size(41, 13);
+            this.Sflushnumber.TabIndex = 15;
+            this.Sflushnumber.Text = "label16";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(765, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(74, 13);
+            this.label15.TabIndex = 14;
+            this.label15.Text = "Straight Flush:";
+            // 
+            // fourofkindnumber
+            // 
+            this.fourofkindnumber.AutoSize = true;
+            this.fourofkindnumber.Location = new System.Drawing.Point(714, 18);
+            this.fourofkindnumber.Name = "fourofkindnumber";
+            this.fourofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.fourofkindnumber.TabIndex = 13;
+            this.fourofkindnumber.Text = "label14";
+            // 
+            // fullhousenumber
+            // 
+            this.fullhousenumber.AutoSize = true;
+            this.fullhousenumber.Location = new System.Drawing.Point(585, 18);
+            this.fullhousenumber.Name = "fullhousenumber";
+            this.fullhousenumber.Size = new System.Drawing.Size(41, 13);
+            this.fullhousenumber.TabIndex = 12;
+            this.fullhousenumber.Text = "label13";
+            // 
+            // flushnumber
+            // 
+            this.flushnumber.AutoSize = true;
+            this.flushnumber.Location = new System.Drawing.Point(473, 18);
+            this.flushnumber.Name = "flushnumber";
+            this.flushnumber.Size = new System.Drawing.Size(41, 13);
+            this.flushnumber.TabIndex = 11;
+            this.flushnumber.Text = "label12";
+            // 
+            // straightnumber
+            // 
+            this.straightnumber.AutoSize = true;
+            this.straightnumber.Location = new System.Drawing.Point(384, 18);
+            this.straightnumber.Name = "straightnumber";
+            this.straightnumber.Size = new System.Drawing.Size(41, 13);
+            this.straightnumber.TabIndex = 10;
+            this.straightnumber.Text = "label11";
+            // 
+            // threeofkindnumber
+            // 
+            this.threeofkindnumber.AutoSize = true;
+            this.threeofkindnumber.Location = new System.Drawing.Point(281, 18);
+            this.threeofkindnumber.Name = "threeofkindnumber";
+            this.threeofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.threeofkindnumber.TabIndex = 9;
+            this.threeofkindnumber.Text = "label10";
+            // 
+            // twopairnumber
+            // 
+            this.twopairnumber.AutoSize = true;
+            this.twopairnumber.Location = new System.Drawing.Point(149, 18);
+            this.twopairnumber.Name = "twopairnumber";
+            this.twopairnumber.Size = new System.Drawing.Size(41, 13);
+            this.twopairnumber.TabIndex = 8;
+            this.twopairnumber.Text = "label10";
             // 
             // pairnumber
             // 
@@ -796,96 +886,6 @@
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "A Pair:";
-            // 
-            // twopairnumber
-            // 
-            this.twopairnumber.AutoSize = true;
-            this.twopairnumber.Location = new System.Drawing.Point(149, 18);
-            this.twopairnumber.Name = "twopairnumber";
-            this.twopairnumber.Size = new System.Drawing.Size(41, 13);
-            this.twopairnumber.TabIndex = 8;
-            this.twopairnumber.Text = "label10";
-            // 
-            // threeofkindnumber
-            // 
-            this.threeofkindnumber.AutoSize = true;
-            this.threeofkindnumber.Location = new System.Drawing.Point(281, 18);
-            this.threeofkindnumber.Name = "threeofkindnumber";
-            this.threeofkindnumber.Size = new System.Drawing.Size(41, 13);
-            this.threeofkindnumber.TabIndex = 9;
-            this.threeofkindnumber.Text = "label10";
-            // 
-            // straightnumber
-            // 
-            this.straightnumber.AutoSize = true;
-            this.straightnumber.Location = new System.Drawing.Point(384, 18);
-            this.straightnumber.Name = "straightnumber";
-            this.straightnumber.Size = new System.Drawing.Size(41, 13);
-            this.straightnumber.TabIndex = 10;
-            this.straightnumber.Text = "label11";
-            // 
-            // flushnumber
-            // 
-            this.flushnumber.AutoSize = true;
-            this.flushnumber.Location = new System.Drawing.Point(473, 18);
-            this.flushnumber.Name = "flushnumber";
-            this.flushnumber.Size = new System.Drawing.Size(41, 13);
-            this.flushnumber.TabIndex = 11;
-            this.flushnumber.Text = "label12";
-            // 
-            // fullhousenumber
-            // 
-            this.fullhousenumber.AutoSize = true;
-            this.fullhousenumber.Location = new System.Drawing.Point(585, 18);
-            this.fullhousenumber.Name = "fullhousenumber";
-            this.fullhousenumber.Size = new System.Drawing.Size(41, 13);
-            this.fullhousenumber.TabIndex = 12;
-            this.fullhousenumber.Text = "label13";
-            // 
-            // fourofkindnumber
-            // 
-            this.fourofkindnumber.AutoSize = true;
-            this.fourofkindnumber.Location = new System.Drawing.Point(714, 18);
-            this.fourofkindnumber.Name = "fourofkindnumber";
-            this.fourofkindnumber.Size = new System.Drawing.Size(41, 13);
-            this.fourofkindnumber.TabIndex = 13;
-            this.fourofkindnumber.Text = "label14";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(765, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(74, 13);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "Straight Flush:";
-            // 
-            // Sflushnumber
-            // 
-            this.Sflushnumber.AutoSize = true;
-            this.Sflushnumber.Location = new System.Drawing.Point(845, 18);
-            this.Sflushnumber.Name = "Sflushnumber";
-            this.Sflushnumber.Size = new System.Drawing.Size(41, 13);
-            this.Sflushnumber.TabIndex = 15;
-            this.Sflushnumber.Text = "label16";
-            // 
-            // Rflushnumber
-            // 
-            this.Rflushnumber.AutoSize = true;
-            this.Rflushnumber.Location = new System.Drawing.Point(891, 18);
-            this.Rflushnumber.Name = "Rflushnumber";
-            this.Rflushnumber.Size = new System.Drawing.Size(65, 13);
-            this.Rflushnumber.TabIndex = 16;
-            this.Rflushnumber.Text = "Royal Flush:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(962, 18);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 13);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "label18";
             // 
             // Form1
             // 
@@ -1034,8 +1034,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label twopairnumber;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label Rflushnumber;
+        private System.Windows.Forms.Label rflushnumber;
+        private System.Windows.Forms.Label RoyalFlush;
         private System.Windows.Forms.Label Sflushnumber;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label fourofkindnumber;

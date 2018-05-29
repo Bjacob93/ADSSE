@@ -2092,6 +2092,8 @@ namespace ADSSE_miniproject_poker_prob
                 fullhousenumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFullHouse(currentHand, GameDeck)) + "%";
                 straightnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfStraight(currentHand, GameDeck)) + "%";
                 flushnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFlush(currentHand, GameDeck)) + "%";
+                Sflushnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfStraightFlush(currentHand, GameDeck)) + "%";
+                rflushnumber.Text = Convert.ToString(probabilityCalculater.ProbailityOfRoyalFlush(currentHand, GameDeck)) + "%";
             }
             else if(currentHand.Count == 1)
             {
@@ -2217,6 +2219,8 @@ namespace ADSSE_miniproject_poker_prob
                 twopairnumber.Text = "";
                 fourofkindnumber.Text = "";
 
+                //reset hand combinations
+                probabilityCalculater.ResetHandCombinations();
 
                 //reset GameDeck and currentHand
                 currentHand.Clear();

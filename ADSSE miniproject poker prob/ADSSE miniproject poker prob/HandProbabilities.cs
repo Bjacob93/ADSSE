@@ -9,10 +9,9 @@ namespace ADSSE_miniproject_poker_prob
     class HandProbabilities
     {
         BuildDeck deck = new BuildDeck();
-        bool pair, twoPair, threeOfAKind, fourOfAKind = false;
+        bool aceInStraight, pair, twoPair, threeOfAKind, fourOfAKind = false;
         float probability;
-        int pairIndex;
-        string combination;
+        int pairIndex, roaylFlushCard;
 
 
         public void ResetHandCombinations()
@@ -603,13 +602,22 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     if (currentCards[0].rank - currentCards[i].rank <= 4)
                     {
+                        if (currentCards[i].rank == 0) aceInStraight = true;
+
                         straightCounter++;
                         if (straightCounter == 4)
                         {
                             if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1))
                             {
                                 straightCounter = 5 - straightCounter;
-                                straightCounter = straightCounter * 8;
+                                if (aceInStraight)
+                                {
+                                    straightCounter = straightCounter * 4;
+                                }
+                                else
+                                {
+                                    straightCounter = straightCounter * 8;
+                                }
                                 probability = (straightCounter / deck.CardsLeft(GameDeck));
                             }
                             else
@@ -627,13 +635,22 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     if (currentCards[1].rank - currentCards[i].rank <= 4)
                     {
+                        if (currentCards[i].rank == 0) aceInStraight = true;
+
                         straightCounter++;
                         if (straightCounter == 4)
                         {
                             if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1))
                             {
                                 straightCounter = 5 - straightCounter;
-                                straightCounter = straightCounter * 8;
+                                if (aceInStraight)
+                                {
+                                    straightCounter = straightCounter * 4;
+                                }
+                                else
+                                {
+                                    straightCounter = straightCounter * 8;
+                                }
                                 probability = (straightCounter / deck.CardsLeft(GameDeck));
                             }
                             else
@@ -651,13 +668,22 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     if (currentCards[2].rank - currentCards[i].rank <= 4)
                     {
+                        if (currentCards[i].rank == 0) aceInStraight = true;
+
                         straightCounter++;
                         if (straightCounter == 4)
                         {
                             if ((currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
                             {
                                 straightCounter = 5 - straightCounter;
-                                straightCounter = straightCounter * 8;
+                                if (aceInStraight)
+                                {
+                                    straightCounter = straightCounter * 4;
+                                }
+                                else
+                                {
+                                    straightCounter = straightCounter * 8;
+                                }
                                 probability = (straightCounter / deck.CardsLeft(GameDeck));
                             }
                             else
@@ -804,13 +830,22 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].rank - currentCards[i].rank >= 0)
                     {
+                        if (currentCards[i].rank == 0) aceInStraight = true;
+
                         straightCounter++;
                         if (straightCounter == 4)
                         {
                             if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank +1))
                             {
                                 straightCounter = 5 - straightCounter;
-                                straightCounter = straightCounter * 8;
+                                if (aceInStraight)
+                                {
+                                    straightCounter = straightCounter * 4;
+                                }
+                                else
+                                {
+                                    straightCounter = straightCounter * 8;
+                                }
                                 probability = (straightCounter / deck.CardsLeft(GameDeck));
                             }
                             else
@@ -828,13 +863,22 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     if (currentCards[1].rank - currentCards[i].rank <= 4)
                     {
+                        if (currentCards[i].rank == 0) aceInStraight = true;
+
                         straightCounter++;
                         if (straightCounter == 4)
                         {
-                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
+                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) /*&& (currentCards[4].rank == currentCards[5].rank + 1)*/)
                             {
                                 straightCounter = 5 - straightCounter;
-                                straightCounter = straightCounter * 8;
+                                if (aceInStraight)
+                                {
+                                    straightCounter = straightCounter * 4;
+                                }
+                                else
+                                {
+                                    straightCounter = straightCounter * 8;
+                                }
                                 probability = (straightCounter / deck.CardsLeft(GameDeck));
                             }
                             else
@@ -1088,6 +1132,552 @@ namespace ADSSE_miniproject_poker_prob
                 else
                 {
                     probability = 0f;
+                }
+            }
+
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
+        }
+
+        public double ProbabilityOfStraightFlush(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            //sort the list in decending order by rank
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
+            currentCards.Reverse();
+
+            probability = 0f;
+            if (currentCards.Count == 2) probability = 0.00001441f;
+
+            if (currentCards.Count == 5)
+            {
+                int straightCounter;
+
+                //if three cards for a straight
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            straightCounter = 5 - straightCounter;
+                            probability = (straightCounter / deck.CardsLeft(GameDeck)) * ((straightCounter / 2) / (deck.CardsLeft(GameDeck) - 1));
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            straightCounter = 5 - straightCounter;
+                            probability = (straightCounter / deck.CardsLeft(GameDeck)) * ((straightCounter / 2) / (deck.CardsLeft(GameDeck) - 1));
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit) 
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            straightCounter = 5 - straightCounter;
+                            probability = (straightCounter / deck.CardsLeft(GameDeck)) * ((straightCounter / 2) / (deck.CardsLeft(GameDeck) - 1));
+                        }
+                    }
+                }
+
+                //if four cards for a straight
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 2;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 2;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            if ((currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 2;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+                }
+
+                //if five cards in sequence
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+            }
+
+            if (currentCards.Count == 6)
+            {
+                int straightCounter;
+
+                //if three cards for a straight
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            probability = 0;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            probability = 0;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            probability = 0;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 4; i < currentCards.Count; i++)
+                {
+                    if (currentCards[3].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 3)
+                        {
+                            probability = 0;
+                        }
+                    }
+                }
+
+                //if four cards for a straight
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            if ((currentCards[0].rank == currentCards[1].rank + 1) && (currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 2;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            if ((currentCards[1].rank == currentCards[2].rank + 1) && (currentCards[2].rank == currentCards[3].rank + 1) && (currentCards[3].rank == currentCards[4].rank + 1) && (currentCards[4].rank == currentCards[5].rank + 1))
+                            {
+                                straightCounter = 5 - straightCounter;
+                                straightCounter = straightCounter * 2;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                            else
+                            {
+                                straightCounter = 5 - straightCounter;
+                                probability = (straightCounter / deck.CardsLeft(GameDeck));
+                            }
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            straightCounter = 5 - straightCounter;
+                            straightCounter = straightCounter * 2; // four different suits
+                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 4; i < currentCards.Count; i++)
+                {
+                    if (currentCards[3].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 4)
+                        {
+                            straightCounter = 5 - straightCounter;
+                            straightCounter = straightCounter * 2; // four different suits
+                            probability = (straightCounter / deck.CardsLeft(GameDeck));
+                        }
+                    }
+                }
+                //for five cards in sequence
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 4; i < currentCards.Count; i++)
+                {
+                    if (currentCards[3].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+            }
+
+            if (currentCards.Count == 7)
+            {
+                int straightCounter;
+
+                //for five cards in sequence
+                straightCounter = 1;
+                for (int i = 1; i < currentCards.Count; i++)
+                {
+                    if (currentCards[0].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 2; i < currentCards.Count; i++)
+                {
+                    if (currentCards[1].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 3; i < currentCards.Count; i++)
+                {
+                    if (currentCards[2].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+
+                straightCounter = 1;
+                for (int i = 4; i < currentCards.Count; i++)
+                {
+                    if (currentCards[3].rank - currentCards[i].rank <= 4 && currentCards[0].suit == currentCards[i].suit)
+                    {
+                        straightCounter++;
+                        if (straightCounter == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+            }
+
+
+            if (fourOfAKind) probability = 0;
+
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
+        }
+
+        public double ProbailityOfRoyalFlush(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            probability = 0;
+
+            if (currentCards.Count == 2) { probability = 0f; }
+
+            if(currentCards.Count == 5)
+            {
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if(roaylFlushCard == 3)
+                        {
+                            roaylFlushCard =  5 - roaylFlushCard;
+                            probability = ((roaylFlushCard / deck.CardsLeft(GameDeck)) * ((roaylFlushCard / 2) / (deck.CardsLeft(GameDeck) - 1)));
+                        }else
+                        {
+                            probability = 0f;
+                        }
+                    }
+                }
+
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 4)
+                        {
+                            roaylFlushCard = 5 - roaylFlushCard;
+                            probability = roaylFlushCard / deck.CardsLeft(GameDeck);
+                        }
+                    }
+                }
+
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 5)
+                        { 
+                            probability = 1f;
+                        }
+                    }
+                }
+            }
+
+            if (currentCards.Count == 6)
+            {
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 3)
+                        {
+                            roaylFlushCard = 5 - roaylFlushCard;
+                            probability = ((roaylFlushCard / deck.CardsLeft(GameDeck)) * ((roaylFlushCard / 2) / (deck.CardsLeft(GameDeck) - 1)));
+                        }
+                        else
+                        {
+                            probability = 0f;
+                        }
+                    }
+                }
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 4)
+                        {
+                            roaylFlushCard = 5 - roaylFlushCard;
+                            probability = roaylFlushCard / deck.CardsLeft(GameDeck);
+                        }
+                        else
+                        {
+                            probability = 0f;
+                        }
+                    }
+                }
+
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
+                }
+            }
+
+            if (currentCards.Count == 7)
+            {
+                roaylFlushCard = 0;
+                for (int i = 0; i < currentCards.Count; i++)
+                {
+                    if ((12 - currentCards[i].rank <= 3 && currentCards[0].suit == currentCards[i].suit) || (currentCards[i].rank == 0 && currentCards[0].suit == currentCards[i].suit))
+                    {
+                        roaylFlushCard++;
+                        if (roaylFlushCard == 5)
+                        {
+                            probability = 1f;
+                        }
+                    }
                 }
             }
 
