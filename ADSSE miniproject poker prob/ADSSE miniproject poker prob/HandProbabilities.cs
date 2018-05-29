@@ -11,6 +11,7 @@ namespace ADSSE_miniproject_poker_prob
         BuildDeck deck = new BuildDeck();
         bool pair, threeOfAKind, fourofkind = false;
         float probability;
+        int pairIndex;
 
         public void ResetHandCombinations()
         {
@@ -40,6 +41,7 @@ namespace ADSSE_miniproject_poker_prob
                             if (c.rank == d.rank)
                             {
                                 pair = true;
+                                pairIndex = currentCards.IndexOf(c);
                                 probability = 1;
                             }
                             else
@@ -63,6 +65,7 @@ namespace ADSSE_miniproject_poker_prob
                             if (c.rank == d.rank)
                             {
                                 pair = true;
+                                pairIndex = currentCards.IndexOf(c);
                                 probability = 1;
                             }
                             else
@@ -89,6 +92,7 @@ namespace ADSSE_miniproject_poker_prob
                         {
                             if (c.rank == d.rank)
                             {
+                                pairIndex = currentCards.IndexOf(c);
                                 pair = true;
                                 probability = 1;
                             }
