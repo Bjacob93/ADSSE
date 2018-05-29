@@ -507,7 +507,19 @@ namespace ADSSE_miniproject_poker_prob
             return prob;
         }
 
+        public double ProbabilityOfStraight(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
+        {
+            //sort the list in decending order by rank
+            currentCards = currentCards.OrderBy(o => o.rank).ToList();
+            currentCards.Reverse();
 
+            probability = 0f;
+
+
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
+        }
  
     }
 
