@@ -518,11 +518,7 @@ namespace ADSSE_miniproject_poker_prob
 
             probability = 0f;
 
-            switch (combination)
-            {
-
-            }
-
+            if (currentCards.Count == 5)
             probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;
