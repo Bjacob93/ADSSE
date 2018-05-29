@@ -57,6 +57,17 @@ namespace ADSSE_miniproject_poker_prob
             return amountOfCardsLeft;
         }
 
+
+        public float TypeOfSuitLeft(List<Card> deck, int suit)
+        {
+            float amountOfSuitsLeft = 0;
+            for(int s = 0; s < deck.Count; s++)
+            {
+                if (deck[s].suit == s && deck[s].available) amountOfSuitsLeft += 1;
+            }
+            return amountOfSuitsLeft;
+        }
+
         public float TypeOfCardLeft(List<Card> deck, int i)
         {
             float typeLeft = 0;
