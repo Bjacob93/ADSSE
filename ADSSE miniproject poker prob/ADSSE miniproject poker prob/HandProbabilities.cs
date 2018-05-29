@@ -9,7 +9,7 @@ namespace ADSSE_miniproject_poker_prob
     class HandProbabilities
     {
         BuildDeck deck = new BuildDeck();
-        bool pair, twoPair, threeOfAKind = false;
+        bool pair, twoPair, threeOfAKind, fourOfAKind = false;
         float probability;
         int pairIndex;
 
@@ -18,6 +18,7 @@ namespace ADSSE_miniproject_poker_prob
             pair = false;
             twoPair = false;
             threeOfAKind = false;
+            fourOfAKind = false;
         }
 
 
@@ -296,7 +297,7 @@ namespace ADSSE_miniproject_poker_prob
                 if (((currentCards[0].rank == currentCards[1].rank) && (currentCards[0].rank == currentCards[2].rank) && (currentCards[0].rank == currentCards[3].rank))
                 || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank)))
                 {
-                    fourofkind = true;
+                    fourOfAKind = true;
                     probability = 1f;
                 }
 
@@ -329,7 +330,7 @@ namespace ADSSE_miniproject_poker_prob
                 || ((currentCards[1].rank == currentCards[2].rank) && (currentCards[1].rank == currentCards[3].rank) && (currentCards[1].rank == currentCards[4].rank))
                 || ((currentCards[2].rank == currentCards[3].rank) && (currentCards[2].rank == currentCards[4].rank) && (currentCards[2].rank == currentCards[5].rank)))
                 {
-                    fourofkind = true;
+                    fourOfAKind = true;
                     probability = 1f;
                 }
                 if (currentCards.Count == 7)
@@ -340,7 +341,7 @@ namespace ADSSE_miniproject_poker_prob
                || ((currentCards[3].rank == currentCards[4].rank) && (currentCards[3].rank == currentCards[5].rank) && (currentCards[3].rank == currentCards[6].rank))
                || ((currentCards[4].rank == currentCards[5].rank) && (currentCards[4].rank == currentCards[6].rank) && (currentCards[4].rank == currentCards[7].rank)))
                     {
-                        fourofkind = true;
+                        fourOfAKind = true;
                         probability = 1f;
                     }
                 }
