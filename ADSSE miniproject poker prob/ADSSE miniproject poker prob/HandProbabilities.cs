@@ -450,6 +450,8 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     probability = 0f;
                 }
+                if (pair && threeOfAKind)
+                    probability = 1f;
             }
 
             if (currentCards.Count == 6)
@@ -468,6 +470,8 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     probability = 0f;
                 }
+                if (pair && threeOfAKind)
+                    probability = 1f;
             }
 
             if (currentCards.Count == 7)
