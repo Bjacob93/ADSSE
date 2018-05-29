@@ -535,12 +535,15 @@ namespace ADSSE_miniproject_poker_prob
                 }
 
                 if (twoPair){
-                    foreach (BuildDeck.Card c in currentCards){
-                        foreach (BuildDeck.Card d in currentCards){
-                            if (c != d){
-                                if (c.rank == d.rank){
-                                    pair = true;
-                                    pairIndex = currentCards.IndexOf(c);
+                    for(int i = 0; i < currentCards.Count; i++)
+                    {
+                        for (int j = 1; j < currentCards.Count; j++)
+                        {
+                            if (i != j)
+                            {
+                                if (currentCards[i].rank == currentCards[j].rank)
+                                {
+                                    pairIndex = i;
                                     currentCards.Remove(currentCards[pairIndex]);
                                 }
                             }
@@ -723,13 +726,17 @@ namespace ADSSE_miniproject_poker_prob
                 {
                     currentCards.Remove(currentCards[pairIndex]);
                 }
-                if (twoPair){
-                    foreach (BuildDeck.Card c in currentCards){
-                        foreach (BuildDeck.Card d in currentCards){
-                            if (c != d){
-                                if (c.rank == d.rank){
-                                    pair = true;
-                                    pairIndex = currentCards.IndexOf(c);
+                if (twoPair)
+                {
+                    for (int i = 0; i < currentCards.Count; i++)
+                    {
+                        for (int j = 1; j < currentCards.Count; j++)
+                        {
+                            if (i != j)
+                            {
+                                if (currentCards[i].rank == currentCards[j].rank)
+                                {
+                                    pairIndex = i;
                                     currentCards.Remove(currentCards[pairIndex]);
                                 }
                             }
@@ -939,16 +946,15 @@ namespace ADSSE_miniproject_poker_prob
                 }
                 if (twoPair)
                 {
-                    foreach (BuildDeck.Card c in currentCards)
+                    for (int i = 0; i < currentCards.Count; i++)
                     {
-                        foreach (BuildDeck.Card d in currentCards)
+                        for (int j = 1; j < currentCards.Count; j++)
                         {
-                            if (c != d)
+                            if (i != j)
                             {
-                                if (c.rank == d.rank)
+                                if (currentCards[i].rank == currentCards[j].rank)
                                 {
-                                    pair = true;
-                                    pairIndex = currentCards.IndexOf(c);
+                                    pairIndex = i;
                                     currentCards.Remove(currentCards[pairIndex]);
                                 }
                             }
@@ -1020,7 +1026,74 @@ namespace ADSSE_miniproject_poker_prob
  
         public double ProbabilityOfFlush(List<BuildDeck.Card> currentCards, List<BuildDeck.Card> GameDeck)
         {
-            return probability;
+            currentCards = currentCards.OrderBy(o => o.suit).ToList();
+            currentCards.Reverse();
+
+            probability = 0f;
+
+            if(currentCards.Count == 2)
+            {
+                if(currentCards[0].suit == currentCards[1].suit)
+                {
+                    Console.WriteLine(Convert.ToString(deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit)));
+                    probability = ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit)) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 2) / (deck.CardsLeft(GameDeck) - 2));
+                }else
+                {
+                    probability = (((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 2) / (deck.CardsLeft(GameDeck) - 2)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 3) / (deck.CardsLeft(GameDeck) - 3))) +
+                                  ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 2) / (deck.CardsLeft(GameDeck) - 2)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 3) / (deck.CardsLeft(GameDeck) - 3))) +
+                                  (13f / deck.CardsLeft(GameDeck)) * (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) * (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f)) +
+                                  (13f / deck.CardsLeft(GameDeck)) * (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) * (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f)));
+                }
+            }
+
+            if(currentCards.Count == 5)
+            {
+                //0,1,2
+                //1,2,3
+                //2,3,4
+                if((currentCards[0].suit == currentCards[1].suit) && (currentCards[0].suit == currentCards[2].suit) || (currentCards[1].suit == currentCards[2].suit) && (currentCards[1].suit == currentCards[3].suit) || (currentCards[2].suit == currentCards[3].suit) && (currentCards[2].suit == currentCards[4].suit))
+                {
+                    probability = ((deck.TypeOfSuitLeft(GameDeck, currentCards[2].suit)) / deck.CardsLeft(GameDeck)) * (((deck.TypeOfSuitLeft(GameDeck, currentCards[2].suit)) - 1) / (deck.CardsLeft(GameDeck) - 1));
+                }
+                else
+                {
+                    probability = 0f;
+                }
+            }
+
+            if(currentCards.Count == 6)
+            {
+                //0,1,2,3
+                //1,2,3,4
+                //2,3,4,5
+                if ((currentCards[0].suit == currentCards[1].suit) && (currentCards[0].suit == currentCards[2].suit) && (currentCards[0].suit == currentCards[3].suit) || (currentCards[1].suit == currentCards[2].suit) && (currentCards[1].suit == currentCards[3].suit) && (currentCards[1].suit == currentCards[4].suit) || (currentCards[2].suit == currentCards[3].suit) && (currentCards[2].suit == currentCards[4].suit) && (currentCards[2].suit == currentCards[5].suit))
+                {
+                    probability = (deck.TypeOfSuitLeft(GameDeck, currentCards[3].suit)) / deck.CardsLeft(GameDeck);
+                }
+                else
+                {
+                    probability = 0f;
+                }
+            }
+
+            if(currentCards.Count == 7)
+            {
+                //0,1,2,3,4
+                //1,2,3,4,5
+                //2,3,4,5,6
+                if ((currentCards[0].suit == currentCards[1].suit) && (currentCards[0].suit == currentCards[2].suit) && (currentCards[0].suit == currentCards[3].suit) && (currentCards[0].suit == currentCards[4].suit) || (currentCards[1].suit == currentCards[2].suit) && (currentCards[1].suit == currentCards[3].suit) && (currentCards[1].suit == currentCards[4].suit) && (currentCards[1].suit == currentCards[5].suit) || (currentCards[2].suit == currentCards[3].suit) && (currentCards[2].suit == currentCards[4].suit) && (currentCards[2].suit == currentCards[5].suit) && (currentCards[2].suit == currentCards[6].suit))
+                {
+                    probability = 1f;
+                }
+                else
+                {
+                    probability = 0f;
+                }
+            }
+
+            probability = probability * 100f;
+            double prob = System.Math.Round(probability, 2);
+            return prob;
         }
     }
 

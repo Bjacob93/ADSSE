@@ -2091,6 +2091,7 @@ namespace ADSSE_miniproject_poker_prob
                 fourofkindnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFourOfaKind(currentHand, GameDeck)) + "%";
                 fullhousenumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFullHouse(currentHand, GameDeck)) + "%";
                 straightnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfStraight(currentHand, GameDeck)) + "%";
+                flushnumber.Text = Convert.ToString(probabilityCalculater.ProbabilityOfFlush(currentHand, GameDeck)) + "%";
             }
             else if(currentHand.Count == 1)
             {
