@@ -73,11 +73,13 @@ namespace ADSSE_miniproject_poker_prob
                             }
                             else
                             {
-                                probability = ((((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
-                                                   + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
-                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
-                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
-                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (deck.CardsLeft(GameDeck))) + (((deck.CardsLeft(GameDeck)-15) / deck.CardsLeft(GameDeck))*(3/(deck.CardsLeft(GameDeck)-1)));
+                                probability = ((((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank))) +
+                                                ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
+                                                ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
+                                                ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
+                                                ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / 
+                                                (deck.CardsLeft(GameDeck))) + (((deck.CardsLeft(GameDeck)-15) / 
+                                                 deck.CardsLeft(GameDeck))*(3/(deck.CardsLeft(GameDeck)-1)));
                             }
                         }
                     }
@@ -1102,13 +1104,14 @@ namespace ADSSE_miniproject_poker_prob
                 if(currentCards[0].suit == currentCards[1].suit)
                 {
                     Console.WriteLine(Convert.ToString(deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit)));
-                    probability = ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit)) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 2) / (deck.CardsLeft(GameDeck) - 2));
+                    probability = (((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit)) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 2) / (deck.CardsLeft(GameDeck) - 2))) + ((13f / 50f) * (12f / 49f) * (11f / 48f) * (10f / 47f) * (9f / 46f));
                 }else
                 {
                     probability = (((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 2) / (deck.CardsLeft(GameDeck) - 2)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[0].suit) - 3) / (deck.CardsLeft(GameDeck) - 3))) +
                                   ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) / deck.CardsLeft(GameDeck)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 1) / (deck.CardsLeft(GameDeck) - 1)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 2) / (deck.CardsLeft(GameDeck) - 2)) * ((deck.TypeOfSuitLeft(GameDeck, currentCards[1].suit) - 3) / (deck.CardsLeft(GameDeck) - 3))) +
                                   (13f / deck.CardsLeft(GameDeck)) * (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) * (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f)) +
-                                  (13f / deck.CardsLeft(GameDeck)) * (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) * (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f)));
+                                  (13f / deck.CardsLeft(GameDeck)) * (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) * (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f))) + 
+                                  ((13f / 50f) * (12f / 49f) * (11f / 48f) * (10f / 47f) * (9f / 46f));
                 }
             }
 
