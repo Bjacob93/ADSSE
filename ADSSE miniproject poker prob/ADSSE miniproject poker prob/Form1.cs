@@ -2186,6 +2186,7 @@ namespace ADSSE_miniproject_poker_prob
                     CardNumber1.Text = CardNumber1.Text;
                     CardSuit1.Text = CardSuit1.Text;
                     ConfirmButton.Visible = false;
+                    CommunityBox.Visible = false;
                 }
             }
         }

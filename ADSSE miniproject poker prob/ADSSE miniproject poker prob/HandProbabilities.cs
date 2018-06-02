@@ -137,7 +137,7 @@ namespace ADSSE_miniproject_poker_prob
                     }
                 }
             }
-
+            if (pair) probability = 1f;
             probability = probability * 100f;
             double prob = System.Math.Round(probability, 2);
             return prob;

@@ -131,6 +131,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ClubsBox2
@@ -352,6 +353,7 @@
             this.CardSuit1.Size = new System.Drawing.Size(35, 13);
             this.CardSuit1.TabIndex = 37;
             this.CardSuit1.Text = "label1";
+            this.CardSuit1.Visible = false;
             // 
             // CardNumber1
             // 
@@ -362,6 +364,7 @@
             this.CardNumber1.Size = new System.Drawing.Size(35, 13);
             this.CardNumber1.TabIndex = 41;
             this.CardNumber1.Text = "label3";
+            this.CardNumber1.Visible = false;
             // 
             // JackCard
             // 
@@ -621,6 +624,7 @@
             this.ComCard1.TabIndex = 56;
             this.ComCard1.Text = "checkBox1";
             this.ComCard1.UseVisualStyleBackColor = true;
+            this.ComCard1.Visible = false;
             // 
             // ComCard2
             // 
@@ -632,6 +636,7 @@
             this.ComCard2.TabIndex = 57;
             this.ComCard2.Text = "checkBox2";
             this.ComCard2.UseVisualStyleBackColor = true;
+            this.ComCard2.Visible = false;
             // 
             // ComCard3
             // 
@@ -643,6 +648,7 @@
             this.ComCard3.TabIndex = 58;
             this.ComCard3.Text = "checkBox3";
             this.ComCard3.UseVisualStyleBackColor = true;
+            this.ComCard3.Visible = false;
             // 
             // ComCard4
             // 
@@ -654,6 +660,7 @@
             this.ComCard4.TabIndex = 59;
             this.ComCard4.Text = "checkBox4";
             this.ComCard4.UseVisualStyleBackColor = true;
+            this.ComCard4.Visible = false;
             // 
             // ComCard5
             // 
@@ -665,6 +672,7 @@
             this.ComCard5.TabIndex = 60;
             this.ComCard5.Text = "checkBox5";
             this.ComCard5.UseVisualStyleBackColor = true;
+            this.ComCard5.Visible = false;
             // 
             // label1
             // 
@@ -675,6 +683,7 @@
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 61;
             this.label1.Text = "label1";
+            this.label1.Visible = false;
             // 
             // Cardchoice1
             // 
@@ -686,6 +695,7 @@
             this.Cardchoice1.TabIndex = 62;
             this.Cardchoice1.Text = "checkBox5";
             this.Cardchoice1.UseVisualStyleBackColor = true;
+            this.Cardchoice1.Visible = false;
             // 
             // Cardchoice2
             // 
@@ -697,6 +707,7 @@
             this.Cardchoice2.TabIndex = 63;
             this.Cardchoice2.Text = "checkBox5";
             this.Cardchoice2.UseVisualStyleBackColor = true;
+            this.Cardchoice2.Visible = false;
             // 
             // groupBox1
             // 
