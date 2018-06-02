@@ -49,7 +49,7 @@ namespace ADSSE_miniproject_poker_prob
                             }
                             else
                             {
-                                probability = (deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (deck.CardsLeft(GameDeck));
+                                probability = ((deck.TypeOfCardLeft(GameDeck, c.rank) + (deck.TypeOfCardLeft(GameDeck, d.rank))) / (deck.CardsLeft(GameDeck))) + ((((deck.CardsLeft(GameDeck) - (deck.TypeOfCardLeft(GameDeck,c.rank) + deck.TypeOfCardLeft(GameDeck, d.rank))) / deck.CardsLeft(GameDeck)) * (3f / (deck.CardsLeft(GameDeck)-1)))*3);
                             }
                         }
                     }
@@ -73,11 +73,11 @@ namespace ADSSE_miniproject_poker_prob
                             }
                             else
                             {
-                                probability = (float)(((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
+                                probability = ((((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)))
                                                    + ((deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) +
                                                      ((deck.TypeOfCardLeft(GameDeck, currentCards[2].rank))) +
                                                      ((deck.TypeOfCardLeft(GameDeck, currentCards[3].rank))) +
-                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (float)(deck.CardsLeft(GameDeck));
+                                                     ((deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)))) / (deck.CardsLeft(GameDeck))) + (((deck.CardsLeft(GameDeck)-15) / deck.CardsLeft(GameDeck))*(3/(deck.CardsLeft(GameDeck)-1)));
                             }
                         }
                     }
