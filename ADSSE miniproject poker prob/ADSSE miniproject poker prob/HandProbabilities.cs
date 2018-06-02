@@ -155,11 +155,11 @@ namespace ADSSE_miniproject_poker_prob
                 for (int i = 0; i < currentCards.Count - 1; i++) {
                     for (int j = 1; j < currentCards.Count; j++) {
                         if (currentCards[i].rank == currentCards[j].rank) {
-                            probability = (deck.TypeOfCardLeft(GameDeck, currentCards[i].rank)) / (deck.CardsLeft(GameDeck));
+                            probability = ((deck.TypeOfCardLeft(GameDeck, currentCards[i].rank)) / (deck.CardsLeft(GameDeck)))+(48f/deck.CardsLeft(GameDeck)*(3f/(deck.CardsLeft(GameDeck)-1))*(2f/(deck.CardsLeft(GameDeck)-2))*3);
                         }
                         else {
                             probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[1].rank))) / (deck.CardsLeft(GameDeck)) *
-                                          ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1)));
+                                          ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) - 1) / (deck.CardsLeft(GameDeck) - 1))) + (48f / deck.CardsLeft(GameDeck) * (3f /( deck.CardsLeft(GameDeck) - 1)) * (2f /( deck.CardsLeft(GameDeck) - 2)) * 3);
 
                         }
                     }

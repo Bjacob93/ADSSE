@@ -741,9 +741,9 @@
             this.rflushnumber.AutoSize = true;
             this.rflushnumber.Location = new System.Drawing.Point(962, 18);
             this.rflushnumber.Name = "rflushnumber";
-            this.rflushnumber.Size = new System.Drawing.Size(41, 13);
+            this.rflushnumber.Size = new System.Drawing.Size(10, 13);
             this.rflushnumber.TabIndex = 17;
-            this.rflushnumber.Text = "label18";
+            this.rflushnumber.Text = " ";
             // 
             // RoyalFlush
             // 
@@ -759,9 +759,9 @@
             this.Sflushnumber.AutoSize = true;
             this.Sflushnumber.Location = new System.Drawing.Point(845, 18);
             this.Sflushnumber.Name = "Sflushnumber";
-            this.Sflushnumber.Size = new System.Drawing.Size(41, 13);
+            this.Sflushnumber.Size = new System.Drawing.Size(10, 13);
             this.Sflushnumber.TabIndex = 15;
-            this.Sflushnumber.Text = "label16";
+            this.Sflushnumber.Text = " ";
             // 
             // label15
             // 
@@ -777,63 +777,63 @@
             this.fourofkindnumber.AutoSize = true;
             this.fourofkindnumber.Location = new System.Drawing.Point(714, 18);
             this.fourofkindnumber.Name = "fourofkindnumber";
-            this.fourofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.fourofkindnumber.Size = new System.Drawing.Size(10, 13);
             this.fourofkindnumber.TabIndex = 13;
-            this.fourofkindnumber.Text = "label14";
+            this.fourofkindnumber.Text = " ";
             // 
             // fullhousenumber
             // 
             this.fullhousenumber.AutoSize = true;
             this.fullhousenumber.Location = new System.Drawing.Point(585, 18);
             this.fullhousenumber.Name = "fullhousenumber";
-            this.fullhousenumber.Size = new System.Drawing.Size(41, 13);
+            this.fullhousenumber.Size = new System.Drawing.Size(10, 13);
             this.fullhousenumber.TabIndex = 12;
-            this.fullhousenumber.Text = "label13";
+            this.fullhousenumber.Text = " ";
             // 
             // flushnumber
             // 
             this.flushnumber.AutoSize = true;
             this.flushnumber.Location = new System.Drawing.Point(473, 18);
             this.flushnumber.Name = "flushnumber";
-            this.flushnumber.Size = new System.Drawing.Size(41, 13);
+            this.flushnumber.Size = new System.Drawing.Size(10, 13);
             this.flushnumber.TabIndex = 11;
-            this.flushnumber.Text = "label12";
+            this.flushnumber.Text = " ";
             // 
             // straightnumber
             // 
             this.straightnumber.AutoSize = true;
             this.straightnumber.Location = new System.Drawing.Point(384, 18);
             this.straightnumber.Name = "straightnumber";
-            this.straightnumber.Size = new System.Drawing.Size(41, 13);
+            this.straightnumber.Size = new System.Drawing.Size(10, 13);
             this.straightnumber.TabIndex = 10;
-            this.straightnumber.Text = "label11";
+            this.straightnumber.Text = " ";
             // 
             // threeofkindnumber
             // 
             this.threeofkindnumber.AutoSize = true;
             this.threeofkindnumber.Location = new System.Drawing.Point(281, 18);
             this.threeofkindnumber.Name = "threeofkindnumber";
-            this.threeofkindnumber.Size = new System.Drawing.Size(41, 13);
+            this.threeofkindnumber.Size = new System.Drawing.Size(10, 13);
             this.threeofkindnumber.TabIndex = 9;
-            this.threeofkindnumber.Text = "label10";
+            this.threeofkindnumber.Text = " ";
             // 
             // twopairnumber
             // 
             this.twopairnumber.AutoSize = true;
             this.twopairnumber.Location = new System.Drawing.Point(149, 18);
             this.twopairnumber.Name = "twopairnumber";
-            this.twopairnumber.Size = new System.Drawing.Size(41, 13);
+            this.twopairnumber.Size = new System.Drawing.Size(10, 13);
             this.twopairnumber.TabIndex = 8;
-            this.twopairnumber.Text = "label10";
+            this.twopairnumber.Text = " ";
             // 
             // pairnumber
             // 
             this.pairnumber.AutoSize = true;
             this.pairnumber.Location = new System.Drawing.Point(54, 18);
             this.pairnumber.Name = "pairnumber";
-            this.pairnumber.Size = new System.Drawing.Size(41, 13);
+            this.pairnumber.Size = new System.Drawing.Size(10, 13);
             this.pairnumber.TabIndex = 7;
-            this.pairnumber.Text = "label10";
+            this.pairnumber.Text = " ";
             // 
             // label9
             // 

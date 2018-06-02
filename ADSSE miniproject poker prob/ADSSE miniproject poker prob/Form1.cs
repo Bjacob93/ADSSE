@@ -28,6 +28,15 @@ namespace ADSSE_miniproject_poker_prob
         public void Form1_Load(object sender, EventArgs e)
         {
             GameDeck = deck.myDeck();
+            pairnumber.Text = "0%";
+            twopairnumber.Text = "0%";
+            fourofkindnumber.Text = "0%";
+            straightnumber.Text = "0%";
+            flushnumber.Text = "0%";
+            rflushnumber.Text = "0%";
+            Sflushnumber.Text = "0%";
+            threeofkindnumber.Text = "0%";
+            fullhousenumber.Text = "0%";
         }
 
 
@@ -2053,31 +2062,73 @@ namespace ADSSE_miniproject_poker_prob
 
         private void button2_Click(object sender, EventArgs e)
         {
-            check++;
-            label1.Text = Convert.ToString(check);
-            rank = Convert.ToInt16(CardNumber1.Text);
+            if (CardNumber1.Text == "label3")
+            {
+                MessageBox.Show("Please Select a Card");
+            }
+            else
+            {
+                check++;
+                label1.Text = Convert.ToString(check);
+                rank = Convert.ToInt16(CardNumber1.Text);
+            }
 
             switch (CardSuit1.Text)
             {
                 case "Hearts":
                     suit = 0;
-                    currentHand.Add(GameDeck[suit + rank]);
-                    GameDeck[suit + rank].available = false;
+                    if (GameDeck[suit + rank].available)
+                        if (GameDeck[suit + rank].available)
+                        {
+                            currentHand.Add(GameDeck[suit + rank]);
+                            GameDeck[suit + rank].available = false;
+                        }
+                        else
+                        {
+                            MessageBox.Show("This card is already in play");
+                            check--;
+                        }
                     break;
+
+
                 case "Clubs":
                     suit = 13;
-                    currentHand.Add(GameDeck[suit + rank]);
-                    GameDeck[suit + rank].available = false;
-                    break;
+                    if (GameDeck[suit + rank].available)
+                    {
+                        currentHand.Add(GameDeck[suit + rank]);
+                        GameDeck[suit + rank].available = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("This card is already in play");
+                        check--;
+                     }
+                     break;
                 case "Diamonds":
                     suit = 26;
-                    currentHand.Add(GameDeck[suit + rank]);
-                    GameDeck[suit + rank].available = false;
+                    if (GameDeck[suit + rank].available)
+                    {
+                        currentHand.Add(GameDeck[suit + rank]);
+                        GameDeck[suit + rank].available = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("This card is already in play");
+                        check--;
+                    }
                     break;
                 case "Spades":
                     suit = 39;
-                    currentHand.Add(GameDeck[suit + rank]);
-                    GameDeck[suit + rank].available = false;
+                    if (GameDeck[suit + rank].available)
+                    {
+                        currentHand.Add(GameDeck[suit + rank]);
+                        GameDeck[suit + rank].available = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("This card is already in play");
+                        check--;
+                    }
                     break;
                 default:
                     break;
@@ -2193,7 +2244,7 @@ namespace ADSSE_miniproject_poker_prob
 
         private void ResetButton_Click(object sender, EventArgs e)
         {
-            if (SecoundBox.Visible == true || SecoundBox.Visible == false && CommunityBox.Visible == true)
+            if (SecoundBox.Visible || !SecoundBox.Visible && CommunityBox.Visible || !CommunityBox.Visible)
             {
                 FirstBox.Visible = true;
                 SecoundBox.Visible = false;
@@ -2216,9 +2267,17 @@ namespace ADSSE_miniproject_poker_prob
                 FourthPlayCard.Image = null;
                 FifthPlayCard.Image = null;
 
-                pairnumber.Text = "";
-                twopairnumber.Text = "";
-                fourofkindnumber.Text = "";
+                pairnumber.Text = "0%";
+                twopairnumber.Text = "0%";
+                fourofkindnumber.Text = "0%";
+                straightnumber.Text = "0%";
+                flushnumber.Text = "0%";
+                rflushnumber.Text = "0%";
+                Sflushnumber.Text = "0%";
+                threeofkindnumber.Text = "0%";
+                fullhousenumber.Text = "0%";
+                CardNumber1.Text = "label3";
+                CardSuit1.Text = "label1";
 
                 //reset hand combinations
                 probabilityCalculater.ResetHandCombinations();
