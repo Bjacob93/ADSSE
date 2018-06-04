@@ -474,7 +474,7 @@ namespace ADSSE_miniproject_poker_prob
                     probability = (deck.TypeOfCardLeft(GameDeck, currentCards[pairIndex].rank) / deck.CardsLeft(GameDeck)) + ((((deck.CardsLeft(GameDeck) - 3f) / (deck.CardsLeft(GameDeck) - 1f)) * (3f / (deck.CardsLeft(GameDeck) - 2)))*3);
                 }
                 else
-                    probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank)) / deck.CardsLeft(GameDeck)) * (2f / (deck.CardsLeft(GameDeck) - 1f))) + ((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank) + deck.TypeOfCardLeft(GameDeck, currentCards[1].rank)) / deck.CardsLeft(GameDeck));
+                    probability = ((((6f / deck.CardsLeft(GameDeck))*(2f/(deck.CardsLeft(GameDeck)-1)))*(3f/ (deck.CardsLeft(GameDeck) - 2))) + ((6f/ (deck.CardsLeft(GameDeck))) * ((3f/ (deck.CardsLeft(GameDeck) - 1))*(2f/(deck.CardsLeft(GameDeck) - 2))))) + (((44f /deck.CardsLeft(GameDeck)) * (3f/(deck.CardsLeft(GameDeck)-1))* (2f / (deck.CardsLeft(GameDeck) - 2)) * (40f / (deck.CardsLeft(GameDeck)-3)) * (3f / (deck.CardsLeft(GameDeck) - 4))) + ((44f/deck.CardsLeft(GameDeck)) * (3f/ (deck.CardsLeft(GameDeck)-1)) * (40f/(deck.CardsLeft(GameDeck)-2))* (3f/ (deck.CardsLeft(GameDeck) - 3))*(2f/ (deck.CardsLeft(GameDeck) - 4))));
             }
 
             if (currentCards.Count == 5)
