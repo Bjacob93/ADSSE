@@ -2148,7 +2148,7 @@ namespace ADSSE_miniproject_poker_prob
             }
             else if(currentHand.Count == 1)
             {
-                MessageBox.Show("The chance will only update on legal tables i.e. 2 Cards, 5 Cards, 6 Cards, or 7 Cards");
+                MessageBox.Show("The probabilities for a hand will only update when the table is legal, i.e. when there are 2, 5, 6, or 7 cards chosen.");
             }
 
             if (check == 1)
