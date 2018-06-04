@@ -401,7 +401,7 @@ namespace ADSSE_miniproject_poker_prob
                         deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) +
                         deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + 
                         deck.TypeOfCardLeft(GameDeck, currentCards[3].rank) +
-                        deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) * 
+                        deck.TypeOfCardLeft(GameDeck, currentCards[4].rank)) / (deck.CardsLeft(GameDeck))) + 
                         (deck.TypeOfCardLeft(GameDeck,currentCards[0].rank) + 
                         deck.TypeOfCardLeft(GameDeck, currentCards[1].rank) + 
                         deck.TypeOfCardLeft(GameDeck, currentCards[2].rank) + 
