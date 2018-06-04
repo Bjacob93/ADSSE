@@ -292,8 +292,7 @@ namespace ADSSE_miniproject_poker_prob
                 }
                 else
                 {
-                    probability = (((deck.TypeOfCardLeft(GameDeck, currentCards[0].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[1].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[2].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[3].rank)) + (deck.TypeOfCardLeft(GameDeck, currentCards[4].rank))) / (deck.CardsLeft(GameDeck))) *
-                                                                                           (2 / (deck.CardsLeft(GameDeck) - 1)) * (1 / (deck.CardsLeft(GameDeck) - 1));
+                    probability = 0f;
                 }
                 //check if we have three of a kind with five cards
                 //combinations in a sorted list
