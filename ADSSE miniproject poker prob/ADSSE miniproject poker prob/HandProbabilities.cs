@@ -1135,7 +1135,7 @@ namespace ADSSE_miniproject_poker_prob
                         (9f / (deck.CardsLeft(GameDeck) - 4f)) + (13f / deck.CardsLeft(GameDeck)) * 
                         (12f / (deck.CardsLeft(GameDeck) - 1f)) * (11f / (deck.CardsLeft(GameDeck) - 2f)) *
                         (10f / (deck.CardsLeft(GameDeck) - 3f)) * (9f / (deck.CardsLeft(GameDeck) - 4f))) + 
-                        ((13f / 50f) * (12f / 49f) * (11f / 48f) * (10f / 47f) * (9f / 46f));
+                        ((36f / 50f) * (12f / 49f) * (11f / 48f) * (10f / 47f) * (9f / 46f));
                 }
             }
 
